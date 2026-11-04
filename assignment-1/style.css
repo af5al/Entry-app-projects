@@ -1,0 +1,204 @@
+/* Menu card external styling */
+
+/* Body styling */
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color:#fffaf3;
+    color: #333333;
+    line-height:1.6 ;
+}
+
+/* Header Section */
+
+header{
+    background-color:hsl(0, 90%, 4%);
+    color: #fffaf3;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Restaurant name h1 */
+
+header h1 {
+font-size: 'Playfair Display', serif;
+font-size: 35px;
+margin-bottom: 10px;
+color: rgb(221, 170, 16);
+}
+
+/* Restaurant tagline */
+header p {
+    color: #fffdfd;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Navigations */
+
+nav a {
+    color: #fffaf3;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* navigation hover */
+
+nav a:hover{
+    color:#f3c78b ;
+}
+
+/* main content */
+
+main {
+    max-width: 1200px;
+    margin:auto;
+    padding: 20px;
+}
+
+/* Menu Setion */
+/* 
+main menu heading */
+
+#menu h2{
+    font-family: 'playfair Display' serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/* menu description */
+.section-description{
+    text-align: center;
+    color: #777777;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Menu category section styling code */
+
+.menu-category{
+
+    margin-bottom: 50px;
+}
+
+/* category heading */
+
+.menu-category h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #9b572c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5c8a8;
+    
+}
+
+/* Menu Card Container Styling */
+
+.menu-container{
+    display: flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+/* individual food card */
+
+.menu-card {
+    background-color:#fffaf3;
+    border:1px solid #e8d9ca;
+    border-radius:8px;
+    padding:22px;
+    margin-bottom:10px;
+    flex:1;
+    min-width: 220px;
+}
+
+/* Food Item Names */
+
+.menu-card h4{
+font-family: 'Playfair Display', serif;
+color:#3b2418;
+font-size: 18px;
+margin-bottom: 8px;
+
+}
+
+
+/* Food description */
+
+.menu-card p {
+    color: #777777;
+    font-size: 15px;
+    margin-bottom: 12px;
+
+}
+
+/* food price */
+
+.menu-card span {
+     color: #b56b32;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* About Us Section Code */
+
+#about {
+   background-color: #f3e7d8;
+    text-align: center;
+    padding: 40px 25px;
+    border-radius: 8px;
+    margin-top: 30px; 
+}
+
+/* About Heading */
+
+#about h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3b2418;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* About paragraph */
+#about p {
+    max-width: 750px;
+    margin: auto;
+    color: #555555;
+    font-size: 15px;
+}
+
+
+/* Footer Section */
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Footer heading */
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    color: #f3c78b;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+/* Footer paragraphs */
+footer p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Copyright text */
+.copyright {
+    border-top: 1px solid #725747;
+    padding-top: 15px;
+    margin-top: 20px;
+    color: #d6c5b9;
+}
