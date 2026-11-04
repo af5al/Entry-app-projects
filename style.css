@@ -1,0 +1,141 @@
+body {
+    background-color: #FFF9EF;
+    color: #51483F;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #E8F3EF;
+    padding: 35px 20px;
+    text-align: center;
+    border-bottom: 3px solid #197D78;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #125B58;
+    letter-spacing: 8px;
+    
+}
+
+header p {
+    color: #806F60;
+    font-size: 14px;
+}
+
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #197D78;
+    font-weight: 600;
+    margin: 0 15px;
+    padding: 8px;
+}
+
+nav a:hover {
+    color: #125B58;
+    border-bottom: 2px solid #197D78;
+}
+
+
+.about {
+    background-color: #FFFFFF;
+    margin: 35px 5%;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #E4EDE6;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #197D78;
+}
+
+.about p {
+    color: #806F60;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+
+.menu {
+    padding: 30px ;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #125B58;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+footer {
+    background-color: #125B58;
+    color: #FFF9EF;
+    padding: 35px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-container h3 {
+    font-family: 'Playfair Display', serif;
+    color: #C8E5DB;
+}
+
+.footer-container p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.copyright {
+    border-top: 1px solid #5C9187;
+    padding-top: 15px;
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.menu-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card h3 {
+    color: #197273;
+}
+
+.card p {
+    color: gray;
+    line-height: 1.5;
+}
+
+.card h4 {
+    color: #287447;
+}
+
+
