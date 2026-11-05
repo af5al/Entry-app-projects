@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fff5e6;
+    color: #382016;
+}
+/* header section */
+header{
+    text-align: center;
+    background-color: #382016;
+    color: white;
+}
+.main-heading{
+    font-size: 50px;
+    padding: 10px;
+    font-family: "Sirin Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+a{
+    color:#fff5e6 ;
+    text-decoration: none;
+    margin: 10px;
+}
+a:hover{
+     color: #e4b7a5;
+}
+/* welcome section */
+main{
+    background-color: #d9b58b;
+}
+.welcome{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.welcome p{
+    padding: 30px;
+}
+.welcome h1{
+     font-size: 52px;
+    margin: 15px ;
+}
+button{
+    text-decoration: none;
+    background-color: #382016;
+    color:#fff5e6 ;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+/* menu section */
+.menu-category h2{
+    text-align: center;
+    text-decoration: underline;
+      font-family: 'Playfair Display', serif;
+    padding: 25px 25px ;
+}
+.menu-category p{
+    text-align: center;
+     font-family: "Google Sans", sans-serif;
+margin-bottom: 30px;}
+
+/* food setion */
+.category h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+        color: #542c1d;
+    border-bottom: 2px solid #542c1d;
+text-align: center;
+padding: 20px;
+}
+.menu-container{
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+
+
+}
+.menu-card{
+ text-align: center; 
+   background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e4d2bd;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.food-icon{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.menu-card h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.menu-card span{
+    color: #9b572c;
+    font-weight: 700;
+}
+/* about section */
+.about{
+    text-align: center;
+}
+.about h2{
+    padding: 10px; 
+     font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.about p{
+    font-family: "Google Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 50px;
+}
+
+
+/* footer section */
+footer{
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Google Sans", sans-serif;
+    color: white;
+    background-color: #382016;
+}
+footer h2{
+    font-size: 35px;
+    text-decoration: underline;
+    margin: 10px;
+}
+footer p{
+    font-size: 10px;
+}
+
+/* media query */
+@media (max-width: 768px) {
+    .menu-container{
+        grid-template-columns:repeat(2,1fr)
+    }
+}
+
+@media (max-width:480px) {
+    .menu-container{
+        grid-template-columns: 1fr;
+    }
+    
+}
