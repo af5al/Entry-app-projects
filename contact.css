@@ -1,0 +1,16 @@
+body {
+    background-image: url(contact.png);
+}
+
+div {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(249, 248, 247);
+    position: relative;
+    top: 30px;
+}
+h1 {
+
+    position: relative;
+    left: 150px;
+}
