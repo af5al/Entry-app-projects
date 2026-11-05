@@ -1,0 +1,65 @@
+body {
+  background-image: url(image2.png);
+}
+
+header {
+    color: rgb(185, 112, 23);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+   
+}
+
+h3 {
+   color: rgb(201, 121, 23);
+   position: relative;
+   bottom: 50px;
+   left: 50px;
+   font-size: 25px;
+}
+.heading {
+ 
+  width: fit-content;
+  position: relative;
+top: 30px;
+left: 550px;
+
+  
+}
+.navbar {
+  font-size: larger;
+  
+  width: fit-content;
+  position: relative;
+  left: 580px;
+ 
+}
+
+nav {
+  
+  display: flex;
+  gap: 40px;
+  text-decoration: none;
+ font-style: italic;
+ 
+}
+section {
+  position: relative;
+  right: 300px;
+  color: rgba(8, 182, 231, 0.852);
+  font-family:  "Redaction 10", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+.footer {
+  background-color: rgba(45, 45, 118, 0.667);
+ max-width: 1500px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  position: relative;
+  top: 200px;
+}

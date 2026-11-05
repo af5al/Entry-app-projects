@@ -1,0 +1,10 @@
+
+body {
+    background-image: url(menu.png);
+    color: aliceblue;
+}
+h1 {
+    color: rgba(9, 21, 26, 0.718);
+    text-align: center;
+    font-size: 80px;
+}
