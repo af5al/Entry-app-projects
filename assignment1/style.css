@@ -12,25 +12,27 @@
 }
 
 .listStyle {
-    list-style-type: circle;
-    list-style-position: inside;
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 0;
+    gap: 50px;
+    padding: 2px;
+    margin: 0;
+    background-color: rgb(123, 38, 58);
 }
 
-li:first-child {
-    color: rgb(123, 38, 58);
+.listStyle li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-li:nth-child(2) {
-    color: rgb(196, 93, 69);
-}
-
-li:last-child {
-    color: rgb(56, 118, 83);
+.listStyle li a:hover {
+    color: rgb(240, 190, 120);
 }
 
 .menuCategory {
@@ -86,6 +88,28 @@ li:last-child {
     padding: 15px;
     margin: 15px 0;
     border: 1px solid rgb(214, 161, 142);
+    overflow: hidden;
+}
+
+.menuItem img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.menuItem {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menuItem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menuItem:hover img {
+    transform: scale(1.08);
 }
 
 body {
