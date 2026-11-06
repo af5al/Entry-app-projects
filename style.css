@@ -1,3 +1,6 @@
+
+/* GENERAL STYLING */
+
 body {
     background-color: #FFF9EF;
     color: #51483F;
@@ -7,44 +10,96 @@ body {
     line-height: 1.7;
 }
 
+
+/* HEADER / HERO SECTION */
+
 header {
-    background-color: #E8F3EF;
-    padding: 35px 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("./images/cafe.jpg");
+
+    background-size: cover;
+    background-position: center center;;
+    background-repeat: no-repeat;
+
+    height: 350px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
+    color: white;
+
     border-bottom: 3px solid #197D78;
+    box-sizing: border-box;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    color: #125B58;
+    font-size: 65px;
     letter-spacing: 8px;
-    
+    color: white;
+    margin-bottom: 20px;
 }
 
 header p {
-    color: #806F60;
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 25px;
+}
+/* FIXED NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 15px 0;
+    background-color: rgba(18, 91, 88, 0.95);
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
-
-nav {
-    margin-top: 20px;
-}
-
-nav a {
+.navbar a {
+    color: white;
     text-decoration: none;
-    color: #197D78;
     font-weight: 600;
-    margin: 0 15px;
-    padding: 8px;
 }
 
-nav a:hover {
+.navbar a:hover {
     color: #125B58;
-    border-bottom: 2px solid #197D78;
+    background-color: #E8F3EF;
+    
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #E8F3EF;
+}
+
+
+/* ABOUT SECTION */
 
 .about {
     background-color: #FFFFFF;
@@ -68,17 +123,73 @@ nav a:hover {
 }
 
 
+
+
 .menu {
-    padding: 30px ;
+    padding: 30px;
 }
 
-h2 {
+.menu h2 {
     font-family: 'Playfair Display', serif;
     font-size: 38px;
     color: #125B58;
     text-align: center;
     margin-bottom: 40px;
 }
+
+.menu h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #125B58;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.card h3 {
+    color: #197273;
+}
+
+.card p {
+    color: #f7f5f5;
+    line-height: 1.5;
+}
+
+.card h4 {
+    color: #287447;
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.card-content {
+    padding: 15px 20px;
+}
+
+
 
 
 footer {
@@ -98,44 +209,40 @@ footer {
 
 .footer-container h3 {
     font-family: 'Playfair Display', serif;
-    color: #C8E5DB;
+    color: #ebf4f1;
 }
 
 .footer-container p {
     font-size: 13px;
     line-height: 1.8;
+    color:#FFFFFF
+
 }
 
 .copyright {
-    border-top: 1px solid #5C9187;
+    border-top: 1px solid #dae6e4;
     padding-top: 15px;
     margin-top: 25px;
     font-size: 12px;
 }
 
-.menu-container{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 5px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.card h3 {
-    color: #197273;
-}
-
-.card p {
-    color: gray;
-    line-height: 1.5;
-}
-
-.card h4 {
-    color: #287447;
-}
 
 
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 42px;
+    }
+
+    header nav {
+        gap: 15px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 25px;
+    }
+}
