@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background-color:#fdfaf6;
+    color:#333;
+    line-height:1.6;
+}
+
+
+
+.top-header{
+    background-color:#f5e6d3;
+    padding:30px;
+    text-align:center;
+}
+
+.top-header h1{
+    color:#8b4513;
+    margin-bottom:10px;
+}
+
+.tagline{
+    font-size:18px;
+    color:#555;
+    margin-bottom:20px;
+}
+
+/* Navigation */
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#8b4513;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#d2691e;
+}
+
+/* Section Headings */
+
+section h2{
+    text-align:center;
+    margin:30px 0 20px;
+    color:#8b4513;
+}
+
+/* Menu Cards */
+
+.menu-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:#fff;
+    width:250px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+    margin:10px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    color:#8b4513;
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:12px;
+}
+
+.card span{
+    font-size:18px;
+    font-weight:bold;
+    color:#b22222;
+}
+
+
+
+.about{
+    background-color:#f5f5f5;
+    padding:30px;
+    text-align:center;
+    margin-top:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+}
+
+
+
+footer{
+    background-color:#556b7a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
