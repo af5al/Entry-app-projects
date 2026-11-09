@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Booking Requests | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="section">
+    <div class="container">
+      <span class="sticker">Owner only</span>
+      <h1 style="margin-top:20px;font-size:clamp(2rem,5vw,3.4rem)">Booking requests</h1>
+
+      <form class="admin-login" id="login">
+        <div class="field">
+          <label for="token">Admin password</label>
+          <input id="token" type="password" autocomplete="current-password" required>
+        </div>
+        <button class="btn btn-orange" type="submit">Load requests</button>
+      </form>
+      <p class="form-status" id="status" role="status" style="margin-top:16px"></p>
+
+      <div id="results" style="margin-top:32px"></div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+      const form = document.getElementById('login');
+      const input = document.getElementById('token');
+      const status = document.getElementById('status');
+      const results = document.getElementById('results');
+
+      try { input.value = sessionStorage.getItem('adminToken') || ''; } catch {}
+
+      async function load() {
+        status.textContent = '';
+        results.innerHTML = '';
+        try {
+          const res = await fetch('/api/bookings', { headers: { Authorization: 'Bearer ' + input.value } });
+          const body = await res.json().catch(() => ({}));
+          if (!res.ok) { status.textContent = body.error || 'Could not load requests.'; return; }
+          try { sessionStorage.setItem('adminToken', input.value); } catch {}
+          const rows = body.bookings || [];
+          if (!rows.length) { results.innerHTML = '<p class="card">No booking requests yet.</p>'; return; }
+          results.innerHTML = `
+            <p><strong>${rows.length}</strong> request${rows.length === 1 ? '' : 's'}, newest first.</p>
+            <div class="admin-table-wrap"><table class="admin-table">
+              <thead><tr><th>Received</th><th>Name</th><th>Company</th><th>Email</th><th>Event date</th><th>Type</th><th>Size</th><th>Message</th></tr></thead>
+              <tbody>${rows.map((b) => `
+                <tr>
+                  <td>${esc(new Date(b.createdAt).toLocaleString())}</td>
+                  <td>${esc(b.name)}</td>
+                  <td>${esc(b.company)}</td>
+                  <td><a href="mailto:${esc(b.email)}">${esc(b.email)}</a></td>
+                  <td>${esc(b.eventDate)}</td>
+                  <td>${esc(b.eventType)}</td>
+                  <td>${esc(b.audienceSize)}</td>
+                  <td class="msg">${esc(b.message)}</td>
+                </tr>`).join('')}</tbody>
+            </table></div>`;
+        } catch {
+          status.textContent = 'Couldn’t reach the server.';
+        }
+      }
+
+      form.addEventListener('submit', (e) => { e.preventDefault(); load(); });
+      if (input.value) load();
+    })();
+  </script>
+</body>
+</html>
