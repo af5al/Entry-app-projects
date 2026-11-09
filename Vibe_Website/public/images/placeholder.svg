@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Photo coming soon">
+  <rect width="400" height="500" fill="#ffeb3b"/>
+  <g stroke="#0a0a0a" stroke-width="6" fill="none" opacity=".12">
+    <path d="M-50 80 L450 -120 M-50 200 L450 0 M-50 320 L450 120 M-50 440 L450 240 M-50 560 L450 360 M-50 680 L450 480"/>
+  </g>
+  <!-- microphone -->
+  <g transform="translate(200 210)">
+    <rect x="-38" y="-110" width="76" height="120" rx="38" fill="#ff5722" stroke="#0a0a0a" stroke-width="8"/>
+    <path d="M-38 -70 h76 M-38 -45 h76 M-38 -20 h76" stroke="#0a0a0a" stroke-width="5"/>
+    <path d="M-62 -10 a62 62 0 0 0 124 0" fill="none" stroke="#0a0a0a" stroke-width="8"/>
+    <path d="M0 52 v48 M-40 100 h80" stroke="#0a0a0a" stroke-width="8" stroke-linecap="square"/>
+  </g>
+  <text x="200" y="400" text-anchor="middle" font-family="Archivo Black, Arial Black, sans-serif" font-size="30" fill="#0a0a0a">PHOTO</text>
+  <text x="200" y="438" text-anchor="middle" font-family="Archivo Black, Arial Black, sans-serif" font-size="30" fill="#0a0a0a">COMING SOON</text>
+</svg>
