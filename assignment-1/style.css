@@ -142,7 +142,7 @@ nav a:hover {
     align-items: center;
     background:
         linear-gradient(90deg, rgba(30, 19, 14, 0.82), rgba(30, 19, 14, 0.22)),
-        url('menu.jpg')
+        url('images/menu.jpg')
         center/cover no-repeat;
     color: var(--white);
 }
@@ -289,7 +289,7 @@ nav a:hover {
     min-height: 480px;
     border-radius: 8px;
     background:
-        url('download.jpg')
+        url('images/download.jpg')
         center/cover no-repeat;
     box-shadow: 18px 18px 0 var(--gold-light);
 }
