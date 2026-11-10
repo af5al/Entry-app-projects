@@ -1,0 +1,239 @@
+/* Common Styles */
+*{
+    margin:0;
+    padding:0;box-sizing: border-box;
+}
+body{
+     font-family: "Barlow Condensed", sans-serif;
+     background-color: #FFF8EC;
+     color: #333;
+     line-height: 1.6;
+
+
+}
+/* header */
+header{
+    background-color: #30180D;
+    color: white;
+    text-align: center;
+    padding: 30px 20px; 
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #E5AD45;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+     margin :0 20px;
+     font-size: 16px;
+    font-weight: 500;
+} 
+nav a:hover {
+    color: #E5AD45;
+}
+
+/* Main content */
+main{
+    width:90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    }
+
+    #menu article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+/* cover image section */
+.hero{
+    background-image: url("images/biriyani.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height:450px;
+
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+    text-align: center; 
+
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 10px;
+} 
+
+/* Dark overlay */
+/* .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+} */
+ /* Cover image text */
+.hero-content {
+    position: relative;
+    color: white;
+    padding: 20px;
+}
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.hero-content a {
+    display: inline-block;
+    background-color: #D99A22;
+    color: #30180D;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.hero-content a:hover {
+    background-color: #E5AD45;
+}
+
+
+
+    /* Menu Section */
+    #menu {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#menu  h2,
+#about h2{
+    /* font-family:'Playfair Display', serif; */
+    color: #60351E;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+/* Menu Categories - CSS Grid */
+#menu  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+#menu  section  h3 {
+    grid-column: 1 / -1;
+    color: #60351E;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+/* Food Cards */
+#menu article {
+    background-color: white;
+    padding: 25px 15px;
+    border: 1px solid #E5D7C5;
+    border-radius: 10px;
+     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s; 
+}
+#menu article:hover {
+    transform: translateY(-5px);
+}
+
+
+
+#menu article h4 {
+    color: #60351E;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#menu article p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#menu article p:last-child {
+    color: #C58A16;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* About Section */
+#about {
+    background-color: #F3E6D3;
+    padding: 35px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #30180D;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    color: #E5AD45;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    #menu  section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #menu  section {
+        grid-template-columns: 1fr;
+    }
+
+    #menu  h2,
+    #about h2 {
+        font-size: 25px;
+    }
+
+    #about {
+        padding: 20px;
+    }
+}
