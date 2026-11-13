@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right, #393230, #766965, #9f918b);
+    
+}
+header{
+    background-color: #38251D;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    margin-left: 20px;
+    display: flex;
+    margin-top: 20px;
+    font-family: "DM Serif Display", serif;
+    
+   
+}
+.name1{
+    color: #F5EBDD;
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+.nav-link{
+    color: #F5EBDD;
+}
+.Tea-Image{
+    display: flex;
+    justify-content: center;
+    
+}
+.img1{
+    height:600px ;
+    width: 70%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+ .heading {
+     
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #311e14;;
+    padding: 10px;
+    font-weight: bolder;
+} 
+.span1{
+    color: #F5EBDD;  
+}
+
+.span3{
+    color: #F5EBDD;
+}
+.welcome1{
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    color:#311e14;;
+    font-weight: bold;
+    
+}
+.welcome2{
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    color:#311e14;;
+    font-weight: bold;
+}
+.welcome3{
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 60px;
+    letter-spacing: 10px;
+    color:#311e14;
+    font-weight: bold;
+    
+}
+
+.quote{
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    color: #311e14;;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.paragraph{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #311e14;;
+    padding: 30px;
+    
+.intro-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    
+}
+}
+.intro{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.tea-logo-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tea-logo{
+    width: 150px;
+}
+.card-heading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+    color: #311e14;;
+    padding: 30px;
+    
+  
+    
+}
+
+.items-heading{
+    font-size: 60px;
+}
+.card-quots{
+    font-size: 30px;
+}
+h1{
+    font-weight: bold;
+}
+
+
+.Allcards{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 80px 20px 80px;
+    
+}
+
+.card1{
+    min-height: 450px;
+    width: 300px;
+    border: solid 2px;
+    padding: 10px;
+    background-color: rgb(71, 49, 42);
+    border-radius: 20px;
+    color:#F5EBDD ;
+    text-align: center;
+}
+.card-img{
+    width: 100%;
+    height: 250px;
+}
+
+
+
+
+
