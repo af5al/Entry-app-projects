@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionHub — High-Fashion Utility For The Modern Era</title>
+    <meta
+      name="description"
+      content="Discover the definitive high-fashion utility pieces for the modern era. Minimalism meets uncompromising structure."
+    />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter for exact typographic fidelity -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="header">
+      <div class="header-container">
+        <a
+          href="Home%20Page.html"
+          class="brand-logo"
+          aria-label="FashionHub Home"
+        >
+          FashionHub
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a href="/About%20Us.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Contact%20Us.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Search -->
+          <button class="action-btn" aria-label="Search items" title="Search">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Wishlist -->
+          <button class="action-btn" aria-label="Wishlist" title="Wishlist">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Account -->
+          <button class="action-btn" aria-label="My Account" title="Account">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+
+          <!-- Shopping Cart -->
+          <button
+            class="action-btn cart-btn"
+            aria-label="Shopping Cart"
+            title="Cart"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge">2</span>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="mobile-toggle-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" aria-label="New Summer Collection Showcase">
+        <div class="hero-image-wrapper">
+          <picture>
+            <img
+              src="images/hero-model.png"
+              alt="FashionHub New Summer Collection editorial model"
+              class="hero-bg-img"
+              fetchpriority="high"
+            />
+          </picture>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content-container">
+          <div class="hero-card">
+            <h1 class="hero-title">New Summer Collection</h1>
+            <p class="hero-description">
+              Discover the definitive high-fashion utility pieces for the modern
+              era.<br class="desktop-break" />
+              Minimalism meets uncompromising structure.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#featured" class="btn btn-primary">Shop Now</a>
+              <a href="#categories" class="btn btn-secondary"
+                >Explore Collection</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop by Category Section -->
+      <section
+        class="section categories-section"
+        id="categories"
+        aria-labelledby="cat-heading"
+      >
+        <div class="section-container">
+          <h2 id="cat-heading" class="section-heading">Shop by Category</h2>
+
+          <div class="categories-bento-grid">
+            <!-- Men (Left tall feature card) -->
+            <article class="category-card cat-card-men">
+              <a
+                href="#featured"
+                class="category-card-link"
+                aria-label="Shop Men Category"
+              >
+                <div class="category-img-container">
+                  <img
+                    src="images/Link - Men.png"
+                    alt="Men collection editorial look"
+                    class="category-img"
+                    loading="lazy"
+                  />
+                  <div class="category-shade"></div>
+                </div>
+                <div class="category-label-wrapper">
+                  <span class="category-name">Men</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Right column (Women + split Accessories & Kids) -->
+            <div class="category-col-right">
+              <!-- Women (Top wide card with carousel indicator dots) -->
+              <article class="category-card cat-card-women">
+                <a
+                  href="#featured"
+                  class="category-card-link"
+                  aria-label="Shop Women Category"
+                >
+                  <div class="category-img-container">
+                    <img
+                      src="images/Link - Women.png"
+                      alt="Women tailored collection"
+                      class="category-img"
+                      loading="lazy"
+                    />
+                    <div class="category-shade"></div>
+                  </div>
+                  <div class="category-label-wrapper">
+                    <span class="category-name">Women</span>
+                  </div>
+                  <!-- Carousel Indicator Dots matching Figma -->
+                  <div class="category-carousel-dots" aria-hidden="true">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Bottom Subgrid: Accessories & Kids -->
+              <div class="category-bottom-row">
+                <!-- Accessories -->
+                <article class="category-card cat-card-accessories">
+                  <a
+                    href="#featured"
+                    class="category-card-link"
+                    aria-label="Shop Accessories Category"
+                  >
+                    <div class="category-img-container">
+                      <img
+                        src="images/Link - Accessories.png"
+                        alt="Technical crossbody accessories bag"
+                        class="category-img"
+                        loading="lazy"
+                      />
+                      <div class="category-shade"></div>
+                    </div>
+                    <div class="category-label-wrapper">
+                      <span class="category-name">Accessories</span>
+                    </div>
+                  </a>
+                </article>
+
+                <!-- Kids -->
+                <article class="category-card cat-card-kids">
+                  <a
+                    href="#featured"
+                    class="category-card-link"
+                    aria-label="Shop Kids Category"
+                  >
+                    <div class="category-img-container">
+                      <img
+                        src="images/Link - Kids.png"
+                        alt="Kids minimalist cotton hoodie and loungewear"
+                        class="category-img"
+                        loading="lazy"
+                      />
+                      <div class="category-shade"></div>
+                    </div>
+                    <div class="category-label-wrapper">
+                      <span class="category-name">Kids</span>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section
+        class="section featured-section"
+        id="featured"
+        aria-labelledby="featured-heading"
+      >
+        <div class="section-container">
+          <div class="section-header-row">
+            <h2 id="featured-heading" class="section-heading">
+              Featured Products
+            </h2>
+            <a
+              href="#"
+              class="section-action-link"
+              aria-label="View all featured products"
+            >
+              <span>View All</span>
+              <svg
+                class="arrow-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/prod-jacket.png"
+                  alt="Structured Utility Jacket"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <button
+                  class="quick-add-btn"
+                  aria-label="Add Structured Utility Jacket to bag"
+                >
+                  <span>+ Quick Add</span>
+                </button>
+              </div>
+              <div class="product-details">
+                <span class="product-category">Outerwear</span>
+                <h3 class="product-title">
+                  <a href="#">Structured Utility Jacket</a>
+                </h3>
+                <p class="product-price">$450</p>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/prod-shirt.png"
+                  alt="Oversized Poplin Shirt"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <button
+                  class="quick-add-btn"
+                  aria-label="Add Oversized Poplin Shirt to bag"
+                >
+                  <span>+ Quick Add</span>
+                </button>
+              </div>
+              <div class="product-details">
+                <span class="product-category">Tops</span>
+                <h3 class="product-title">
+                  <a href="#">Oversized Poplin Shirt</a>
+                </h3>
+                <p class="product-price">$180</p>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/prod-trousers.png"
+                  alt="Tailored Wide-Leg Trousers"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <button
+                  class="quick-add-btn"
+                  aria-label="Add Tailored Wide-Leg Trousers to bag"
+                >
+                  <span>+ Quick Add</span>
+                </button>
+              </div>
+              <div class="product-details">
+                <span class="product-category">Bottoms</span>
+                <h3 class="product-title">
+                  <a href="#">Tailored Wide-Leg Trousers</a>
+                </h3>
+                <p class="product-price">$280</p>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/prod-boots.png"
+                  alt="Monolith Leather Boots"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <button
+                  class="quick-add-btn"
+                  aria-label="Add Monolith Leather Boots to bag"
+                >
+                  <span>+ Quick Add</span>
+                </button>
+              </div>
+              <div class="product-details">
+                <span class="product-category">Footwear</span>
+                <h3 class="product-title">
+                  <a href="#">Monolith Leather Boots</a>
+                </h3>
+                <p class="product-price">$650</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Manifesto -->
+          <div class="footer-col footer-col-brand">
+            <a
+              href="#"
+              class="brand-logo footer-logo"
+              aria-label="FashionHub Home"
+            >
+              FashionHub
+            </a>
+            <p class="footer-manifesto">
+              High-fashion utility for the modern era.<br />
+              Minimalist aesthetics meeting uncompromising quality.
+            </p>
+            <p class="footer-copyright">
+              &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+              for the modern era.
+            </p>
+          </div>
+
+          <!-- Col 2: Support Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              <li><a href="#" class="footer-link">Size Guide</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Company Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Sustainability</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Connect & Location -->
+          <div class="footer-col footer-col-connect">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="footer-social-icons">
+              <!-- Globe Icon -->
+              <a
+                href="#"
+                class="social-icon-btn"
+                aria-label="Website and Worldwide Shipping"
+                title="Worldwide Shipping"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Email / Envelope Icon -->
+              <a
+                href="mailto:hello@fashionhub.com"
+                class="social-icon-btn"
+                aria-label="Email Customer Concierge"
+                title="Email Concierge"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <address class="footer-address">
+              123 Innovation Ave<br />
+              NY, NY 10001<br />
+              +1 (555) 019-2834
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notification for Add to Cart -->
+    <div
+      class="toast-notification"
+      id="toastNotification"
+      role="status"
+      aria-live="polite"
+    >
+      <span class="toast-icon">✓</span>
+      <span class="toast-message">Item added to your bag</span>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

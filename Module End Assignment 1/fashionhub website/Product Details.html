@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structured Wool Coat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="header">
+      <div class="header-container">
+        <a
+          href="Home%20Page.html"
+          class="brand-logo"
+          aria-label="FashionHub Home"
+        >
+          FashionHub
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a href="/About%20Us.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Contact%20Us.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Search -->
+          <button class="action-btn" aria-label="Search items" title="Search">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Wishlist -->
+          <button class="action-btn" aria-label="Wishlist" title="Wishlist">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Account -->
+          <button class="action-btn" aria-label="My Account" title="Account">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+
+          <!-- Shopping Cart -->
+          <button
+            class="action-btn cart-btn"
+            aria-label="Shopping Cart"
+            title="Cart"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge">2</span>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="mobile-toggle-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <span class="meta-link">Women</span>
+        <img src="images/chevron-right.png" alt="" class="crumb-chevron" />
+        <span class="meta-link">Outerwear</span>
+        <img src="images/chevron-right.png" alt="" class="crumb-chevron" />
+        <span class="meta-link current">Structured Wool Coat</span>
+      </nav>
+
+      <div class="product">
+        <section class="gallery">
+          <div class="thumbs">
+            <button
+              class="thumb"
+              type="button"
+              aria-label="Show image 1"
+              aria-pressed="true"
+            >
+              <img src="images/product-thumb-1.png" alt="" />
+            </button>
+            <button
+              class="thumb"
+              type="button"
+              aria-label="Show image 2"
+              aria-pressed="false"
+            >
+              <img src="images/product-thumb-2.png" alt="" />
+            </button>
+            <button
+              class="thumb"
+              type="button"
+              aria-label="Show image 3"
+              aria-pressed="false"
+            >
+              <img src="images/product-thumb-3.png" alt="" />
+            </button>
+          </div>
+          <div class="hero">
+            <img src="images/product-hero.png" alt="Structured Wool Coat" />
+            <button class="zoom" type="button" aria-label="Zoom image">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M7 10l6 0" />
+                <path d="M10 7l0 6" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="details">
+          <div class="details-head">
+            <div class="title-block">
+              <p class="brand">Maison Luxe</p>
+              <h1><span class="nowrap">Structured Wool</span> Coat</h1>
+            </div>
+            <button class="wishlist" type="button" aria-label="Add to wishlist">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="rating">
+            <div class="stars" role="img" aria-label="Rated 4.8 out of 5">
+              <img src="images/star.png" alt="" class="star" />
+              <img src="images/star.png" alt="" class="star" />
+              <img src="images/star.png" alt="" class="star" />
+              <img src="images/star.png" alt="" class="star" />
+              <img src="images/half-star.png" alt="" class="star" />
+            </div>
+            <span>4.8 (124 Reviews)</span>
+            <span class="dot"></span>
+            <span class="stock">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M9 12l2 2l4 -4" />
+              </svg>
+              In Stock
+            </span>
+          </div>
+
+          <p class="price">$1,250.00</p>
+
+          <div class="options">
+            <div>
+              <p class="label">Color: Obsidian Black</p>
+              <div class="swatches">
+                <button
+                  class="swatch"
+                  type="button"
+                  aria-label="Obsidian Black"
+                  aria-pressed="true"
+                  style="background-color: #1a1c1c"
+                ></button>
+                <button
+                  class="swatch"
+                  type="button"
+                  aria-label="Light Grey"
+                  aria-pressed="false"
+                  style="background-color: #e1e2e4"
+                ></button>
+                <button
+                  class="swatch"
+                  type="button"
+                  aria-label="Taupe"
+                  aria-pressed="false"
+                  style="background-color: #7e7576"
+                ></button>
+              </div>
+            </div>
+
+            <div>
+              <div class="row-between">
+                <p class="label">Size: 38 (FR)</p>
+                <button class="size-guide" type="button">Size Guide</button>
+              </div>
+              <div class="sizes">
+                <button class="size" type="button" aria-pressed="false">
+                  34
+                </button>
+                <button class="size" type="button" aria-pressed="false">
+                  36
+                </button>
+                <button class="size" type="button" aria-pressed="true">
+                  38
+                </button>
+                <button class="size" type="button" aria-pressed="false">
+                  40
+                </button>
+                <button
+                  class="size"
+                  type="button"
+                  aria-pressed="false"
+                  disabled
+                >
+                  42
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <p class="label">Quantity</p>
+              <div class="qty">
+                <button type="button" aria-label="Decrease quantity">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12l14 0" />
+                  </svg>
+                </button>
+                <span>1</span>
+                <button type="button" aria-label="Increase quantity">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5l0 14" />
+                    <path d="M5 12l14 0" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-primary" type="button">Add to cart</button>
+            <button class="btn btn-secondary" type="button">Buy now</button>
+          </div>
+
+          <div class="accordions">
+            <div>
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="true"
+              >
+                <span class="accordion-title">Description</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M6 15l6 -6l6 6" />
+                </svg>
+              </button>
+              <p class="description">
+                An architectural approach to winter outerwear. This structured
+                coat is crafted from a dense, premium wool blend that maintains
+                its sharp lines while offering exceptional warmth. Featuring a
+                hidden placket, minimal hardware, and an oversized lapel for a
+                modern silhouette.
+              </p>
+            </div>
+            <div class="accordion-row">
+              <span class="accordion-title">Details &amp; Care</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+            <div class="accordion-row">
+              <span class="accordion-title">Shipping &amp; Returns</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Manifesto -->
+          <div class="footer-col footer-col-brand">
+            <a
+              href="#"
+              class="brand-logo footer-logo"
+              aria-label="FashionHub Home"
+            >
+              FashionHub
+            </a>
+            <p class="footer-manifesto">
+              High-fashion utility for the modern era.<br />
+              Minimalist aesthetics meeting uncompromising quality.
+            </p>
+            <p class="footer-copyright">
+              &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+              for the modern era.
+            </p>
+          </div>
+
+          <!-- Col 2: Support Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              <li><a href="#" class="footer-link">Size Guide</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Company Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Sustainability</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Connect & Location -->
+          <div class="footer-col footer-col-connect">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="footer-social-icons">
+              <!-- Globe Icon -->
+              <a
+                href="#"
+                class="social-icon-btn"
+                aria-label="Website and Worldwide Shipping"
+                title="Worldwide Shipping"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Email / Envelope Icon -->
+              <a
+                href="mailto:hello@fashionhub.com"
+                class="social-icon-btn"
+                aria-label="Email Customer Concierge"
+                title="Email Concierge"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <address class="footer-address">
+              123 Innovation Ave<br />
+              NY, NY 10001<br />
+              +1 (555) 019-2834
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const trigger = document.querySelector(".accordion-trigger");
+      trigger.addEventListener("click", () => {
+        const open = trigger.getAttribute("aria-expanded") !== "true";
+        trigger.setAttribute("aria-expanded", String(open));
+        trigger.nextElementSibling.hidden = !open;
+      });
+
+      document
+        .querySelectorAll(".thumbs, .swatches, .sizes")
+        .forEach((group) => {
+          group.addEventListener("click", (event) => {
+            const button = event.target.closest("button");
+            if (!button || button.disabled) return;
+            group
+              .querySelectorAll("[aria-pressed]")
+              .forEach((b) =>
+                b.setAttribute("aria-pressed", String(b === button)),
+              );
+            const section = group.closest(".options > div");
+            if (group.classList.contains("swatches")) {
+              section.querySelector(".label").textContent =
+                `Color: ${button.getAttribute("aria-label")}`;
+            }
+            if (group.classList.contains("sizes")) {
+              section.querySelector(".label").textContent =
+                `Size: ${button.textContent} (FR)`;
+            }
+          });
+        });
+
+      const qty = document.querySelector(".qty span");
+      const [minus, plus] = document.querySelectorAll(".qty button");
+      minus.addEventListener("click", () => {
+        qty.textContent = Math.max(1, Number(qty.textContent) - 1);
+      });
+      plus.addEventListener("click", () => {
+        qty.textContent = Number(qty.textContent) + 1;
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
