@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Wishlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="header">
+      <div class="header-container">
+        <a
+          href="Home%20Page.html"
+          class="brand-logo"
+          aria-label="FashionHub Home"
+        >
+          FashionHub
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a href="/About%20Us.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Contact%20Us.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Search -->
+          <button class="action-btn" aria-label="Search items" title="Search">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Wishlist -->
+          <button class="action-btn" aria-label="Wishlist" title="Wishlist">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Account -->
+          <button class="action-btn" aria-label="My Account" title="Account">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+
+          <!-- Shopping Cart -->
+          <button
+            class="action-btn cart-btn"
+            aria-label="Shopping Cart"
+            title="Cart"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge">2</span>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="mobile-toggle-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="wishlist-main">
+      <header class="wishlist-header">
+        <h1>Your Wishlist</h1>
+        <p class="wishlist-count">4 items</p>
+      </header>
+
+      <ul class="wishlist-grid">
+        <li class="wishlist-card">
+          <div class="card-media">
+            <img
+              src="images/structured-wool-coat.png"
+              alt="Structured Wool Coat"
+            />
+            <button
+              class="remove-button"
+              type="button"
+              aria-label="Remove Structured Wool Coat from wishlist"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Outerwear</p>
+            <h2 class="card-name">Structured Wool Coat</h2>
+            <p class="card-price">$890.00</p>
+            <p class="stock stock-in">In Stock</p>
+            <button class="cart-button" type="button">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="wishlist-card">
+          <div class="card-media">
+            <img
+              src="images/essential-leather-tote.png"
+              alt="Essential Leather Tote"
+            />
+            <button
+              class="remove-button"
+              type="button"
+              aria-label="Remove Essential Leather Tote from wishlist"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Accessories</p>
+            <h2 class="card-name">Essential Leather Tote</h2>
+            <p class="card-price">
+              <span class="price-sale">$450.00</span>
+              <span class="price-original">$550.00</span>
+            </p>
+            <p class="stock stock-in">In Stock</p>
+            <button class="cart-button" type="button">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="wishlist-card">
+          <div class="card-media">
+            <img src="images/chronograph-zero.png" alt="Chronograph Zero" />
+            <button
+              class="remove-button"
+              type="button"
+              aria-label="Remove Chronograph Zero from wishlist"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Jewelry</p>
+            <h2 class="card-name">Chronograph Zero</h2>
+            <p class="card-price">$320.00</p>
+            <p class="stock stock-low">Low Stock</p>
+            <button class="cart-button" type="button">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="wishlist-card">
+          <div class="card-media">
+            <img src="images/aero-trainer.png" alt="Aero Trainer" />
+            <button
+              class="remove-button"
+              type="button"
+              aria-label="Remove Aero Trainer from wishlist"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Footwear</p>
+            <h2 class="card-name">Aero Trainer</h2>
+            <p class="card-price">$210.00</p>
+            <p class="stock stock-out">Out of Stock</p>
+            <button class="cart-button" type="button" disabled>
+              Out of Stock
+            </button>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Manifesto -->
+          <div class="footer-col footer-col-brand">
+            <a
+              href="#"
+              class="brand-logo footer-logo"
+              aria-label="FashionHub Home"
+            >
+              FashionHub
+            </a>
+            <p class="footer-manifesto">
+              High-fashion utility for the modern era.<br />
+              Minimalist aesthetics meeting uncompromising quality.
+            </p>
+            <p class="footer-copyright">
+              &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+              for the modern era.
+            </p>
+          </div>
+
+          <!-- Col 2: Support Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              <li><a href="#" class="footer-link">Size Guide</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Company Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Sustainability</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Connect & Location -->
+          <div class="footer-col footer-col-connect">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="footer-social-icons">
+              <!-- Globe Icon -->
+              <a
+                href="#"
+                class="social-icon-btn"
+                aria-label="Website and Worldwide Shipping"
+                title="Worldwide Shipping"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Email / Envelope Icon -->
+              <a
+                href="mailto:hello@fashionhub.com"
+                class="social-icon-btn"
+                aria-label="Email Customer Concierge"
+                title="Email Concierge"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <address class="footer-address">
+              123 Innovation Ave<br />
+              NY, NY 10001<br />
+              +1 (555) 019-2834
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

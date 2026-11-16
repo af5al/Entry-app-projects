@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | FashionHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/wishlist-page/styles.css" />
+    <link rel="stylesheet" href="/register-page/styles.css" />
+    <link rel="stylesheet" href="/cart-page/styles.css" />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="header">
+      <div class="header-container">
+        <a
+          href="Home%20Page.html"
+          class="brand-logo"
+          aria-label="FashionHub Home"
+        >
+          FashionHub
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a href="/About%20Us.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Contact%20Us.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Search -->
+          <button class="action-btn" aria-label="Search items" title="Search">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Wishlist -->
+          <button class="action-btn" aria-label="Wishlist" title="Wishlist">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Account -->
+          <button class="action-btn" aria-label="My Account" title="Account">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+
+          <!-- Shopping Cart -->
+          <button
+            class="action-btn cart-btn"
+            aria-label="Shopping Cart"
+            title="Cart"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge">2</span>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="mobile-toggle-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout">
+      <ol class="checkout-steps">
+        <li class="step is-done">
+          <span class="step-dot">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12l5 5l10 -10" />
+            </svg>
+          </span>
+          <span class="step-label">Cart</span>
+        </li>
+        <li class="step is-current" aria-current="step">
+          <span class="step-dot">2</span>
+          <span class="step-label">Shipping</span>
+        </li>
+        <li class="step">
+          <span class="step-dot">3</span>
+          <span class="step-label">Payment</span>
+        </li>
+        <li class="step">
+          <span class="step-dot">4</span>
+          <span class="step-label">Confirmation</span>
+        </li>
+      </ol>
+
+      <div class="checkout-layout">
+        <div class="checkout-main">
+          <section class="express" aria-labelledby="express-title">
+            <h2 class="section-heading" id="express-title">Express Checkout</h2>
+            <div class="express-buttons">
+              <button class="express-button shop-pay" type="button">
+                Shop Pay
+              </button>
+              <button class="express-button paypal" type="button">
+                PayPal
+              </button>
+            </div>
+            <p class="divider">Or continue below</p>
+          </section>
+
+          <section class="shipping" aria-labelledby="shipping-title">
+            <div class="section-head">
+              <h2 class="section-heading" id="shipping-title">
+                Shipping Address
+              </h2>
+              <a class="section-link" href="#">Log in for faster checkout</a>
+            </div>
+
+            <form class="form-grid">
+              <div class="field">
+                <label for="first-name">First Name</label>
+                <input
+                  id="first-name"
+                  type="text"
+                  placeholder="Jane"
+                  autocomplete="given-name"
+                />
+              </div>
+              <div class="field">
+                <label for="last-name">Last Name</label>
+                <input
+                  id="last-name"
+                  type="text"
+                  placeholder="Doe"
+                  autocomplete="family-name"
+                />
+              </div>
+              <div class="field field-full">
+                <label for="email">Email Address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="jane.doe@example.com"
+                  autocomplete="email"
+                />
+              </div>
+              <div class="field field-full">
+                <label for="street">Street Address</label>
+                <input
+                  id="street"
+                  type="text"
+                  placeholder="123 Fashion Ave, Apt 4B"
+                  autocomplete="street-address"
+                />
+              </div>
+              <div class="field field-third">
+                <label for="city">City</label>
+                <input
+                  id="city"
+                  type="text"
+                  placeholder="New York"
+                  autocomplete="address-level2"
+                />
+              </div>
+              <div class="field field-third">
+                <label for="state">State / Province</label>
+                <div class="select-wrap">
+                  <select id="state" autocomplete="address-level1">
+                    <option>Select State</option>
+                    <option>New York</option>
+                    <option>California</option>
+                    <option>Texas</option>
+                  </select>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6l6 -6" />
+                  </svg>
+                </div>
+              </div>
+              <div class="field field-third">
+                <label for="zip">ZIP / Postal Code</label>
+                <input
+                  id="zip"
+                  type="text"
+                  placeholder="10001"
+                  autocomplete="postal-code"
+                />
+              </div>
+            </form>
+
+            <label class="save-info">
+              <input type="checkbox" />
+              Save this information for next time
+            </label>
+          </section>
+
+          <section class="payment" aria-labelledby="payment-title">
+            <div class="section-head">
+              <h2 class="section-title" id="payment-title">Payment Method</h2>
+              <span class="section-step">Step 3</span>
+            </div>
+
+            <div class="payment-options">
+              <div class="payment-option is-open">
+                <label class="payment-head">
+                  <input type="radio" name="payment" value="card" checked />
+                  <span>Credit / Debit Card</span>
+                  <span class="card-logos" aria-hidden="true"
+                    ><span></span><span></span
+                  ></span>
+                </label>
+
+                <div class="payment-body">
+                  <div class="field input-icon-start">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M3 8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3l0 -8"
+                      />
+                      <path d="M3 10l18 0" />
+                      <path d="M7 15l.01 0" />
+                      <path d="M11 15l2 0" />
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="Card number"
+                      aria-label="Card number"
+                      autocomplete="cc-number"
+                    />
+                  </div>
+
+                  <div class="payment-row">
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="MM / YY"
+                        aria-label="Expiry date"
+                        autocomplete="cc-exp"
+                      />
+                    </div>
+                    <div class="field input-icon-end">
+                      <input
+                        type="text"
+                        placeholder="CVC"
+                        aria-label="CVC"
+                        autocomplete="cc-csc"
+                      />
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                        <path d="M12 9h.01" />
+                        <path d="M11 12h1v4h1" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Name on card"
+                      aria-label="Name on card"
+                      autocomplete="cc-name"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-option">
+                <label class="payment-head">
+                  <input type="radio" name="payment" value="upi" />
+                  <span>UPI / Mobile Wallet</span>
+                </label>
+              </div>
+
+              <div class="payment-option">
+                <label class="payment-head">
+                  <input type="radio" name="payment" value="cod" />
+                  <span>Cash on Delivery (COD)</span>
+                </label>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside
+          class="cart-summary checkout-summary"
+          aria-labelledby="checkout-summary-title"
+        >
+          <h2 class="section-heading" id="checkout-summary-title">
+            Order Summary
+          </h2>
+
+          <ul class="summary-items">
+            <li class="summary-item">
+              <div class="card-media summary-media">
+                <img
+                  src="images/tailored-black-blazer.png"
+                  alt="Tailored Wool Blend Blazer"
+                />
+                <span class="item-count" aria-label="Quantity 1">1</span>
+              </div>
+              <div class="summary-item-info">
+                <p class="card-name">Tailored Wool Blend Blazer</p>
+                <p class="cart-variant">Color: Noir | Size: M</p>
+                <p class="card-price">$450.00</p>
+              </div>
+            </li>
+            <li class="summary-item">
+              <div class="card-media summary-media">
+                <img
+                  src="images/white-shirt.png"
+                  alt="Crisp Poplin Button-Down"
+                />
+                <span class="item-count" aria-label="Quantity 2">2</span>
+              </div>
+              <div class="summary-item-info">
+                <p class="card-name">Crisp Poplin Button-Down</p>
+                <p class="cart-variant">Color: Blanc | Size: M</p>
+                <p class="card-price">$125.00</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="promo">
+            <input
+              class="promo-input"
+              type="text"
+              placeholder="Discount code"
+              aria-label="Discount code"
+            />
+            <button class="promo-apply" type="button">Apply</button>
+          </div>
+
+          <dl class="summary-rows">
+            <div class="summary-row">
+              <dt>Subtotal</dt>
+              <dd>$700.00</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Shipping</dt>
+              <dd>Calculated at next step</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Estimated Tax</dt>
+              <dd>$56.00</dd>
+            </div>
+          </dl>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <span class="total-amount">
+              <span class="currency">USD</span>
+              <span class="total-value">$756.00</span>
+            </span>
+          </div>
+
+          <button
+            class="cart-button checkout-button continue-button"
+            type="button"
+          >
+            Continue to Payment
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </button>
+
+          <p class="secure-note">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6"
+              />
+              <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+              <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+            </svg>
+            Payments are secure and encrypted.
+          </p>
+        </aside>
+      </div>
+    </main>
+    <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Manifesto -->
+          <div class="footer-col footer-col-brand">
+            <a
+              href="#"
+              class="brand-logo footer-logo"
+              aria-label="FashionHub Home"
+            >
+              FashionHub
+            </a>
+            <p class="footer-manifesto">
+              High-fashion utility for the modern era.<br />
+              Minimalist aesthetics meeting uncompromising quality.
+            </p>
+            <p class="footer-copyright">
+              &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+              for the modern era.
+            </p>
+          </div>
+
+          <!-- Col 2: Support Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              <li><a href="#" class="footer-link">Size Guide</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Company Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Sustainability</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Connect & Location -->
+          <div class="footer-col footer-col-connect">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="footer-social-icons">
+              <!-- Globe Icon -->
+              <a
+                href="#"
+                class="social-icon-btn"
+                aria-label="Website and Worldwide Shipping"
+                title="Worldwide Shipping"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Email / Envelope Icon -->
+              <a
+                href="mailto:hello@fashionhub.com"
+                class="social-icon-btn"
+                aria-label="Email Customer Concierge"
+                title="Email Concierge"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <address class="footer-address">
+              123 Innovation Ave<br />
+              NY, NY 10001<br />
+              +1 (555) 019-2834
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

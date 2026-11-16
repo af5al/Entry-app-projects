@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessories | FashionHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="header">
+      <div class="header-container">
+        <a
+          href="Home%20Page.html"
+          class="brand-logo"
+          aria-label="FashionHub Home"
+        >
+          FashionHub
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a href="/About%20Us.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Contact%20Us.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Search -->
+          <button class="action-btn" aria-label="Search items" title="Search">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Wishlist -->
+          <button class="action-btn" aria-label="Wishlist" title="Wishlist">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Account -->
+          <button class="action-btn" aria-label="My Account" title="Account">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+
+          <!-- Shopping Cart -->
+          <button
+            class="action-btn cart-btn"
+            aria-label="Shopping Cart"
+            title="Cart"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge">2</span>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="mobile-toggle-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="listing">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#">Home</a>
+        <span aria-hidden="true">&gt;</span>
+        <a href="#">Catalog</a>
+        <span aria-hidden="true">&gt;</span>
+        <span aria-current="page">Accessories</span>
+      </nav>
+
+      <div class="listing-body">
+        <aside class="filters" aria-label="Product filters">
+          <h2 class="section-heading">Filters</h2>
+
+          <fieldset class="filter-group">
+            <legend class="filter-label">Category</legend>
+            <label class="check">
+              <input type="checkbox" checked />
+              <span class="check-box" aria-hidden="true"></span>
+              <span>All Categories</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" />
+              <span class="check-box" aria-hidden="true"></span>
+              <span>Clothing</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" />
+              <span class="check-box" aria-hidden="true"></span>
+              <span>Footwear</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" />
+              <span class="check-box" aria-hidden="true"></span>
+              <span class="check-strong">Accessories</span>
+            </label>
+          </fieldset>
+
+          <div class="filter-group">
+            <p class="filter-label">Price</p>
+            <input
+              class="price-range"
+              type="range"
+              min="0"
+              max="1000"
+              value="1000"
+              aria-label="Maximum price"
+            />
+            <div class="price-values">
+              <span>$0</span>
+              <span>$1,000+</span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <p class="filter-label">Color</p>
+            <div class="swatches">
+              <button
+                type="button"
+                class="swatch"
+                style="--swatch: #111111"
+                aria-label="Black"
+              ></button>
+              <button
+                type="button"
+                class="swatch swatch-light"
+                style="--swatch: #ffffff"
+                aria-label="White"
+              ></button>
+              <button
+                type="button"
+                class="swatch"
+                style="--swatch: #eef0c6"
+                aria-label="Cream"
+              ></button>
+              <button
+                type="button"
+                class="swatch"
+                style="--swatch: #8a8a8a"
+                aria-label="Grey"
+              ></button>
+            </div>
+          </div>
+
+          <button type="button" class="apply-button">Apply Filters</button>
+        </aside>
+
+        <section class="results" aria-label="Products">
+          <div class="toolbar">
+            <p class="count">Showing 1-12 of 48 products</p>
+            <label class="sort">
+              <span>Sort by:</span>
+              <select>
+                <option>Newest</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Top Rated</option>
+              </select>
+              <svg
+                class="sort-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6l6 -6" />
+              </svg>
+            </label>
+          </div>
+
+          <ul class="product-grid">
+            <li class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/obsidian-leather-tote.png"
+                  alt="Obsidian Leather Tote"
+                />
+                <span class="badge">New</span>
+                <button
+                  type="button"
+                  class="wishlist"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h3 class="product-name">Obsidian Leather Tote</h3>
+                  <span class="rating">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                      />
+                    </svg>
+                    4.9
+                  </span>
+                </div>
+                <p class="product-category">Accessories</p>
+                <p class="price">$450</p>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/product-aero-silver-hoops.png"
+                  alt="Aero Silver Hoops"
+                />
+                <span class="badge">New</span>
+                <button
+                  type="button"
+                  class="wishlist"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h3 class="product-name">Aero Silver Hoops</h3>
+                  <span class="rating">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                      />
+                    </svg>
+                    4.7
+                  </span>
+                </div>
+                <p class="product-category">Accessories</p>
+                <p class="price">$120</p>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/product-vanguard-shades.png"
+                  alt="Vanguard Shades"
+                />
+                <span class="badge badge-sale">Sale</span>
+                <button
+                  type="button"
+                  class="wishlist"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h3 class="product-name">Vanguard Shades</h3>
+                  <span class="rating">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                      />
+                    </svg>
+                    4.5
+                  </span>
+                </div>
+                <p class="product-category">Accessories</p>
+                <p class="price">
+                  <span class="price-sale">$185</span>
+                  <span class="price-original">$220</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <div class="product-media">
+                <img
+                  src="images/product-monochrome-silk-scarf.png"
+                  alt="Monochrome Silk Scarf"
+                />
+                <button
+                  type="button"
+                  class="wishlist"
+                  aria-label="Add to wishlist"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h3 class="product-name">Monochrome Silk Scarf</h3>
+                  <span class="rating">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                      />
+                    </svg>
+                    5.0
+                  </span>
+                </div>
+                <p class="product-category">Accessories</p>
+                <p class="price">$85</p>
+              </div>
+            </li>
+          </ul>
+
+          <nav class="pagination" aria-label="Pagination">
+            <button
+              type="button"
+              class="page-button page-arrow"
+              aria-label="Previous page"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M15 6l-6 6l6 6" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              class="page-button is-active"
+              aria-current="page"
+            >
+              1
+            </button>
+            <button type="button" class="page-button">2</button>
+            <button type="button" class="page-button">3</button>
+            <span class="page-ellipsis" aria-hidden="true">...</span>
+            <button type="button" class="page-button">8</button>
+            <button
+              type="button"
+              class="page-button page-arrow"
+              aria-label="Next page"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 6l6 6l-6 6" />
+              </svg>
+            </button>
+          </nav>
+        </section>
+      </div>
+    </main>
+    <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Manifesto -->
+          <div class="footer-col footer-col-brand">
+            <a
+              href="#"
+              class="brand-logo footer-logo"
+              aria-label="FashionHub Home"
+            >
+              FashionHub
+            </a>
+            <p class="footer-manifesto">
+              High-fashion utility for the modern era.<br />
+              Minimalist aesthetics meeting uncompromising quality.
+            </p>
+            <p class="footer-copyright">
+              &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+              for the modern era.
+            </p>
+          </div>
+
+          <!-- Col 2: Support Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              <li><a href="#" class="footer-link">Size Guide</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Company Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Sustainability</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Connect & Location -->
+          <div class="footer-col footer-col-connect">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="footer-social-icons">
+              <!-- Globe Icon -->
+              <a
+                href="#"
+                class="social-icon-btn"
+                aria-label="Website and Worldwide Shipping"
+                title="Worldwide Shipping"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Email / Envelope Icon -->
+              <a
+                href="mailto:hello@fashionhub.com"
+                class="social-icon-btn"
+                aria-label="Email Customer Concierge"
+                title="Email Concierge"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <address class="footer-address">
+              123 Innovation Ave<br />
+              NY, NY 10001<br />
+              +1 (555) 019-2834
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | FashionHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-card" aria-labelledby="register-title">
+        <h1 id="register-title" class="brand-logo">FashionHub</h1>
+        <p class="auth-subtitle">Create your account.</p>
+
+        <form class="auth-form">
+          <div class="field">
+            <label for="full-name">Full Name</label>
+            <input
+              id="full-name"
+              name="name"
+              type="text"
+              placeholder="Jane Doe"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="jane@example.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="+1 (555) 000-0000"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              value="password123"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="field">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              id="confirm-password"
+              name="confirm-password"
+              type="password"
+              value="password123"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <button class="register-button" type="submit">
+            Register
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 6l6 6l-6 6" />
+            </svg>
+          </button>
+        </form>
+
+        <p class="auth-footer">
+          Already have an account? <a href="#">Log In</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

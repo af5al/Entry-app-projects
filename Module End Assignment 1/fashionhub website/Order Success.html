@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmed | FashionHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <main class="confirmation-page">
+      <section class="confirmation-card" aria-labelledby="confirmation-title">
+        <div class="success-icon" aria-hidden="true">
+          <span class="success-icon-inner">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12l5 5l10 -10" />
+            </svg>
+          </span>
+        </div>
+
+        <h1 id="confirmation-title" class="confirmation-title">
+          Thank you for your order!
+        </h1>
+        <p class="confirmation-message">
+          Your order has been confirmed and is now being processed.
+        </p>
+
+        <div class="order-summary">
+          <div>
+            <p class="summary-label">Order Number</p>
+            <p class="order-number">#FH-8942-XCV</p>
+          </div>
+          <div class="summary-date">
+            <p class="summary-label">Date</p>
+            <p class="summary-value">October 24, 2024</p>
+          </div>
+        </div>
+
+        <section class="arrival" aria-labelledby="arrival-title">
+          <h2 id="arrival-title" class="arrival-title">Estimated Arrival</h2>
+          <ol class="tracker">
+            <li class="step is-complete">
+              <span class="step-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+              </span>
+              <span class="step-bar"></span>
+              <span class="step-name">Confirmed</span>
+              <span class="step-date">Oct 24</span>
+            </li>
+            <li class="step">
+              <span class="step-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                  <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                  <path
+                    d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"
+                  />
+                </svg>
+              </span>
+              <span class="step-bar"></span>
+              <span class="step-name">Processing</span>
+              <span class="step-date">Est. Oct 26</span>
+            </li>
+            <li class="step">
+              <span class="step-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                </svg>
+              </span>
+              <span class="step-bar"></span>
+              <span class="step-name">Delivery</span>
+              <span class="step-date">Est. Oct 28</span>
+            </li>
+          </ol>
+        </section>
+
+        <div class="actions">
+          <a class="button button-primary" href="#">Continue Shopping</a>
+          <button class="button button-secondary" type="button">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+              <path d="M7 11l5 5l5 -5" />
+              <path d="M12 4l0 12" />
+            </svg>
+            Download Invoice
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Manifesto -->
+          <div class="footer-col footer-col-brand">
+            <a
+              href="#"
+              class="brand-logo footer-logo"
+              aria-label="FashionHub Home"
+            >
+              FashionHub
+            </a>
+            <p class="footer-manifesto">
+              High-fashion utility for the modern era.<br />
+              Minimalist aesthetics meeting uncompromising quality.
+            </p>
+            <p class="footer-copyright">
+              &copy; 2024 FashionHub. All rights reserved. High-fashion utility
+              for the modern era.
+            </p>
+          </div>
+
+          <!-- Col 2: Support Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              <li><a href="#" class="footer-link">Size Guide</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Company Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Sustainability</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Connect & Location -->
+          <div class="footer-col footer-col-connect">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="footer-social-icons">
+              <!-- Globe Icon -->
+              <a
+                href="#"
+                class="social-icon-btn"
+                aria-label="Website and Worldwide Shipping"
+                title="Worldwide Shipping"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Email / Envelope Icon -->
+              <a
+                href="mailto:hello@fashionhub.com"
+                class="social-icon-btn"
+                aria-label="Email Customer Concierge"
+                title="Email Concierge"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <address class="footer-address">
+              123 Innovation Ave<br />
+              NY, NY 10001<br />
+              +1 (555) 019-2834
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
