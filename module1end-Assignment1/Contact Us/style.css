@@ -1,0 +1,444 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #080808;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* MAIN NAVIGATION */
+
+.mainNavigation {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navigationContainer {
+    max-width: 1440px;
+    margin: auto;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.brandLogo {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.navigationLinks {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigationLinks a {
+    font-size: 13px;
+    color: #555555;
+    padding: 8px 0;
+}
+
+.navigationLinks a:hover,
+.navigationLinks .activeLink {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.trailingActions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigationButton {
+    background: none;
+    border: none;
+    color: #444444;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navigationButton:hover {
+    color: #999999;
+}
+
+
+/* CONTACT HEADER */
+
+.contactHeader {
+    max-width: 1440px;
+    margin: auto;
+    padding: 45px 5% 35px;
+}
+
+.contactHeader h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.contactHeader p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.7;
+}
+
+
+/* CONTACT MAIN SECTION */
+
+.contactMain {
+    max-width: 1440px;
+    margin: auto;
+    padding: 25px 5% 45px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 25px;
+}
+
+.leftColumn,
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* CONTACT DETAILS CARD */
+
+.contactDetailsCard {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contactDetailsCard h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contactDetail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.contactDetail:last-child {
+    border-bottom: none;
+}
+
+.detailIcon {
+    font-size: 17px;
+    width: 20px;
+    color: #555555;
+}
+
+.detailContent h3 {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.detailContent p {
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+
+/* FAQ SECTION */
+
+.faqSection {
+    background-color: #f8f8f8;
+}
+
+.faqSection h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.faqItem {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.faqItem details {
+    padding: 15px 0;
+}
+
+.faqItem summary {
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqItem summary::-webkit-details-marker {
+    display: none;
+}
+
+.faqItem summary::after {
+    content: "⌄";
+    font-size: 16px;
+}
+
+.faqItem details[open] summary::after {
+    content: "⌃";
+}
+
+.faqItem p {
+    font-size: 12px;
+    color: #777777;
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+
+/* CONTACT FORM */
+
+.contactFormCard {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.formGroup label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    font-family: inherit;
+    font-size: 12px;
+    color: #333333;
+    outline: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: #999999;
+}
+
+.formGroup textarea {
+    height: 120px;
+    resize: none;
+}
+
+.sendButton {
+    width: 100%;
+    padding: 13px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: #333333;
+}
+
+.mapPlaceholder {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.mapPlaceholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.siteFooter {
+    background-color: #ffffff;
+    padding: 35px 5% 20px;
+}
+
+.footerContainer {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+
+.footerBrand h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.footerLinks {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footerLinks a {
+    font-size: 11px;
+    color: #666666;
+}
+
+.footerLinks a:hover {
+    color: #000000;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+
+.copyright p {
+    font-size: 10px;
+    color: #777777;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+
+    .navigationContainer {
+        flex-wrap: wrap;
+    }
+
+    .navigationLinks {
+        gap: 15px;
+    }
+
+    .contactMain {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .navigationContainer {
+        justify-content: center;
+    }
+
+    .navigationLinks {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .trailingActions {
+        gap: 12px;
+    }
+
+    .contactHeader h1 {
+        font-size: 35px;
+    }
+
+    .contactMain {
+        grid-template-columns: 1fr;
+    }
+
+    .footerContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .footerLinks {
+        gap: 12px;
+    }
+
+    .copyright {
+        grid-column: 1;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .brandLogo {
+        font-size: 25px;
+    }
+
+    .navigationLinks {
+        gap: 12px;
+    }
+
+    .navigationLinks a {
+        font-size: 11px;
+    }
+
+    .contactHeader h1 {
+        font-size: 30px;
+    }
+
+    .contactHeader p br {
+        display: none;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contactDetailsCard,
+    .contactFormCard {
+        padding: 20px;
+    }
+
+}

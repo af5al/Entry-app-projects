@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Products Catalog - FashionHub</title>
+</head>
+
+<body>
+
+    <header class="mainNavigation">
+
+        <nav class="navigationContainer">
+
+            <a href="#" class="logoLink">
+                <span class="logoText">FashionHub</span>
+            </a>
+
+            <div class="desktopLinks">
+                <a href="#" class="navigationLink">Men</a>
+                <a href="#" class="navigationLink">Women</a>
+                <a href="#" class="navigationLink activeLink">Accessories</a>
+                <a href="#" class="navigationLink">About</a>
+                <a href="#" class="navigationLink">Contact</a>
+            </div>
+
+            <div class="trailingActions">
+
+                <div class="searchContainer">
+                    <button class="navigationButton" aria-label="Search">
+                        &#9906;
+                    </button>
+                    <input type="text" placeholder="Search..." class="searchInput">
+                </div>
+
+                <button class="navigationButton" aria-label="Wishlist">
+                    &#9825;
+                </button>
+
+                <button class="navigationButton" aria-label="Cart">
+                    &#128717;
+                </button>
+
+                <button class="navigationButton" aria-label="Profile">
+                    &#128100;
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="catalogMain">
+
+        <!-- Breadcrumb Navigation -->
+        <section class="breadcrumbSection">
+
+            <div class="breadcrumbContainer">
+
+                <a href="#" class="breadcrumbLink">Home</a>
+
+                <span class="breadcrumbArrow">&gt;</span>
+
+                <a href="#" class="breadcrumbLink">Catalog</a>
+
+                <span class="breadcrumbArrow">&gt;</span>
+
+                <span class="breadcrumbCurrent">Accessories</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Catalog Layout -->
+        <section class="catalogSection">
+
+            <!-- Sidebar Filters -->
+            <aside class="filterSidebar">
+
+                <h2 class="filterHeading">Filters</h2>
+
+
+                <!-- Category Filter -->
+                <div class="filterGroup">
+
+                    <h3 class="filterSubHeading">CATEGORY</h3>
+
+                    <div class="categoryFilterList">
+
+                        <label class="filterOption">
+                            <input type="checkbox" checked>
+                            <span>All Categories</span>
+                        </label>
+
+                        <label class="filterOption">
+                            <input type="checkbox">
+                            <span>Clothing</span>
+                        </label>
+
+                        <label class="filterOption">
+                            <input type="checkbox">
+                            <span>Footwear</span>
+                        </label>
+
+                        <label class="filterOption">
+                            <input type="checkbox">
+                            <span class="selectedCategory">Accessories</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Price Filter -->
+                <div class="filterGroup">
+
+                    <h3 class="filterSubHeading">PRICE</h3>
+
+                    <div class="priceRangeContainer">
+
+                        <input
+                            type="range"
+                            class="priceRangeInput"
+                            min="0"
+                            max="1000"
+                            value="500"
+                        >
+
+                        <div class="priceRangeLabels">
+
+                            <span>$0</span>
+
+                            <span>$1,000+</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Color Filter -->
+                <div class="filterGroup colorFilterGroup">
+
+                    <h3 class="filterSubHeading">COLOR</h3>
+
+                    <div class="colorOptions">
+
+                        <button class="colorCircle blackColor" aria-label="Black"></button>
+
+                        <button class="colorCircle whiteColor" aria-label="White"></button>
+
+                        <button class="colorCircle beigeColor" aria-label="Beige"></button>
+
+                        <button class="colorCircle greyColor" aria-label="Grey"></button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Apply Filters Button -->
+                <button class="applyFiltersButton">
+                    Apply Filters
+                </button>
+
+            </aside>
+
+
+            <!-- Product Grid Section -->
+            <div class="productContent">
+
+
+                <!-- Product Toolbar -->
+                <div class="productToolbar">
+
+                    <p class="productCount">
+                        Showing 1-12 of 48 products
+                    </p>
+
+                    <div class="sortContainer">
+
+                        <label for="sortProducts">Sort by:</label>
+
+                        <select id="sortProducts" class="sortSelect">
+
+                            <option value="newest">Newest</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product Grid -->
+                <div class="productGrid">
+
+
+                    <!-- Product Card 1 -->
+                    <article class="productCard">
+
+                        <div class="productImageContainer">
+
+                            <img
+                                src="../images/Tot.jpg"
+                                alt="Obsidian Leather Tote"
+                                class="productImage"
+                            >
+
+                            <button class="wishlistButton" aria-label="Add to wishlist">
+                                &#9825;
+                            </button>
+
+                        </div>
+
+                        <div class="productDetails">
+
+                            <div class="productTitleRating">
+
+                                <h3 class="productName">Obsidian Leather Tote</h3>
+
+                                <span class="productRating">&#9733; 4.9</span>
+
+                            </div>
+
+                            <p class="productCategory">Accessories</p>
+
+                            <p class="productPrice">$450</p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product Card 2 -->
+                    <article class="productCard">
+
+                        <div class="productImageContainer">
+
+                            <img
+                                src="../images/Hoops.jpg"
+                                alt="Aero Silver Hoops"
+                                class="productImage"
+                            >
+
+                            <div class="productBadgeBackground newBadge">
+                                <span>NEW</span>
+                            </div>
+
+                            <button class="wishlistButton" aria-label="Add to wishlist">
+                                &#9825;
+                            </button>
+
+                        </div>
+
+                        <div class="productDetails">
+
+                            <div class="productTitleRating">
+
+                                <h3 class="productName">Aero Silver Hoops</h3>
+
+                                <span class="productRating">&#9733; 4.7</span>
+
+                            </div>
+
+                            <p class="productCategory">Accessories</p>
+
+                            <p class="productPrice">$120</p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product Card 3 -->
+                    <article class="productCard">
+
+                        <div class="productImageContainer">
+
+                            <img
+                                src="../images/Shades.jpg"
+                                alt="Vanguard Shades"
+                                class="productImage"
+                            >
+
+                            <div class="productBadgeBackground saleBadge">
+                                <span>SALE</span>
+                            </div>
+
+                            <button class="wishlistButton" aria-label="Add to wishlist">
+                                &#9825;
+                            </button>
+
+                        </div>
+
+                        <div class="productDetails">
+
+                            <div class="productTitleRating">
+
+                                <h3 class="productName">Vanguard Shades</h3>
+
+                                <span class="productRating">&#9733; 4.5</span>
+
+                            </div>
+
+                            <p class="productCategory">Accessories</p>
+
+                            <p class="productPrice salePrice">
+                                $185
+                                <del>$220</del>
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product Card 4 -->
+                    <article class="productCard">
+
+                        <div class="productImageContainer">
+
+                            <img
+                                src="../images/Scarf.jpg"
+                                alt="Monochrome Silk Scarf"
+                                class="productImage"
+                            >
+
+                            <button class="wishlistButton" aria-label="Add to wishlist">
+                                &#9825;
+                            </button>
+
+                        </div>
+
+                        <div class="productDetails">
+
+                            <div class="productTitleRating">
+
+                                <h3 class="productName">Monochrome Silk Scarf</h3>
+
+                                <span class="productRating">&#9733; 5.0</span>
+
+                            </div>
+
+                            <p class="productCategory">Accessories</p>
+
+                            <p class="productPrice">$85</p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- Pagination -->
+                <div class="pagination">
+
+                    <button class="paginationButton">&lsaquo;</button>
+
+                    <button class="paginationButton activePage">1</button>
+
+                    <button class="paginationButton">2</button>
+
+                    <button class="paginationButton">3</button>
+
+                    <span class="paginationDots">...</span>
+
+                    <button class="paginationButton">8</button>
+
+                    <button class="paginationButton">&rsaquo;</button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="siteFooter">
+
+        <div class="footerTop">
+
+            <div class="footerBrand">
+                <h2>FashionHub</h2>
+                <p>High-fashion utility for the modern era.</p>
+            </div>
+
+            <div class="footerLinks">
+                <a href="#">Sustainability</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+            </div>
+
+        </div>
+
+        <div class="footerBottom">
+            <p>© 2024 FashionHub. All rights reserved. High-fashion utility for the modern era.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
