@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - FashionHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo" style="letter-spacing:-0.96px">FashionHub</a>
+  <span class="secure-tag"><img src="assets/icon-lock.svg" alt="" width="16" height="21"> Secure Checkout</span>
+</header>
+
+<main class="page-wrap d-flex flex-column gap-5">
+  <!-- Progress stepper -->
+  <ol class="stepper list-unstyled m-0 p-0">
+    <li class="step done"><span class="step-dot"><img src="assets/icon-check-white.svg" alt="" width="11" height="8"></span><span class="label">Cart</span></li>
+    <li class="step current"><span class="step-dot">2</span><span class="label fw-bold">Shipping</span></li>
+    <li class="step"><span class="step-dot">3</span><span class="label">Payment</span></li>
+    <li class="step"><span class="step-dot">4</span><span class="label">Confirmation</span></li>
+  </ol>
+
+  <div class="split">
+    <div class="split-main" style="gap:48px">
+      <!-- Express checkout -->
+      <section>
+        <h2 class="h-section mb-2">Express Checkout</h2>
+        <div class="express">
+          <button class="btn-fh btn-shoppay btn-up" style="letter-spacing:.6px">Shop Pay</button>
+          <button class="btn-fh btn-paypal btn-up" style="letter-spacing:.6px">PayPal</button>
+        </div>
+        <div class="or-divider label label-up">Or continue below</div>
+      </section>
+
+      <!-- Shipping form -->
+      <section class="d-flex flex-column gap-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="h-section">Shipping Address</h2>
+          <a href="login.html" class="label text-decoration-underline">Log in for faster checkout</a>
+        </div>
+        <form class="form-grid" onsubmit="return false">
+          <div class="field span-3"><label for="fn">First Name</label><input id="fn" class="input-fh" placeholder="Jane"></div>
+          <div class="field span-3"><label for="ln">Last Name</label><input id="ln" class="input-fh" placeholder="Doe"></div>
+          <div class="field span-6"><label for="em">Email Address</label><input id="em" type="email" class="input-fh" placeholder="jane.doe@example.com"></div>
+          <div class="field span-6"><label for="st">Street Address</label><input id="st" class="input-fh" placeholder="123 Fashion Ave, Apt 4B"></div>
+          <div class="field span-2"><label for="ct">City</label><input id="ct" class="input-fh" placeholder="New York"></div>
+          <div class="field span-2"><label for="sp">State / Province</label>
+            <select id="sp" class="form-select input-fh"><option>Select State</option><option>New York</option><option>California</option></select>
+          </div>
+          <div class="field span-2"><label for="zp">ZIP / Postal Code</label><input id="zp" class="input-fh" placeholder="10001"></div>
+          <label class="span-6 d-flex align-items-center gap-2" style="color:var(--muted-2)"><input type="checkbox" class="form-check-input m-0"> Save this information for next time</label>
+        </form>
+      </section>
+
+      <!-- Payment (next step, dimmed) -->
+      <section class="d-flex flex-column gap-4 is-dimmed">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="h-section">Payment Method</h2>
+          <span class="label px-2 py-1 rounded-1" style="background:#eee">Step 3</span>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <div class="pay-option">
+            <label><input type="radio" name="pay" class="form-check-input" checked> Credit / Debit Card
+              <span class="card-chips"><span></span><span></span></span></label>
+            <div class="pay-body">
+              <div class="with-icon" style="grid-column:1/-1"><img class="lead-ic" src="assets/icon-card.svg" alt="" width="20" height="16"><input class="input-fh" placeholder="Card number"></div>
+              <input class="input-fh" placeholder="MM / YY">
+              <div class="with-icon"><input class="input-fh" placeholder="CVC"><img class="trail-ic" src="assets/icon-help.svg" alt="" width="15" height="15"></div>
+              <input class="input-fh" placeholder="Name on card" style="grid-column:1/-1">
+            </div>
+          </div>
+          <div class="pay-option"><label><input type="radio" name="pay" class="form-check-input"> UPI / Mobile Wallet</label></div>
+          <div class="pay-option"><label><input type="radio" name="pay" class="form-check-input"> Cash on Delivery (COD)</label></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Order summary -->
+    <aside class="split-side">
+      <div class="summary" style="border-color:var(--border-soft);padding:24px;gap:16px">
+        <h2 class="h-section">Order Summary</h2>
+        <div class="d-flex flex-column gap-3 py-3">
+          <div class="mini-item">
+            <div class="thumb cover"><img src="assets/cart-blazer.png" alt="Tailored Wool Blend Blazer"><span class="qty-badge">1</span></div>
+            <div class="d-flex flex-column gap-1">
+              <strong>Tailored Wool Blend Blazer</strong>
+              <span class="label" style="color:var(--muted-2)">Color: Noir | Size: M</span>
+              <span class="pt-1">$450.00</span>
+            </div>
+          </div>
+          <div class="mini-item">
+            <div class="thumb cover"><img src="assets/checkout-poplin.png" alt="Crisp Poplin Button-Down"><span class="qty-badge">2</span></div>
+            <div class="d-flex flex-column gap-1">
+              <strong>Crisp Poplin Button-Down</strong>
+              <span class="label" style="color:var(--muted-2)">Color: Blanc | Size: M</span>
+              <span class="pt-1">$125.00</span>
+            </div>
+          </div>
+        </div>
+        <form class="inline-form pt-2" style="border-top:1px solid var(--border-soft)" onsubmit="return false">
+          <input class="input-fh mt-2" placeholder="Discount code">
+          <button class="btn-fh btn-light-fh mt-2" style="padding:0 16px">Apply</button>
+        </form>
+        <div class="d-flex flex-column gap-2 pt-2" style="border-top:1px solid var(--border-soft)">
+          <div class="summary-row"><span>Subtotal</span><span class="text-dark">$700.00</span></div>
+          <div class="summary-row"><span>Shipping</span><span class="text-dark">Calculated at next step</span></div>
+          <div class="summary-row"><span>Estimated Tax</span><span class="text-dark">$56.00</span></div>
+        </div>
+        <div class="d-flex justify-content-between align-items-end pt-2" style="border-top:1px solid var(--border-soft)">
+          <span style="font-size:18px">Total</span>
+          <span class="d-flex align-items-baseline gap-2"><span class="label">USD</span><span class="big-total">$756.00</span></span>
+        </div>
+        <a href="order-confirmation.html" class="btn-fh btn-dark-fh btn-block mt-2">Continue to Payment <img src="assets/icon-arrow-right-sm.svg" alt="" width="12" height="12"></a>
+        <p class="d-flex justify-content-center align-items-center gap-1 m-0" style="font-size:11px;color:var(--muted-2)"><img src="assets/icon-lock.svg" alt="" width="8" height="11"> Payments are secure and encrypted.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer-mini">
+  <span class="label">&copy; 2024 FashionHub. All rights reserved. High-fashion utility for the modern era.</span>
+  <nav class="label"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a></nav>
+</footer>
+</body>
+</html>
