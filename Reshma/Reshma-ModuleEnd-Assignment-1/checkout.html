@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="checkout.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <header class="header">
+        <div class="navBar" id="home">
+            <h1>FashionHub</h1>
+            <div class="icons">
+                <a href="#">
+                    <i class="bi bi-lock"></i>
+                </a>
+                <p>SECURE CHECKOUT</p>
+            </div>
+        </div>
+    </header>
+    <section class="page-wrapper">
+        <div class="track_order">
+            <div class="track_step completed">
+                <span> <i class="bi bi-check-circle-fill"></i></span>
+                <p>Cart</p>
+            </div>
+            <div class="track_line active"></div>
+            <div class="track_step completed">
+                <span>2</span>
+                <p>Shipping</p>
+            </div>
+
+            <div class="track_line"></div>
+
+            <div class="track_step">
+                <span>3</span>
+                <p>Payment</p>
+            </div>
+            <div class="track_line"></div>
+            <div class="track_step">
+                <span>4</span>
+                <p>Confirmation</p>
+            </div>
+
+        </div>
+        <div class="checkout">
+            <div class="shipping_details">
+                <div class="express_checkout">
+                    <h4>Express Checkout</h4>
+                    <button class="btn shop">SHOP PAY</button>
+                    <button class="btn pay">PAYPAL</button>
+                </div>
+                <div class="continue">OR CONTINUE BELOW</div>
+                <form class="contact_form">
+                    <div class="heading">
+                        <h4>Shipping Address</h4>
+                        <p>Log in for faster checkout</p>
+                    </div>
+                    <div class="form_grid">
+                        <div class="name_details">
+                            <div>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Jane Doe">
+                            </div>
+                            <div>
+                                <label for="name">Last Name</label>
+                                <input type="text" id="name" placeholder="Jane Doe">
+                            </div>
+                        </div>
+                        <div class="full_width">
+                            <label for="email">EMmail Address</label>
+                            <input type="email" id="email" placeholder="jane@example.com">
+                        </div>
+                         <div class="full_width">
+                            <label for="address">Street Address</label>
+                            <input type="text" id="email" placeholder="123 Fashion Ave,Apt 4B">
+                        </div>
+                        <div class="address"> 
+                             <div>
+                                <label for="city">City</label>
+                                <input type="text" id="city" placeholder="New York">
+                            </div>
+                            <div>
+                                <label for="substateect">State  / Province</label>
+                                <select id="subject">
+                                    <option>Select State</option>
+                                    <option>other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="address">ZIP/Postal Code</label>
+                                <input type="text" id="zipcode" placeholder="10001">
+                            </div>
+                        </div>
+                        <div class="save">
+                            <input class="checkbox" type="checkbox">
+                            <label>Save this information for next time</label>
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <div class="payment_heading">
+                            <h4>Payment Method</h4>
+                            <p>Step 3</p>
+                        </div>
+                        <div class="payment_option active">
+                            <div class="payment_title">
+                                <input type="radio" id="card" name="payment" checked>
+                                <label for="card">Credit / Debit Card</label>
+                            </div>
+
+                            <div class="card_details">
+                                <div class="input_group">
+                                    <input type="text" placeholder="Card number">
+                                </div>
+
+                                <div class="row">
+                                    <div class="input_group">
+                                        <input type="text" placeholder="MM / YY">
+                                    </div>
+
+                                    <div class="input_group">
+                                        <input type="text" placeholder="CVC">
+                                    </div>
+                                </div>
+
+                                <div class="input_group">
+                                    <input type="text" placeholder="Name on card">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment_option">
+                            <div class="payment_title">
+                                <input type="radio" id="upi" name="payment">
+                                <label for="upi">UPI / Mobile Wallet</label>
+                            </div>
+                        </div>
+                        <div class="payment_option">
+                            <div class="payment_title">
+                                <input type="radio" id="cod" name="payment">
+                                <label for="cod">Cash on Delivery (COD)</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="order_summary">
+                <h3>Order Summary</h3>
+                <div class="black_blazer">
+                    <img src="./images/mens_coat.jpg" alt="Tailored Black Blazer">
+                    <div class="product_desc">
+                        <p>Tailored Black Blazer</p>
+                        <p>size: M | Color:Onyx</p>
+                        <p>$280.00</p>
+                    </div>
+                 </div>
+                <div class="sneakers">
+                    <img src="./images/mens_sneakers.jpg" alt="Tailored Black Blazer">
+                    <div class="product_desc">
+                        <p>Minimalist Leather Sneaker</p>
+                        <p>size:42 | Color:Pure White</p>
+                        <p>$280.00</p>
+                    </div>
+                </div>
+                <div class="promocode">
+                    <input type="text" name="promocode" id="promo_code" placeholder="Promo Code">
+                    <button class="btn btn-light">APPLY</button>
+                </div>
+                <div class="summary_details mt-3">
+                    <div class="subtotal">
+                        <p>Subtotal (2 items)</p>
+                        <p>$635.00</p>
+                    </div>
+                    <div class="tax ">
+                            <p>Estimated Tax</p>
+                        <p>$46.50</p>
+                    </div>
+                    <div class="shipping">
+                        <p>Shipping</p>
+                        <p>Complimentary</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <p>Toatal</p>
+                    <div>
+                        <p>USD</p>
+                        <p>$618</p>
+                    </div>
+                </div>
+                <button class="btn btn-dark">Continue to Payment <i class="bi bi-arrow-right"></i></button>
+                <p>Payment are secure and encrypted.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 FashionHub. All rights reserved. High-fashion utility for the modern era.</p>
+        <div class="footer-links">
+        <p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Shipping & Returns</a>
+        </p>
+    </div>
+    </footer>
+</body>
+</html>

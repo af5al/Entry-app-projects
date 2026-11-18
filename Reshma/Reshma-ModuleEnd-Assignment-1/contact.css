@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+            padding: 0 40px;
+
+}
+h1 {
+    font-size: 33px;
+    font-weight: 800;
+    font-family: "Archivo Black", sans-serif;
+}
+
+nav, .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a, .icons a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    font-weight: 500;
+}
+nav .contact_link{
+    text-decoration: underline;
+}
+.contact {
+    position: relative;
+    padding: 45px 40px;
+    top: 63px;
+    background-color: #fafafa;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.contact_grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.25fr;
+    gap: 20px;
+}
+
+.left_column,
+.right_column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.contact_info,
+.contact_form {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.contact_info h3,
+.questionnaire h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.contact_info h3 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact_item {
+    display: flex;
+    gap: 12px;
+}
+
+.contact_item i {
+    color: #666;
+    font-size: 17px;
+}
+
+.contact_item label,
+.contact_form label {
+    display: block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contact_item p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* FAQ */
+.questionnaire h3 {
+    margin-bottom: 15px;
+}
+
+.faq_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.faq_item i {
+    color: #666;
+}
+
+.faq_item p {
+    margin: 0;
+}
+
+/* Form */
+.form_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.full_width {
+    grid-column: 1 / -1;
+}
+
+.contact_form input,
+.contact_form select,
+.contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    font-family: inherit;
+    border: 1px solid #e5e0e0;
+    border-radius: 6px;
+    background: #fafafa;
+    outline: none;
+}
+
+.contact_form input,
+.contact_form select {
+    height: 36px;
+}
+
+.contact_form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact_form input:focus,
+.contact_form select:focus,
+.contact_form textarea:focus {
+    border-color: #999;
+}
+
+.contact_form button {
+    height: 36px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Map */
+.map {
+    width: 100%;
+    height: 335px;
+    padding: 12px 30px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .contact {
+        padding: 25px;
+    }
+
+    .contact_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .left_column {
+        order: 2;
+    }
+
+    .right_column {
+        order: 1;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .contact {
+        padding: 20px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .form_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full_width {
+        grid-column: auto;
+    }
+
+    .contact_info,
+    .contact_form {
+        padding: 18px;
+    }
+
+    .map {
+        height: 190px;
+        padding: 10px;
+    }
+}
+
+
+/* ..... */
+
+.footer{
+    padding: 20px;
+    top: 110px;
+    position: relative;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.brand-section h2{
+    font-family: "Archivo Black", sans-serif;
+}
+.brand-section p{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.footer p{
+    margin: 0;
+}
+.footer .footer-links
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 7px;
+}
