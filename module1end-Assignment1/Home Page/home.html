@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>FashionHub</title>
+</head>
+<body>
+    <header class="mainNavigation">
+
+        <nav class="navigationContainer">
+
+            <!-- Logo -->
+            <a href="#" class="logoLink">
+                <span class="logoText">FashionHub</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="desktopLinks">
+                <a href="#" class="navigationLink">Men</a>
+                <a href="#" class="navigationLink">Women</a>
+                <a href="#" class="navigationLink">Accessories</a>
+                <a href="#" class="navigationLink">About</a>
+                <a href="#" class="navigationLink">Contact</a>
+            </div>
+
+            <!-- Trailing Actions -->
+            <div class="trailingActions">
+
+                <button id="search-btn" class="navigationButton" aria-label="Search">
+                    <svg id="search-icon" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+
+                    </svg>
+                </button>
+
+                <button id="wishlist-btn" class="navigationButton" aria-label="Wishlist">
+                    <svg id="wishlist-icon" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"></path>
+
+                    </svg>
+                </button>
+
+                <button id="profile-btn" class="navigationButton" aria-label="Profile">
+                    <svg id="profile-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+
+                <button class="navigationButton" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 8h14l1 13H4L5 8z"></path>
+                        <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+                    </svg>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="homePage">
+
+        <!-- Hero Section -->
+        <section class="heroSection">
+            <img class="heroImage" src="../images/Home Page Hero Section.jpg" alt="Hero Section main image">
+            <div class="heroSectionContainer">
+                <div class="heroHeading">
+                    <h1 class="heroHeadingText">New Summer Collection</h1>
+                </div>
+                <div class="heroParaOverlay">
+                    <p class="heroParaOverlayText">Discover the definitive high-fashion utility pieces for the modern era.
+                       Minimalism meets uncompromising structure.</p>
+                </div>
+                <div class="heroBtnContainerMargin">
+                    <div class="heroBtnContainer">
+                        <div class="heroBtnLinkShopNow">
+                            <a class="heroSectionBtnShopNow" href="#shopNow">Shop Now</a>
+                        </div>
+                        <div class="heroBtnLinkExploreCollection">
+                            <a class="heroSectionBtnExploreCollection" href="#exploreCollection">Explore Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section - Shop by Category -->
+        <section class="categorySection">
+            <div class="categorySectionHorizBorder">
+                <div class="categoryHeading">
+                    <h2 class="categoryHeadingText">Shop by Category</h2>
+                </div>
+            </div>
+
+            <div class="categoryContainer">
+
+                <!-- Kids -->
+                <a href="#" class="categoryCardKidsCategory">
+                    <img class="categoryKidsImage" src="../images/Kids.jpg" alt="Kids Fashion">
+                    <span class="categoryKidsGradient"></span>
+
+                    <div class="categoryKidsImageContainer">
+                        <span class="categoryKidsImageText">Kids</span>
+                    </div>
+                </a>
+
+                <!-- Accessories -->
+                <a href="#" class="categoryCardAccessoriesCategory">
+                    <img class="categoryAccessoriesImage" src="../images/Accessories.jpg" alt="Fashion Accessories">
+                    <span class="categoryAccessoriesGradient"></span>
+
+                    <div class="categoryAccessoriesImageContainer">
+                        <span class="categoryAccessoriesImageText">Accessories</span>
+                    </div>
+                </a>
+
+
+                <!-- Women -->
+                <a href="#" class="categoryCardWomenCategory">
+                    <img class="categoryWomenImage" src="../images/Women.jpg" alt="Women's Fashion">
+                    <span class="categoryWomenGradient"></span>
+
+                    <div class="categoryWomenContainer">
+
+                        <div class="categoryWomenTextContainer">
+                            <span class="categoryWomenText">Women</span>
+                        </div>
+
+                        <div class="categoryWomenTransformContainer">
+                            <div class="categoryWomenIconContainer">
+                                <!-- Arrow Icon -->
+                                <span class="categoryWomenArrow">&rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Men -->
+                <a href="#" class="categoryCardMenCategory">
+                    <img class="categoryMenImage" src="../images/Men.jpg" alt="Men's Fashion">
+                    <span class="categoryMenGradient"></span>
+
+                    <div class="categoryMenContainer">
+
+                            <div class="categoryMenTextContainer">
+                            <span class="categoryMenText">Men</span>
+                        </div>
+                    
+                        <div class="categoryMenTransformContainer">
+                            <div class="categoryMenIconContainer">
+                                <!-- Arrow Icon -->
+                                <span class="categoryMenArrow">&rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section - Featured Products -->
+        <section class="featuredProductsSection">
+
+            <div class="featuredProductsMainContainer">
+
+                <h2 class="featuredProductsTitle">Featured Products</h2>
+
+                <a href="#" class="viewAllLink">
+                    <span class="viewAllText">View All</span>
+
+                    <div class="viewAllIconContainer">
+                        <span class="viewAllIcon">&rarr;</span>
+                    </div>
+                </a>
+
+                <div class="featuredProductsContainer">
+
+                    <!-- Product Card 1 -->
+                    <article class="productCard">
+
+                        <div class="productBackground">
+
+                            <img src="../images/Jacket.jpg"
+                                alt="Structured Utility Jacket">
+
+                        </div>
+
+                        <div class="productButtonContainer">
+
+                            <div class="addToCartButton">
+
+                                <div class="addToCartButtonShadow">
+
+                                    <div class="addToCartContentContainer">
+                                        <span class="addToCartText">Add to cart</span>
+
+                                        <div class="addToCartIconContainer">
+                                            <span class="cartIcon">&#128722;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="productDetailsContainer">
+
+                            <div class="productCategoryContainer">
+                                <p class="productCategory">Outerwear</p>
+                            </div>
+
+                            <h3 class="productName">Structured Utility Jacket</h3>
+
+                            <div class="productPriceMargin">
+
+                                <div class="productPriceContainer">
+                                    <p class="productPrice">$450</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Product Card 2 -->
+                    <article class="productCard">
+
+                        <div class="productBackground">
+                            <img src="../images/Shirt.jpg"
+                                alt="Oversized Poplin Shirt">
+                        </div>
+
+                        <div class="productButtonContainer">
+
+                            <div class="addToCartButton">
+
+                                <div class="addToCartButtonShadow">
+
+                                    <div class="addToCartContentContainer">
+                                        <span class="addToCartText">Add to cart</span>
+
+                                        <div class="addToCartIconContainer">
+                                            <span class="cartIcon">&#128722;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="productDetailsContainer">
+
+                            <div class="productCategoryContainer">
+                                <p class="productCategory">Tops</p>
+                            </div>
+
+                            <h3 class="productName">Oversized Poplin Shirt</h3>
+
+                            <div class="productPriceMargin">
+                                <div class="productPriceContainer">
+                                    <p class="productPrice">$180</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Product Card 3 -->
+                    <article class="productCard">
+
+                        <div class="productBackground">
+                            <img src="../images/Trousers.jpg" alt="Trousers">
+                            <div class="productBadgeBackground">
+                                <span class="productBadgeText">New</span>
+                            </div>
+                        </div>
+
+                        <div class="productButtonContainer">
+
+                            <div class="addToCartButton">
+
+                                <div class="addToCartButtonShadow">
+
+                                    <div class="addToCartContentContainer">
+                                        <span class="addToCartText">Add to cart</span>
+
+                                        <div class="addToCartIconContainer">
+                                            <span class="cartIcon">&#128722;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="productDetailsContainer">
+
+                            <div class="productCategoryContainer">
+                                <p class="productCategory">Bottoms</p>
+                            </div>
+
+                            <h3 class="productName">Tailored Wide-Leg Trousers</h3>
+
+                            <div class="productPriceMargin">
+
+                                <div class="productPriceContainer">
+                                    <p class="productPrice">$280</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Product Card 4 -->
+                    <article class="productCard">
+                        <div class="productBackground">
+                            <img src="../images/Shoes.jpg"
+                                alt="Monolith Leather Boots">
+                        </div>
+
+                        <div class="productButtonContainer">
+                            <div class="addToCartButton">
+                                <div class="addToCartButtonShadow">
+                                    <div class="addToCartContentContainer">
+                                        <span class="addToCartText">Add to cart</span>
+
+                                        <div class="addToCartIconContainer">
+                                            <span class="cartIcon">&#128722;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="productDetailsContainer">
+
+                            <div class="productCategoryContainer">
+                                <p class="productCategory">Footwear</p>
+                            </div>
+
+                            <h3 class="productName">Monolith Leather Boots</h3>
+
+                            <div class="productPriceMargin">
+
+                                <div class="productPriceContainer">
+                                    <p class="productPrice">$650</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footerSection">
+
+        <div class="footerMainContainer">
+
+            <!-- Footer -->
+            <div class="brandAndCopyrightColumn">
+
+                <div class="brandNameMargin">
+                    <div class="brandNameContainer">
+                        <h2 class="footerBrandName">FashionHub</h2>
+                    </div>
+                </div>
+
+                <div class="brandDescriptionContainer">
+                    <p class="brandDescription">
+                        High-fashion utility for the modern era.
+                        Minimalist aesthetics meeting uncompromising
+                        quality.
+                    </p>
+                </div>
+
+                <div class="copyrightContainer">
+                    <p class="copyrightText">
+                        &copy; 2024 FashionHub. All rights reserved.
+                        High-fashion utility for the modern era.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Support Links Column -->
+            <div class="supportLinksColumn">
+
+                <div class="supportHeadingMargin">
+                    <div class="supportHeadingContainer">
+                        <h4 class="footerColumnHeading">Support</h4>
+                    </div>
+                </div>
+
+                <a href="#" class="footerLink">FAQ</a>
+
+                <a href="#" class="footerLink">Shipping &amp; Returns</a>
+
+                <a href="#" class="footerLink">Size Guide</a>
+
+            </div>
+
+
+            <!-- Company Links Column -->
+            <div class="companyLinksColumn">
+
+                <div class="companyHeadingMargin">
+                    <div class="companyHeadingContainer">
+                        <h4 class="footerColumnHeading">Company</h4>
+                    </div>
+                </div>
+
+                <a href="#" class="footerLink">About</a>
+
+                <a href="#" class="footerLink">Sustainability</a>
+
+                <a href="#" class="footerLink">Terms of Service</a>
+
+                <a href="#" class="footerLink">Privacy Policy</a>
+
+            </div>
+
+
+            <!-- Social/Contact -->
+            <div class="socialContactColumn">
+
+                <div class="connectHeadingMargin">
+                    <div class="connectHeadingContainer">
+                        <h4 class="footerColumnHeading">Connect</h4>
+                    </div>
+                </div>
+
+                <div class="socialIconsContainer">
+
+                    <a href="#" class="socialIconLink">
+                        <span class="socialIcon">&#127760;</span>
+                    </a>
+
+                    <a href="#" class="socialIconLink">
+                        <span class="socialIcon">&#9993;</span>
+                    </a>
+
+                </div>
+
+                <div class="contactAddressMargin">
+
+                    <div class="contactAddressContainer">
+                        <p class="contactAddress">
+                            123 Fashion Ave<br>
+                            NY, NY 10001<br>
+                            Mon-Fri, 9am-6pm
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>

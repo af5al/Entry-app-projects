@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart | FashionHub</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#" class="logo">FashionHub</a>
+
+        <nav class="nav-links">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accessories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="nav-icons">
+            <a href="#" aria-label="Search">&#9906;</a>
+            <a href="#" aria-label="Wishlist">&#9825;</a>
+            <a href="#" aria-label="Shopping Cart">&#128722;</a>
+            <a href="#" aria-label="Account">&#9818;</a>
+        </div>
+    </header>
+
+    <!-- Shopping Cart -->
+    <main class="cart-section">
+
+        <h2>Your Cart</h2>
+
+        <div class="cart-layout">
+
+            <!-- Cart Items -->
+            <section class="cart-items">
+
+                <!-- Cart Item 1 -->
+                <article class="cart-item">
+
+                    <img src="../images/black-blazer.jpg"
+                         alt="Tailored Black Blazer">
+
+                    <div class="item-details">
+                        <h3>Tailored Black Blazer</h3>
+                        <p>Size: M | Color: Onyx</p>
+
+                        <div class="quantity-control">
+                            <button type="button">−</button>
+                            <span>1</span>
+                            <button type="button">+</button>
+                        </div>
+                    </div>
+
+                    <div class="item-price">
+                        <span class="old-price">$350.00</span>
+                        <span class="new-price">$280.00</span>
+
+                        <button class="remove-button" type="button">
+                            &#128465; REMOVE
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- Cart Item 2 -->
+                <article class="cart-item">
+
+                    <img src="../images/white-sneakers.jpg"
+                         alt="Minimalist Leather Sneaker">
+
+                    <div class="item-details">
+                        <h3>Minimalist Leather Sneaker</h3>
+                        <p>Size: 42 | Color: Pure White</p>
+
+                        <div class="quantity-control">
+                            <button type="button">−</button>
+                            <span>1</span>
+                            <button type="button">+</button>
+                        </div>
+                    </div>
+
+                    <div class="item-price">
+                        <span class="old-price">$150.00</span>
+                        <span class="new-price">$120.00</span>
+
+                        <button class="remove-button" type="button">
+                            &#128465; REMOVE
+                        </button>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Order Summary -->
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal (2 items)</span>
+                    <strong>$635.00</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Estimated Tax</span>
+                    <strong>$46.50</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <strong>Complimentary</strong>
+                </div>
+
+                <div class="discount-row">
+                    <span>Discount Applied (WELCOME10)</span>
+                    <strong>-$63.50</strong>
+                </div>
+
+                <div class="total-row">
+                    <span>Total</span>
+
+                    <div>
+                        <del>$635.00</del>
+                        <strong>$618.00</strong>
+                    </div>
+                </div>
+
+                <!-- Promo Code -->
+                <div class="promo-code">
+                    <input type="text" placeholder="Promo Code">
+                    <button type="button">APPLY</button>
+                </div>
+
+                <!-- Checkout Button -->
+                <button class="checkout-button" type="button">
+                    PROCEED TO CHECKOUT &#8594;
+                </button>
+
+                <p class="secure-text">
+                    Secure checkout powered by Stripe.
+                </p>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>FashionHub</h2>
+
+                <p>
+                    © 2024 FashionHub. All rights reserved.
+                    High-fashion utility for the modern era.
+                </p>
+            </div>
+
+            <nav class="footer-links">
+                <a href="#">Sustainability</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+            </nav>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | FashionHub</title>
+
+</head>
+
+<body>
+
+    <header class="mainNavigation">
+
+        <div class="navigationContainer">
+
+            <a href="#" class="brandLogo">FashionHub</a>
+
+            <nav class="navigationLinks">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Accessories</a>
+                <a href="#">About</a>
+                <a href="#" class="activeLink">Contact</a>
+            </nav>
+
+            <div class="trailingActions">
+
+                <!-- Wishlist -->
+                <button id="wishlist-btn" class="navigationButton" aria-label="Wishlist">
+                    <svg width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"></path>
+
+                    </svg>
+                </button>
+
+                <!-- Shopping Bag -->
+                <button class="navigationButton" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M5 8h14l1 13H4L5 8z"></path>
+                        <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+
+                    </svg>
+                </button>
+
+                <!-- Profile -->
+                <button id="profile-btn" class="navigationButton" aria-label="Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="contactHeader">
+
+            <h1>Get in Touch</h1>
+
+            <p>
+                We are here to assist you with styling advice, order inquiries, or any other
+                <br>
+                questions. Reach out to our dedicated concierge team.
+            </p>
+
+        </section>
+
+
+        <section class="contactMain">
+
+            <div class="leftColumn">
+
+                <!-- Contact details card -->
+                <div class="contactDetailsCard">
+
+                    <h2>Concierge Details</h2>
+
+                    <div class="contactDetail">
+
+                        <div class="detailIcon">☎</div>
+
+                        <div class="detailContent">
+                            <h3>PHONE</h3>
+                            <p>+1 (800) 555-0199</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contactDetail">
+
+                        <div class="detailIcon">✉</div>
+
+                        <div class="detailContent">
+                            <h3>EMAIL</h3>
+                            <p>concierge@fashionhub.com</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contactDetail">
+
+                        <div class="detailIcon">⌖</div>
+
+                        <div class="detailContent">
+                            <h3>FLAGSHIP STUDIO</h3>
+                            <p>
+                                100 High Street, Suite 400<br>
+                                New York, NY 10001
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contactDetail">
+
+                        <div class="detailIcon">◷</div>
+
+                        <div class="detailContent">
+                            <h3>OPENING HOURS</h3>
+                            <p>
+                                Mon - Fri: 10:00 AM - 7:00 PM<br>
+                                Sat - Sun: Closed
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ SECTION -->
+                <div class="faqSection">
+
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faqItem">
+
+                        <details>
+                            <summary>What is your return policy?</summary>
+                            <p>
+                                Please contact our concierge team for assistance with returns.
+                            </p>
+                        </details>
+
+                    </div>
+
+
+                    <div class="faqItem">
+
+                        <details>
+                            <summary>Do you ship internationally?</summary>
+                            <p>
+                                Please contact our team for international shipping information.
+                            </p>
+                        </details>
+
+                    </div>
+
+
+                    <div class="faqItem">
+
+                        <details>
+                            <summary>How can I track my order?</summary>
+                            <p>
+                                Contact our concierge team for help tracking your order.
+                            </p>
+                        </details>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT COLUMN -->
+            <div class="rightColumn">
+
+                <!-- CONTACT FORM -->
+                <div class="contactFormCard">
+
+                    <form>
+
+                        <div class="formRow">
+
+                            <div class="formGroup">
+                                <label for="fullName">FULL NAME</label>
+                                <input type="text" id="fullName" placeholder="Jane Doe">
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="emailAddress">EMAIL ADDRESS</label>
+                                <input type="email" id="emailAddress" placeholder="jane@example.com">
+                            </div>
+
+                        </div>
+
+
+                        <div class="formGroup">
+
+                            <label for="subject">SUBJECT</label>
+
+                            <select id="subject">
+
+                                <option value="order">Order Inquiry</option>
+                                <option value="styling">Styling Advice</option>
+                                <option value="returns">Returns</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="formGroup">
+
+                            <label for="message">MESSAGE</label>
+
+                            <textarea id="message" placeholder="How can we help you?"></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="sendButton">
+                            SEND MESSAGE
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Map image -->
+                <div class="mapPlaceholder">
+                    <img src="../images/contact-map.jpg" alt="FashionHub location map">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="siteFooter">
+
+        <div class="footerContainer">
+
+            <div class="footerBrand">
+
+                <h2>FashionHub</h2>
+
+            </div>
+
+            <div class="footerLinks">
+
+                <a href="#">Sustainability</a>
+                <a href="#">Size Guide</a>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+
+            </div>
+
+
+            <!-- COPYRIGHT -->
+            <div class="copyright">
+
+                <p>
+                    © 2024 FashionHub. All rights reserved. High-fashion utility for the modern era.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
