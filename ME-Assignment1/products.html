@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Catalog - FashionHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">FashionHub</a>
+  <nav class="main-nav">
+    <a href="products.html">Men</a>
+    <a href="products.html">Women</a>
+    <a href="products.html" class="active">Accessories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <a href="products.html" class="icon-btn" aria-label="Search"><img src="assets/icon-search.svg" alt="" width="18" height="18"></a>
+    <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><img src="assets/icon-heart.svg" alt="" width="20" height="18"></a>
+    <a href="login.html" class="icon-btn" aria-label="Profile"><img src="assets/icon-user.svg" alt="" width="16" height="16"></a>
+    <a href="cart.html" class="icon-btn" aria-label="Cart"><img src="assets/icon-bag.svg" alt="" width="16" height="20"><span class="cart-badge">2</span></a>
+  </div>
+</header>
+
+<main class="page-wrap d-flex flex-column gap-4">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="index.html">Home</a><img src="assets/icon-chevron-small.svg" alt="" width="5" height="8">
+    <a href="products.html">Catalog</a><img src="assets/icon-chevron-small.svg" alt="" width="5" height="8">
+    <span class="current">Accessories</span>
+  </nav>
+
+  <div class="catalog-layout">
+    <!-- Filters sidebar -->
+    <aside class="filters">
+      <h2 class="h-section">Filters</h2>
+      <div class="filter-group">
+        <h3 class="label label-up m-0">Category</h3>
+        <label class="form-check"><input class="form-check-input" type="checkbox" checked> All Categories</label>
+        <label class="form-check"><input class="form-check-input" type="checkbox"> Clothing</label>
+        <label class="form-check"><input class="form-check-input" type="checkbox"> Footwear</label>
+        <label class="form-check fw-bold text-black"><input class="form-check-input" type="checkbox"> Accessories</label>
+      </div>
+      <div class="filter-group">
+        <h3 class="label label-up m-0">Price</h3>
+        <input type="range" class="form-range" min="0" max="1000" value="1000">
+        <div class="d-flex justify-content-between text-muted-fh"><span>$0</span><span>$1,000+</span></div>
+      </div>
+      <div class="filter-group">
+        <h3 class="label label-up m-0">Color</h3>
+        <div class="swatches">
+          <button class="swatch" style="background:#000" aria-label="Black"></button>
+          <button class="swatch" style="background:#fff" aria-label="White"></button>
+          <button class="swatch" style="background:#f5f5dc" aria-label="Beige"></button>
+          <button class="swatch" style="background:#808080" aria-label="Grey"></button>
+        </div>
+      </div>
+      <button class="btn-fh btn-dark-fh btn-block" style="min-height:36px">Apply Filters</button>
+    </aside>
+
+    <!-- Product grid -->
+    <section class="d-flex flex-column gap-4">
+      <div class="toolbar">
+        <span class="label">Showing 1-12 of 48 products</span>
+        <div class="d-flex align-items-center gap-2">
+          <span class="label">Sort by:</span>
+          <select class="form-select">
+            <option>Newest</option><option>Price: Low to High</option><option>Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-media short">
+            <a href="product-details.html"><img src="assets/prod-leather-tote.png" alt="Obsidian Leather Tote"></a>
+            <button class="wish-btn" aria-label="Add to wishlist"><img src="assets/icon-heart-small.png" alt="" width="17" height="15"></button>
+          </div>
+          <div class="pt-2">
+            <div class="product-row">
+              <h3 class="product-name bold">Obsidian Leather Tote</h3>
+              <span class="rating label"><img src="assets/icon-star.svg" alt="" width="12" height="11">4.9</span>
+            </div>
+            <span class="label" style="color:var(--muted-2)">Accessories</span>
+            <p class="mt-1 mb-0">$450</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-media short">
+            <a href="product-details.html"><img src="assets/prod-silver-hoops.png" alt="Aero Silver Hoops"></a>
+            <span class="badge-fh">New</span>
+            <button class="wish-btn" aria-label="Add to wishlist"><img src="assets/icon-heart-small.png" alt="" width="17" height="15"></button>
+          </div>
+          <div class="pt-2">
+            <div class="product-row">
+              <h3 class="product-name bold">Aero Silver Hoops</h3>
+              <span class="rating label"><img src="assets/icon-star.svg" alt="" width="12" height="11">4.7</span>
+            </div>
+            <span class="label" style="color:var(--muted-2)">Accessories</span>
+            <p class="mt-1 mb-0">$120</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-media short">
+            <a href="product-details.html"><img src="assets/prod-vanguard-shades.png" alt="Vanguard Shades"></a>
+            <span class="badge-fh sale">Sale</span>
+            <button class="wish-btn" aria-label="Add to wishlist"><img src="assets/icon-heart-small.png" alt="" width="17" height="15"></button>
+          </div>
+          <div class="pt-2">
+            <div class="product-row">
+              <h3 class="product-name bold">Vanguard Shades</h3>
+              <span class="rating label"><img src="assets/icon-star.svg" alt="" width="12" height="11">4.5</span>
+            </div>
+            <span class="label" style="color:var(--muted-2)">Accessories</span>
+            <p class="mt-1 mb-0 d-flex gap-2 align-items-center"><strong class="text-danger-fh">$185</strong><small class="strike" style="color:var(--placeholder)">$220</small></p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-media short">
+            <a href="product-details.html"><img src="assets/prod-silk-scarf.png" alt="Monochrome Silk Scarf"></a>
+            <button class="wish-btn" aria-label="Add to wishlist"><img src="assets/icon-heart-small.png" alt="" width="17" height="15"></button>
+          </div>
+          <div class="pt-2">
+            <div class="product-row">
+              <h3 class="product-name bold">Monochrome Silk Scarf</h3>
+              <span class="rating label"><img src="assets/icon-star.svg" alt="" width="12" height="11">5.0</span>
+            </div>
+            <span class="label" style="color:var(--muted-2)">Accessories</span>
+            <p class="mt-1 mb-0">$85</p>
+          </div>
+        </article>
+      </div>
+
+      <nav class="pagination-fh" aria-label="Pagination">
+        <a href="#" aria-label="Previous"><img src="assets/icon-chevron-left.svg" alt="" width="6" height="10"></a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <span class="text-muted-fh">...</span>
+        <a href="#">8</a>
+        <a href="#" aria-label="Next"><img src="assets/icon-chevron-right.svg" alt="" width="6" height="10"></a>
+      </nav>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">FashionHub</a>
+      <p>High-fashion utility for the modern era. Minimalist aesthetics meeting uncompromising quality.</p>
+      <p class="label footer-copy">&copy; 2024 FashionHub. All rights reserved. High-fashion utility for the modern era.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">FAQ</a><a href="#">Shipping &amp; Returns</a><a href="#">Size Guide</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a><a href="#">Sustainability</a><a href="#">Terms of Service</a><a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <div class="footer-social">
+        <a href="#" aria-label="Website"><img src="assets/icon-globe.svg" alt="" width="20" height="20"></a>
+        <a href="contact.html" aria-label="Email"><img src="assets/icon-mail.svg" alt="" width="20" height="16"></a>
+      </div>
+      <p class="label mt-2 mb-0">123 Fashion Ave<br>NY, NY 10001<br>Mon-Fri, 9am-6pm</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

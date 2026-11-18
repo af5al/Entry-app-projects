@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - FashionHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">FashionHub</a>
+  <nav class="main-nav">
+    <a href="products.html">Men</a>
+    <a href="products.html" class="active">Women</a>
+    <a href="products.html">Accessories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <a href="products.html" class="icon-btn" aria-label="Search"><img src="assets/icon-search.svg" alt="" width="18" height="18"></a>
+    <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><img src="assets/icon-heart.svg" alt="" width="20" height="18"></a>
+    <a href="login.html" class="icon-btn" aria-label="Profile"><img src="assets/icon-user.svg" alt="" width="16" height="16"></a>
+    <a href="cart.html" class="icon-btn" aria-label="Cart"><img src="assets/icon-bag.svg" alt="" width="16" height="20"><span class="cart-badge">2</span></a>
+  </div>
+</header>
+
+<main class="page-wrap d-flex flex-column gap-4">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="products.html">Women</a><img src="assets/icon-chevron-right.svg" alt="" width="13" height="8">
+    <a href="products.html">Outerwear</a><img src="assets/icon-chevron-right.svg" alt="" width="13" height="8">
+    <span class="current">Structured Wool Coat</span>
+  </nav>
+
+  <div class="pd-layout">
+    <!-- Gallery -->
+    <section class="pd-gallery">
+      <div class="pd-thumbs">
+        <button class="active"><img src="assets/pd-thumb-1.png" alt="Fabric detail"></button>
+        <button><img src="assets/pd-thumb-2.png" alt="Button detail"></button>
+        <button><img src="assets/pd-thumb-3.png" alt="Back view"></button>
+      </div>
+      <div class="pd-main cover">
+        <img src="assets/pd-main-coat.png" alt="Structured Wool Coat">
+        <button class="pd-zoom" aria-label="Zoom"><img src="assets/icon-zoom.svg" alt="" width="18" height="18"></button>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section class="pd-info">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <span class="label label-up" style="letter-spacing:1.2px">Maison Luxe</span>
+          <h1 class="h-display mt-1">Structured Wool<br>Coat</h1>
+        </div>
+        <button class="icon-btn" aria-label="Add to wishlist"><img src="assets/icon-heart.svg" alt="" width="20" height="18"></button>
+      </div>
+
+      <div class="pd-rating">
+        <div class="stars">
+          <img src="assets/icon-star-full.svg" alt="" width="20" height="19">
+          <img src="assets/icon-star-full.svg" alt="" width="20" height="19">
+          <img src="assets/icon-star-full.svg" alt="" width="20" height="19">
+          <img src="assets/icon-star-full.svg" alt="" width="20" height="19">
+          <img src="assets/icon-star-half.svg" alt="" width="20" height="19">
+        </div>
+        <span class="label">4.8 (124 Reviews)</span>
+        <span class="dot"></span>
+        <span class="label d-flex align-items-center gap-1 text-black"><img src="assets/icon-check-circle.svg" alt="" width="12" height="12"> In Stock</span>
+      </div>
+
+      <p class="h-section m-0">$1,250.00</p>
+
+      <div class="pd-options">
+        <div class="d-flex flex-column gap-2">
+          <span class="label label-up text-black">Color: Obsidian Black</span>
+          <div class="d-flex gap-3">
+            <button class="color-dot active" style="background:#1a1c1c" aria-label="Obsidian Black"></button>
+            <button class="color-dot" style="background:#e1e2e4" aria-label="Light Grey"></button>
+            <button class="color-dot" style="background:#7e7576" aria-label="Taupe"></button>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-2">
+          <div class="d-flex justify-content-between">
+            <span class="label label-up text-black">Size: 38 (FR)</span>
+            <a href="#" class="label text-decoration-underline">Size Guide</a>
+          </div>
+          <div class="size-row">
+            <button class="size-btn">34</button>
+            <button class="size-btn">36</button>
+            <button class="size-btn active">38</button>
+            <button class="size-btn">40</button>
+            <button class="size-btn" disabled>42</button>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-2 align-items-start">
+          <span class="label label-up text-black">Quantity</span>
+          <div class="qty">
+            <button aria-label="Decrease">-</button>
+            <span>1</span>
+            <button aria-label="Increase">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pd-actions">
+        <a href="cart.html" class="btn-fh btn-dark-fh btn-block btn-up">Add to Cart</a>
+        <a href="checkout.html" class="btn-fh btn-outline-fh btn-block btn-up" style="background:var(--bg)">Buy Now</a>
+      </div>
+
+      <div class="accordion-fh">
+        <details open>
+          <summary><span class="h-sub">Description</span><img src="assets/icon-chevron-down.svg" alt="" width="12" height="15"></summary>
+          <p>An architectural approach to winter outerwear. This structured coat is crafted from a dense, premium wool blend that maintains its sharp lines while offering exceptional warmth. Featuring a hidden placket, minimal hardware, and an oversized lapel for a modern silhouette.</p>
+        </details>
+        <details>
+          <summary><span class="h-sub">Details &amp; Care</span><img src="assets/icon-chevron-down.svg" alt="" width="12" height="15"></summary>
+          <p>80% wool, 20% polyamide. Dry clean only.</p>
+        </details>
+        <details>
+          <summary><span class="h-sub">Shipping &amp; Returns</span><img src="assets/icon-chevron-down.svg" alt="" width="12" height="15"></summary>
+          <p>Complimentary shipping on all orders. Free returns within 30 days.</p>
+        </details>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">FashionHub</a>
+      <p>High-fashion utility for the modern era. Minimalist aesthetics meeting uncompromising quality.</p>
+      <p class="label footer-copy">&copy; 2024 FashionHub. All rights reserved. High-fashion utility for the modern era.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">FAQ</a><a href="#">Shipping &amp; Returns</a><a href="#">Size Guide</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a><a href="#">Sustainability</a><a href="#">Terms of Service</a><a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <div class="footer-social">
+        <a href="#" aria-label="Website"><img src="assets/icon-globe.svg" alt="" width="20" height="20"></a>
+        <a href="contact.html" aria-label="Email"><img src="assets/icon-mail.svg" alt="" width="20" height="16"></a>
+      </div>
+      <p class="label mt-2 mb-0">123 Fashion Ave<br>NY, NY 10001<br>Mon-Fri, 9am-6pm</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
