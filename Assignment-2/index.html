@@ -1,339 +1,271 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopNest — High-Fashion Utility & Footwear</title>
+    <title>FashionHub</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-    <!-- Sticky Navigation Bar  -->
-    <header class="site-header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a href="#home" class="brand-logo">ShopNest</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid px-4">
 
-            <nav class="nav-menu">
-                <a href="#home" class="nav-item active">Home</a>
-                <a href="#categories" class="nav-item">Categories</a>
-                <a href="#products" class="nav-item">Products</a>
-                <a href="#deals" class="nav-item">Collections</a>
-                <a href="#about" class="nav-item">About</a>
-                <a href="#contact" class="nav-item">Contact</a>
-            </nav>
+            <a class="navbar-brand fw-bold" href="index.html">FashionHub</a>
 
-            <div class="header-actions d-flex align-items-center">
-                <div class="search-wrap">
-                    <i class="bi bi-search"></i>
-                    <input type="text" placeholder="Search...">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="category.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-icons">
+                    <a href="category.html" class="text-dark"><i class="bi bi-search"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
+                    <a href="cart.html" class="text-dark"><i class="bi bi-bag"></i></a>
+                    <a href="login.html" class="text-dark"><i class="bi bi-person"></i></a>
                 </div>
-                <a href="#products" class="icon-link" aria-label="Wishlist">
-                    <i class="bi bi-heart"></i>
-                </a>
-                <a href="#products" class="icon-link cart-link" aria-label="Cart">
-                    <i class="bi bi-bag"></i>
-                    <span class="cart-dot"></span>
-                </a>
-                <a href="#about" class="icon-link" aria-label="Account">
-                    <i class="bi bi-person"></i>
-                </a>
+
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
 
-        <!-- Hero Banner  -->
-        <section class="hero-section" id="home">
-            <div class="hero-card text-center">
-                <h1 class="hero-title">New Season Collection</h1>
-                <p class="hero-desc">Discover the definitive high-fashion utility pieces for the modern era. Minimalism meets uncompromising structure.</p>
-                <div class="hero-cta-group">
-                    <a href="#products" class="btn btn-black">Shop Now</a>
-                    <a href="#deals" class="btn btn-outline-dark">View Deals</a>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>New Summer Collection</h1>
+
+            <p>
+                Discover the definitive high-fashion utility pieces for the modern era.
+                <br>
+                Minimalism meets uncompromising structure.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="category.html" class="btn btn-dark">Shop Now</a>
+                <a href="category.html" class="btn btn-outline-dark">View Collection</a>
             </div>
-        </section>
+        </div>
 
-        <!--  Category  -->
-        <section class="category-section" id="categories">
-            <div class="container">
-                <h2 class="section-heading">Shop by Category</h2>
+    </section>
+
+
+    <!-- Shop By Category -->
+    <section class="container-fluid px-4 py-4">
+
+        <h5 class="section-title">Shop by Category</h5>
+        <hr>
+
+        <div class="row g-3">
+
+            <!-- Men -->
+            <div class="col-md-6">
+                <a href="category.html" class="text-decoration-none">
+                    <div class="category-card men">
+                        <img src="assets/images/categories/category-1.jpeg" alt="Men Fashion">
+                        <span>Men</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Right Categories -->
+            <div class="col-md-6">
 
                 <div class="row g-3">
-                    <!-- Left Column -->
-                    <div class="col-12 col-md-6">
-                        <a href="#products" class="category-card category-card-tall">
-                            <img src="assets/images/categories/category-1.jpeg" alt="Footwear Collection">
-                            <span class="category-title">Footwear</span>
+
+                    <!-- Women -->
+                    <div class="col-12">
+                        <a href="category.html" class="text-decoration-none">
+                            <div class="category-card women">
+                                <img src="assets/images/categories/category-2.jpeg" alt="Women Fashion">
+                                <span>Women</span>
+                            </div>
                         </a>
                     </div>
 
-                    <!-- Right Column -->
-                    <div class="col-12 col-md-6">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <a href="#products" class="category-card category-card-wide">
-                                    <img src="assets/images/categories/category-2.jpeg" alt="Clothing Collection">
-                                    <span class="category-title">Clothing</span>
-                                </a>
+                    <!-- Accessories -->
+                    <div class="col-6">
+                        <a href="category.html" class="text-decoration-none">
+                            <div class="category-card small-category">
+                                <img src="assets/images/categories/category-3.jpeg" alt="Accessories">
+                                <span>Accessories</span>
                             </div>
+                        </a>
+                    </div>
 
-                            <div class="col-6">
-                                <a href="#products" class="category-card category-card-square">
-                                    <img src="assets/images/categories/category-3.jpeg" alt="Electronics Gear">
-                                    <span class="category-title">Electronics</span>
-                                </a>
+                    <!-- Kids -->
+                    <div class="col-6">
+                        <a href="category.html" class="text-decoration-none">
+                            <div class="category-card small-category">
+                                <img src="assets/images/categories/category-4.jpeg" alt="Kids Fashion">
+                                <span>Kids</span>
                             </div>
+                        </a>
+                    </div>
 
-                            <div class="col-6">
-                                <a href="#products" class="category-card category-card-square">
-                                    <img src="assets/images/categories/category-4.jpeg" alt="Books and Publications">
-                                    <span class="category-title">Books</span>
-                                </a>
-                            </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="products-section py-4">
+
+        <div class="container-fluid px-4">
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="section-title">Featured Products</h5>
+                <a href="category.html" class="view-all">View All →</a>
+            </div>
+
+            <div class="row g-3">
+
+                <!-- Product 1 -->
+                <div class="col-6 col-md-3">
+                    <a href="product-details.html" class="text-decoration-none text-dark">
+                    <div class="product-card">
+                        <img src="assets/images/products/product-1.jpeg" alt="Structured Utility Jacket">
+
+                        <div class="product-info">
+                            <small>Outerwear</small>
+                            <h6>Men Shoes</h6>
+                            <p>$450</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!--  Banner -->
-        <aside class="deal-strip" id="deals">
-            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <div>
-                    <h3>Limited Seasonal Release</h3>
-                    <p>Receive complimentary express shipping and 20% off all footwear with code <strong>SHOPNEST20</strong>.</p>
-                </div>
-                <a href="#products" class="btn btn-black mt-3 mt-md-0">Claim Offer</a>
-            </div>
-        </aside>
-
-        <!-- Featured Products Section -->
-        <section class="products-section" id="products">
-            <div class="container">
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h2 class="section-heading mb-0">Featured Products</h2>
-                    <a href="#products" class="view-all-link">View All &rarr;</a>
+                    </a>
                 </div>
 
-                <div class="row g-4">
-                    <!-- Card 1 -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <article class="product-item">
-                            <div class="product-img-box">
-                                <span class="tag-badge">NEW</span>
-                                <button type="button" class="wishlist-btn" aria-label="Favorite"><i class="bi bi-heart"></i></button>
-                                <img src="assets/images/products/product-1.jpeg" alt="Performance Running Shoes">
-                            </div>
-                            <div class="product-info">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="product-tag">FOOTWEAR</span>
-                                    <span class="product-rating"><i class="bi bi-star-fill"></i> 4.9</span>
-                                </div>
-                                <h3 class="product-title">Performance Running Shoes</h3>
-                                <div class="product-prices">
-                                    <span class="price-discounted">$120.00</span>
-                                    <del class="price-original">$160.00</del>
-                                </div>
-                                <button type="button" class="btn btn-cart">Add to Cart</button>
-                            </div>
-                        </article>
+                <!-- Product 2 -->
+                <div class="col-6 col-md-3">
+                    <a href="product-details.html" class="text-decoration-none text-dark">
+                    <div class="product-card">
+                        <img src="assets/images/products/product-2.jpeg" alt="Oversized Poplin Shirt">
+
+                        <div class="product-info">
+                            <small>Tops</small>
+                            <h6>Macbook</h6>
+                            <p>$180</p>
+                        </div>
                     </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <article class="product-item">
-                            <div class="product-img-box">
-                                <span class="tag-badge sale">SALE</span>
-                                <button type="button" class="wishlist-btn" aria-label="Favorite"><i class="bi bi-heart"></i></button>
-                                <img src="assets/images/products/product-2.jpeg" alt="Air Cushion Running Sneakers">
-                            </div>
-                            <div class="product-info">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="product-tag">FOOTWEAR</span>
-                                    <span class="product-rating"><i class="bi bi-star-fill"></i> 4.8</span>
-                                </div>
-                                <h3 class="product-title">Air Cushion Running Sneakers</h3>
-                                <div class="product-prices">
-                                    <span class="price-discounted">$105.00</span>
-                                    <del class="price-original">$140.00</del>
-                                </div>
-                                <button type="button" class="btn btn-cart">Add to Cart</button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <article class="product-item">
-                            <div class="product-img-box">
-                                <button type="button" class="wishlist-btn" aria-label="Favorite"><i class="bi bi-heart"></i></button>
-                                <img src="assets/images/products/product-3.jpeg" alt="Lightweight Training Shoes">
-                            </div>
-                            <div class="product-info">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="product-tag">TRAINING</span>
-                                    <span class="product-rating"><i class="bi bi-star-fill"></i> 4.7</span>
-                                </div>
-                                <h3 class="product-title">Lightweight Training Shoes</h3>
-                                <div class="product-prices">
-                                    <span class="price-discounted">$95.00</span>
-                                    <del class="price-original">$120.00</del>
-                                </div>
-                                <button type="button" class="btn btn-cart">Add to Cart</button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <article class="product-item">
-                            <div class="product-img-box">
-                                <button type="button" class="wishlist-btn" aria-label="Favorite"><i class="bi bi-heart"></i></button>
-                                <img src="assets/images/products/product-4.jpeg" alt="Classic Lifestyle Sneakers">
-                            </div>
-                            <div class="product-info">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="product-tag">LIFESTYLE</span>
-                                    <span class="product-rating"><i class="bi bi-star-fill"></i> 5.0</span>
-                                </div>
-                                <h3 class="product-title">Classic Lifestyle Sneakers</h3>
-                                <div class="product-prices">
-                                    <span class="price-discounted">$150.00</span>
-                                    <del class="price-original">$190.00</del>
-                                </div>
-                                <button type="button" class="btn btn-cart">Add to Cart</button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <article class="product-item">
-                            <div class="product-img-box">
-                                <span class="tag-badge">NEW</span>
-                                <button type="button" class="wishlist-btn" aria-label="Favorite"><i class="bi bi-heart"></i></button>
-                                <img src="assets/images/products/product-5.jpeg" alt="Premium Streetwear Sneakers">
-                            </div>
-                            <div class="product-info">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="product-tag">STREETWEAR</span>
-                                    <span class="product-rating"><i class="bi bi-star-fill"></i> 4.6</span>
-                                </div>
-                                <h3 class="product-title">Premium Streetwear Sneakers</h3>
-                                <div class="product-prices">
-                                    <span class="price-discounted">$80.00</span>
-                                    <del class="price-original">$110.00</del>
-                                </div>
-                                <button type="button" class="btn btn-cart">Add to Cart</button>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <article class="product-item">
-                            <div class="product-img-box">
-                                <span class="tag-badge sale">SALE</span>
-                                <button type="button" class="wishlist-btn" aria-label="Favorite"><i class="bi bi-heart"></i></button>
-                                <img src="assets/images/products/product-6.jpeg" alt="Everyday Casual Shoes">
-                            </div>
-                            <div class="product-info">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="product-tag">FOOTWEAR</span>
-                                    <span class="product-rating"><i class="bi bi-star-fill"></i> 4.9</span>
-                                </div>
-                                <h3 class="product-title">Everyday Casual Shoes</h3>
-                                <div class="product-prices">
-                                    <span class="price-discounted">$135.00</span>
-                                    <del class="price-original">$175.00</del>
-                                </div>
-                                <button type="button" class="btn btn-cart">Add to Cart</button>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--  Signup Section -->
-        <section class="newsletter-section">
-            <div class="container text-center">
-                <h2>Stay Connected</h2>
-                <p>Subscribe to receive preview access to limited footwear drops and seasonal campaigns.</p>
-                <form class="newsletter-form" action="#" method="get">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-black">Subscribe</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Multi-Column Footer -->
-    <footer class="site-footer" id="about">
-        <div class="container">
-            <div class="row g-4 justify-content-between">
-                <!--  Brand & Philosophy -->
-                <div class="col-12 col-md-4">
-                    <a href="#home" class="footer-logo">ShopNest</a>
-                    <p class="footer-bio">
-                        High-fashion utility for the modern era. Minimalist aesthetics meeting uncompromising quality.
-                    </p>
+                    </a>
                 </div>
 
-                <!-- Support -->
-                <div class="col-6 col-md-2">
-                    <h4 class="footer-heading">Support</h4>
-                    <ul class="footer-nav">
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#deals">Deals</a></li>
-                        <li><a href="#about">Size Guide</a></li>
-                    </ul>
-                </div>
+                <!-- Product 3 -->
+                <div class="col-6 col-md-3">
+                    <a href="product-details.html" class="text-decoration-none text-dark">
+                    <div class="product-card">
+                        <img src="assets/images/products/product-3.jpeg" alt="Signature Wide-Leg Trousers">
 
-                <!--   About -->
-                <div class="col-6 col-md-2">
-                    <h4 class="footer-heading">Company</h4>
-                    <ul class="footer-nav">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#about">Sustainability</a></li>
-                        <li><a href="#about">Terms of Service</a></li>
-                        <li><a href="#about">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!--  Contact & Social Media -->
-                <div class="col-12 col-md-3" id="contact">
-                    <h4 class="footer-heading">Connect</h4>
-                    <div class="footer-social-icons mb-3">
-                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <div class="product-info">
+                            <small>Bottoms</small>
+                            <h6>Psychonaut</h6>
+                            <p>$320</p>
+                        </div>
                     </div>
-                    <p class="footer-address">
-                        127 Fashion Ave<br>
-                        NY, NY 10001<br>
-                        Mon - Fri, 9am - 6pm
-                    </p>
+                    </a>
                 </div>
-            </div>
 
-            <!-- Footer Bottom Line -->
-            <div class="footer-bottom">
-                <p>&copy; 2026 ShopNest. All rights reserved. High-fashion utility for the modern era.</p>
+                <!-- Product 4 -->
+                <div class="col-6 col-md-3">
+                    <a href="product-details.html" class="text-decoration-none text-dark">
+                    <div class="product-card">
+                        <img src="assets/images/products/product-4.jpeg" alt="Monolith Leather Boots">
+
+                        <div class="product-info">
+                            <small>Footwear</small>
+                            <h6>Monolith Leather Jacket</h6>
+                            <p>$650</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
             </div>
         </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid px-4 py-4">
+
+        <div class="row">
+
+            <!-- Brand -->
+            <div class="col-md-5 mb-4">
+                <h4 class="fw-bold">FashionHub</h4>
+
+                <p class="footer-description">
+                    High-fashion utility for the modern era.
+                    Minimalist aesthetics meeting uncompromising quality.
+                </p>
+
+                <small>© 2024 FashionHub. All rights reserved.</small>
+            </div>
+
+            <!-- Support -->
+            <div class="col-4 col-md-2">
+                <h6>Support</h6>
+                <a href="contact.html">FAQ</a>
+                <a href="cart.html">Shipping & Returns</a>
+                <a href="category.html">Size Guide</a>
+            </div>
+
+            <!-- Company -->
+            <div class="col-4 col-md-2">
+                <h6>Company</h6>
+                <a href="about.html">About</a>
+                <a href="about.html">Sustainability</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-4 col-md-3">
+                <h6>Connect</h6>
+
+                <div class="footer-icons">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-envelope"></i>
+                </div>
+
+                <small>
+                    123 Fashion Avenue<br>
+                    New York, NY 10001
+                </small>
+            </div>
+
+        </div>
+
     </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
