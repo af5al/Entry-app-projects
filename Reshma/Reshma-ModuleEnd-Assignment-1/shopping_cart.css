@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+ font-family: "Archivo Black", sans-serif;
+  background-color: #f8f9fa;
+  color: #111;
+  font-size: 14px;
+}
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 40px;
+
+}
+h1 {
+    font-size: 33px;
+    font-weight: 800;
+    font-family: "Archivo Black", sans-serif;
+}
+
+nav, .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a, .icons a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    font-weight: 500;
+}
+nav .accessories_link{
+    text-decoration: underline;
+}
+/* main start*/
+.page-wrapper {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 20px 45px;
+    position: relative;
+    top: 66px;
+    background-color: #fafafa;
+}
+.heading{
+    padding-bottom: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    margin-bottom: 35px;
+    font-size: 24px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 23px;
+}
+.black_blazer{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.sneakers{
+    order: 3;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.black_blazer,.sneakers{
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    
+    gap: 20px;
+}
+.order_summary{
+    background: #ececec;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    padding: 25px;
+    border-radius: 10px;
+}
+.order_summary h3{
+    border-bottom: 1px solid #c2bebe;
+    padding-bottom: 13px;
+}
+.black_blazer img,
+.sneakers img{
+    width: 117px;
+    object-fit: cover;
+}
+.product_desc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.product_desc p{
+    margin: 0;
+}
+.desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product_desc .quantity{
+        display: inline-flex;
+    justify-content: space-between;
+}
+.product_price{
+    display: inline-flex;
+    gap: 12px;
+}
+.product_name p:nth-child(1){
+    font-weight: 500;
+}
+.product_name p:nth-child(2){
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.product_price p{
+    font-weight: 700;
+}
+.quantity .unit{
+    border: 1px solid black;
+    padding: 0px 12px;
+    display: inline-flex;
+    gap: 25px;
+    border-radius: 6px;
+}
+.remove button{
+    display: inline-flex;
+    gap: 6px;
+    font-size: 12px;
+    background: none;
+}
+.subtotal,.tax,.shipping{
+    display: flex;
+    justify-content: space-between;
+}
+.subtotal p:nth-child(2),
+.tax p:nth-child(2),
+.shipping p:nth-child(2),
+.total div p{
+    font-weight: 700;
+}
+.discount{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #d52222;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bab7b7;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+        margin: 20px 0;
+}
+.total div{
+    display: inline-flex;
+    gap: 12px;
+}
+.promocode{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.promocode input{
+    border-radius: 7px;
+    padding-left: 12px;
+    border: 1px solid gray;
+    column-gap: 14px;
+    width: 70%;
+}
+.promocode button{
+        width: 30%;
+}
+.btn-dark{
+    width:100%;
+        margin: 20px 0;
+}
+.btn-dark ~p{
+    text-align:center;
+    font-size :12px;
+}
+
+/* main end*/
+
+footer{
+    position: relative;
+    top: 110px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.brand-section h2{
+    font-family: "Archivo Black", sans-serif;
+}
+.footer-links p{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+
+    .page-wrapper {
+        padding: 100px 25px 25px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .black_blazer,
+    .sneakers,
+    .order_summary {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .order_summary {
+        margin-top: 10px;
+    }
+
+    .navBar {
+        padding: 10px 25px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    .navBar {
+        padding: 12px 15px;
+        gap: 12px;
+    }
+
+    .navBar h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        overflow-x: auto;
+    }
+
+    nav a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .icons {
+        gap: 15px;
+    }
+
+    .page-wrapper {
+        padding: 125px 15px 20px;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+
+    .black_blazer,
+    .sneakers {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .black_blazer img,
+    .sneakers img {
+        width: 85px;
+        min-width: 85px;
+        height: 110px;
+    }
+
+    .desc {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .product_name p:first-child {
+        font-size: 13px;
+    }
+
+    .product_name p:nth-child(2) {
+        font-size: 11px;
+    }
+
+    .product_price {
+        font-size: 12px;
+    }
+
+    .quantity {
+        flex-wrap: wrap;
+    }
+
+    .quantity .unit {
+        gap: 15px;
+        padding: 5px 10px;
+    }
+
+    .remove button {
+        font-size: 10px;
+    }
+
+    .order_summary {
+        padding: 18px;
+        order:3
+    }
+
+    .footer-links p {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 25px 10px;
+    }
+}
