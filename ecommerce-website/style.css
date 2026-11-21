@@ -1,0 +1,5857 @@
+
+/* ========================================
+   1. COMMON CSS
+======================================== */
+
+/* Remove default spacing from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove bullets from lists */
+ul {
+    list-style: none;
+}
+
+
+/* ========================================
+   2. HEADER SECTION
+======================================== */
+
+/* Main header */
+header {
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Website logo */
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.3s;
+}
+
+/* Logo hover effect */
+.logo a:hover {
+    opacity: 0.7;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Navigation links */
+nav ul li a {
+    font-size: 13px;
+    color: #333333;
+    transition: 0.3s;
+}
+
+/* Navigation hover effect */
+nav ul li a:hover {
+    color: #888888;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+
+
+/* ========================================
+   3. HEADER TRAILING ACTIONS
+======================================== */
+
+/* Header icons container */
+.trailing-actions {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+/* Header action links */
+.trailing-actions a {
+    font-size: 13px;
+    color: #111111;
+    transition: 0.3s;
+}
+
+/* Header action hover effect */
+.trailing-actions a:hover {
+    color: #888888;
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   4. HERO SECTION
+======================================== */
+
+/* Main hero section */
+.hero-section {
+    width: 100%;
+    height: 700px;
+    min-height: 700px;
+
+    background-image: url("./images/hero-banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Center hero content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hero content */
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Hero heading */
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: inline-block;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+}
+
+/* Hero description */
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 12px 20px;
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   5. HERO BUTTONS
+======================================== */
+
+/* Buttons container */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Common button styling */
+.hero-buttons a {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 13px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Shop Now button */
+.shop-now-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+
+/* Shop Now hover */
+.shop-now-button:hover {
+    background-color: #333333;
+    transform: translateY(-3px);
+}
+
+/* Explore Collection button */
+.explore-collection-button {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+/* Explore Collection hover */
+.explore-collection-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   6. SHOP BY CATEGORY SECTION
+======================================== */
+
+/* Main category section */
+.shop-by-category {
+    padding: 50px 5%;
+    background-color: #ffffff;
+}
+
+/* Category heading */
+.category-heading h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+
+/* ========================================
+   7. CATEGORY CONTAINER
+======================================== */
+
+/* Category grid */
+.category-container {
+    display: grid;
+
+    /* Two columns */
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+/* Individual category item */
+.category-item {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Category images */
+.category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+/* Category image hover */
+.category-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Category title */
+.category-item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+
+/* ========================================
+   8. FEATURED PRODUCTS SECTION
+======================================== */
+
+/* Main featured section */
+.featured-section {
+    padding: 50px 5%;
+    background-color: #f8f8f8;
+}
+
+/* Featured heading */
+.featured-heading {
+    margin-bottom: 25px;
+}
+
+/* Featured heading title */
+.featured-heading h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   9. FEATURED PRODUCTS CONTAINER
+======================================== */
+
+/* Products grid */
+.featured-container {
+    display: grid;
+
+    /* Four products in one row */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+/* Individual product */
+.product-item {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Product image */
+.product-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+/* Product image hover */
+.product-item:hover img {
+    transform: scale(1.04);
+}
+
+/* Product name */
+.product-item h3 {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+/* Product name hover */
+.product-item:hover h3 {
+    color: #777777;
+}
+
+/* Product price */
+.product-item p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   10. FOOTER SECTION
+======================================== */
+
+/* Main footer */
+.footer-section {
+    padding: 45px 5% 20px;
+    background-color: #ffffff;
+}
+
+/* Footer container */
+.footer-container {
+    display: grid;
+
+    /* Four footer columns */
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+
+/* ========================================
+   11. FOOTER BRAND
+======================================== */
+
+/* Footer logo */
+.footer-brand h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Footer description */
+.footer-brand p {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Footer copyright */
+.footer-copyright {
+    margin-top: 25px;
+}
+
+/* Copyright text */
+.footer-copyright p {
+    font-size: 11px;
+    color: #555555;
+}
+
+
+/* ========================================
+   12. FOOTER LINKS
+======================================== */
+
+/* Footer column headings */
+.footer-support h3,
+.footer-company h3,
+.footer-connect h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Footer list items */
+.footer-support ul li,
+.footer-company ul li {
+    margin-bottom: 12px;
+}
+
+/* Footer links */
+.footer-support a,
+.footer-company a {
+    font-size: 13px;
+    color: #666666;
+    transition: 0.3s;
+}
+
+/* Footer link hover */
+.footer-support a:hover,
+.footer-company a:hover {
+    color: #000000;
+    padding-left: 5px;
+}
+
+
+/* ========================================
+   13. FOOTER CONTACT
+======================================== */
+
+/* Footer icons */
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Footer icon links */
+.footer-icons a {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Footer icon hover */
+.footer-icons a:hover {
+    transform: translateY(-3px);
+}
+
+/* Footer address */
+.footer-connect p {
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   14. TABLET RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 0 3%;
+    }
+
+    /* Logo */
+    .logo a {
+        font-size: 24px;
+    }
+
+    /* Navigation */
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    /* Header actions */
+    .trailing-actions {
+        gap: 12px;
+    }
+
+    .trailing-actions a {
+        font-size: 11px;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 450px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    /* Category */
+    .category-item {
+        height: 230px;
+    }
+
+    /* Products */
+    .featured-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-item img {
+        height: 250px;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   15. MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 480px) {
+
+    /* Header */
+    header {
+        height: auto;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Logo */
+    .logo a {
+        font-size: 23px;
+    }
+
+    /* Navigation */
+    nav {
+        order: 3;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    /* Header actions */
+    .trailing-actions {
+        gap: 12px;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 400px;
+        background-position: center;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+        padding: 8px 12px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* Hero buttons */
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero-buttons a {
+        padding: 12px 16px;
+        font-size: 11px;
+    }
+
+    /* Category section */
+    .shop-by-category {
+        padding: 30px 5%;
+    }
+
+    .category-heading h2,
+    .featured-heading h2 {
+        font-size: 20px;
+    }
+
+    /* Category grid */
+    .category-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .category-item {
+        height: 170px;
+    }
+
+    .category-item h3 {
+        font-size: 14px;
+        bottom: 12px;
+        left: 12px;
+    }
+
+    /* Featured section */
+    .featured-section {
+        padding: 30px 5%;
+    }
+
+    .featured-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product-item img {
+        height: 180px;
+    }
+
+    .product-item h3 {
+        font-size: 13px;
+    }
+
+    .product-item p {
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer-section {
+        padding: 30px 5%;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-brand h2 {
+        font-size: 23px;
+    }
+
+    .footer-copyright {
+        margin-top: 15px;
+    }
+
+}
+
+
+/* ==========================================
+   FASHIONHUB - ABOUT US PAGE
+========================================== */
+
+
+/* ==========================================
+   1. GENERAL ABOUT PAGE STYLING
+========================================== */
+
+.about-main {
+    width: 100%;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+
+/* ==========================================
+   2. HEADER SECTION
+========================================== */
+
+.about-header {
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Website Logo */
+.about-header .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.3s;
+}
+
+/* Logo Hover */
+.about-header .logo a:hover {
+    opacity: 0.7;
+}
+
+/* Navigation Menu */
+.about-header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+/* Navigation Links */
+.about-header nav ul li a {
+    font-size: 13px;
+    color: #333333;
+    transition: 0.3s;
+}
+
+/* Navigation Hover */
+.about-header nav ul li a:hover {
+    color: #888888;
+}
+
+/* Active About Link */
+.about-header nav ul li:nth-child(4) a {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+
+/* Header Icons */
+.about-header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* Icon Links */
+.about-header .header-icons a {
+    font-size: 17px;
+    color: #111111;
+    transition: 0.3s;
+}
+
+/* Icon Hover */
+.about-header .header-icons a:hover {
+    color: #888888;
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   3. ABOUT HERO SECTION
+========================================== */
+
+.about-hero {
+    width: 100%;
+    padding: 45px 5%;
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Hero Content */
+.about-hero-content {
+    width: 100%;
+}
+
+/* Hero Heading */
+.about-hero-content h1 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.05;
+    color: #000000;
+    margin-bottom: 18px;
+}
+
+/* Hero Description */
+.about-hero-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    max-width: 430px;
+}
+
+/* Hero Image Container */
+.about-hero-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Hero Image */
+.about-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+/* Hero Image Hover */
+.about-hero-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ==========================================
+   4. COMPANY STATISTICS SECTION
+========================================== */
+
+.company-statistics {
+    width: 100%;
+    padding: 25px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
+
+/* Statistic Item */
+.statistic-item {
+    width: 100%;
+}
+
+/* Statistic Number */
+.statistic-item h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Statistic Description */
+.statistic-item p {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    color: #777777;
+}
+
+
+/* ==========================================
+   5. THE NARRATIVE SECTION
+========================================== */
+
+.narrative-section {
+    width: 100%;
+    padding: 45px 5% 35px;
+    background-color: #ffffff;
+}
+
+/* Narrative Heading */
+.narrative-heading h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #111111;
+}
+
+/* Narrative Container */
+.narrative-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Common Narrative Card */
+.narrative-card {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+
+/* ==========================================
+   6. OUR MISSION CARD
+========================================== */
+
+.mission-card {
+    background-color: #f3f3f3;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Mission Icon */
+.mission-icon span {
+    font-size: 28px;
+    color: #111111;
+}
+
+/* Mission Content */
+.mission-card .narrative-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+/* Mission Description */
+.mission-card .narrative-content p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+
+/* ==========================================
+   7. OUR VISION CARD
+========================================== */
+
+/* Vision Background */
+.vision-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+/* Vision Image Hover */
+.vision-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Vision Content */
+.vision-card .narrative-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(
+        transparent,
+        rgba(255, 255, 255, 0.85)
+    );
+    z-index: 2;
+}
+
+/* Vision Heading */
+.vision-card .narrative-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+/* Vision Description */
+.vision-card .narrative-content p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+
+/* ==========================================
+   8. THE ARCHITECTS SECTION
+========================================== */
+
+.architects-section {
+    width: 100%;
+    padding: 0 5% 55px;
+    background-color: #ffffff;
+}
+
+/* Architects Heading */
+.architects-heading h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #111111;
+}
+
+/* Architects Container */
+.architects-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual Architect */
+.architect-item {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Architect Image Container */
+.architect-image {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+}
+
+/* Architect Image */
+.architect-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+/* Architect Image Hover */
+.architect-item:hover .architect-image img {
+    transform: scale(1.04);
+}
+
+/* Architect Information */
+.architect-info {
+    padding-top: 12px;
+}
+
+/* Architect Name */
+.architect-info h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #111111;
+}
+
+/* Architect Designation */
+.architect-info p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #777777;
+}
+
+
+/* ==========================================
+   9. ABOUT PAGE FOOTER
+========================================== */
+
+.about-main + .footer-section {
+    width: 100%;
+    padding: 45px 5% 20px;
+    background-color: #ffffff;
+}
+
+/* Footer Container */
+.about-main + .footer-section .footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* Footer Brand */
+.about-main + .footer-section .footer-brand h2 {
+    font-size: 27px;
+    margin-bottom: 18px;
+    color: #000000;
+}
+
+/* Footer Description */
+.about-main + .footer-section .footer-brand p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #777777;
+}
+
+/* Footer Column Heading */
+.about-main + .footer-section .footer-column h3 {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #111111;
+}
+
+/* Footer Lists */
+.about-main + .footer-section .footer-column ul {
+    list-style: none;
+}
+
+/* Footer List Items */
+.about-main + .footer-section .footer-column ul li {
+    margin-bottom: 12px;
+}
+
+/* Footer Links */
+.about-main + .footer-section .footer-column ul li a {
+    font-size: 12px;
+    color: #666666;
+    transition: 0.3s;
+}
+
+/* Footer Hover */
+.about-main + .footer-section .footer-column ul li a:hover {
+    color: #000000;
+    padding-left: 5px;
+}
+
+/* Footer Copyright */
+.about-main + .footer-section .footer-bottom {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Copyright Text */
+.about-main + .footer-section .footer-bottom p {
+    font-size: 11px;
+    color: #777777;
+}
+
+
+/* ==========================================
+   10. TABLET RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .about-header {
+        padding: 0 3%;
+    }
+
+    .about-header .logo a {
+        font-size: 23px;
+    }
+
+    .about-header nav ul {
+        gap: 12px;
+    }
+
+    .about-header nav ul li a {
+        font-size: 11px;
+    }
+
+    /* Hero */
+    .about-hero {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 20px;
+        padding: 35px 4%;
+    }
+
+    .about-hero-content h1 {
+        font-size: 30px;
+    }
+
+    .about-hero-image {
+        height: 260px;
+    }
+
+    /* Statistics */
+    .company-statistics {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .statistic-item h2 {
+        font-size: 22px;
+    }
+
+    /* Narrative */
+    .narrative-container {
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 12px;
+    }
+
+    .narrative-card {
+        height: 200px;
+    }
+
+    .mission-card {
+        padding: 18px;
+    }
+
+    /* Architects */
+    .architects-container {
+        gap: 15px;
+    }
+
+    .architect-image {
+        height: 250px;
+    }
+
+    /* Footer */
+    .about-main + .footer-section .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+}
+
+
+/* ==========================================
+   11. MOBILE RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 480px) {
+
+    /* Header */
+    .about-header {
+        height: auto;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .about-header .logo a {
+        font-size: 23px;
+    }
+
+    /* Navigation */
+    .about-header nav {
+        order: 3;
+        width: 100%;
+    }
+
+    .about-header nav ul {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .about-header nav ul li a {
+        font-size: 11px;
+    }
+
+    /* Header Icons */
+    .about-header .header-icons {
+        gap: 12px;
+    }
+
+    /* Hero */
+    .about-hero {
+        grid-template-columns: 1fr;
+        padding: 30px 5%;
+        gap: 20px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 32px;
+    }
+
+    .about-hero-content p {
+        font-size: 13px;
+    }
+
+    .about-hero-image {
+        height: 250px;
+    }
+
+    /* Statistics */
+    .company-statistics {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 5%;
+        gap: 25px;
+    }
+
+    .statistic-item h2 {
+        font-size: 23px;
+    }
+
+    /* Narrative */
+    .narrative-section {
+        padding: 30px 5%;
+    }
+
+    .narrative-heading h2,
+    .architects-heading h2 {
+        font-size: 20px;
+    }
+
+    .narrative-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .narrative-card {
+        height: 220px;
+    }
+
+    /* Architects */
+    .architects-section {
+        padding: 0 5% 35px;
+    }
+
+    .architects-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .architect-image {
+        height: 350px;
+    }
+
+    .architect-info h3 {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .about-main + .footer-section {
+        padding: 30px 5% 20px;
+    }
+
+    .about-main + .footer-section .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .about-main + .footer-section .footer-brand {
+        grid-column: span 2;
+    }
+
+    .about-main + .footer-section .footer-brand h2 {
+        font-size: 23px;
+    }
+
+    .about-main + .footer-section .footer-bottom {
+        margin-top: 25px;
+    }
+
+}
+
+
+/* ==========================================
+   FASHIONHUB - SHOPPING CART PAGE
+========================================== */
+
+
+/* ==========================================
+   1. HEADER SECTION
+========================================== */
+
+header {
+    width: 100%;
+    min-height: 65px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Website Logo */
+header .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.3s;
+}
+
+header .logo a:hover {
+    opacity: 0.7;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 13px;
+    color: #333333;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #999999;
+}
+
+/* Header Icons */
+header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+header .header-icons a {
+    font-size: 17px;
+    color: #111111;
+    transition: 0.3s;
+}
+
+header .header-icons a:hover {
+    transform: translateY(-3px);
+    color: #888888;
+}
+
+
+/* ==========================================
+   2. CART HEADING SECTION
+========================================== */
+
+.cart-heading {
+    padding: 30px 5% 20px;
+    background-color: #ffffff;
+}
+
+/* Cart Title */
+.cart-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* ==========================================
+   3. MAIN CART SECTION
+========================================== */
+
+.cart-section {
+    width: 100%;
+    padding: 25px 5% 45px;
+
+    /* Cart and summary side by side */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    gap: 25px;
+    align-items: start;
+
+    background-color: #f8f8f8;
+}
+
+
+/* ==========================================
+   4. CART ITEMS SECTION
+========================================== */
+
+/* Cart Items Container */
+.cart-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Individual Cart Item */
+.cart-item {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 115px 1fr auto auto;
+
+    align-items: center;
+    gap: 18px;
+
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* Cart Item Hover */
+.cart-item:hover {
+    border-color: #cccccc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ==========================================
+   5. CART PRODUCT IMAGE
+========================================== */
+
+/* Image Container */
+.cart-product-image {
+    width: 115px;
+    height: 115px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+}
+
+/* Product Image */
+.cart-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+/* Product Image Hover */
+.cart-product-image:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ==========================================
+   6. PRODUCT INFORMATION
+========================================== */
+
+/* Product Information */
+.cart-product-info h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+/* Product Description */
+.cart-product-info p {
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   7. QUANTITY SELECTOR
+========================================== */
+
+/* Quantity Container */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Quantity Buttons */
+.quantity-selector button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Quantity Button Hover */
+.quantity-selector button:hover {
+    background-color: #eeeeee;
+}
+
+/* Quantity Number */
+.quantity-selector span {
+    font-size: 13px;
+    padding: 0 8px;
+}
+
+
+/* ==========================================
+   8. PRODUCT PRICE
+========================================== */
+
+/* Product Price */
+.cart-product-price p {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #111111;
+}
+
+/* Original Price */
+.cart-product-price del {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999999;
+    margin-right: 5px;
+}
+
+
+/* ==========================================
+   9. REMOVE PRODUCT
+========================================== */
+
+/* Remove Link */
+.remove-product a {
+    font-size: 10px;
+    color: #666666;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+/* Remove Hover */
+.remove-product a:hover {
+    color: #cc0000;
+}
+
+
+/* ==========================================
+   10. ORDER SUMMARY SECTION
+========================================== */
+
+/* Order Summary Card */
+.order-summary {
+    width: 100%;
+    padding: 25px;
+    background-color: #f2f2f2;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+}
+
+/* Summary Heading */
+.order-summary h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/* ==========================================
+   11. SUMMARY ROWS
+========================================== */
+
+/* Individual Summary Row */
+.summary-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    gap: 10px;
+}
+
+/* Summary Labels */
+.summary-row span {
+    font-size: 13px;
+    color: #777777;
+}
+
+/* Summary Values */
+.summary-row strong {
+    font-size: 13px;
+    color: #111111;
+}
+
+
+/* ==========================================
+   12. DISCOUNT SECTION
+========================================== */
+
+/* Discount Row */
+.summary-discount {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 22px;
+    color: #cc0000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   13. TOTAL SECTION
+========================================== */
+
+/* Total Container */
+.summary-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+/* Total Label */
+.summary-total span {
+    font-size: 14px;
+    color: #444444;
+}
+
+/* Total Price Container */
+.summary-total p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Original Total */
+.summary-total del {
+    font-size: 12px;
+    color: #999999;
+}
+
+/* Final Total */
+.summary-total strong {
+    font-size: 20px;
+    color: #111111;
+}
+
+
+/* ==========================================
+   14. PROMO CODE SECTION
+========================================== */
+
+/* Promo Code Container */
+.promo-code {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+/* Promo Input */
+.promo-code input {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 13px;
+    outline: none;
+}
+
+/* Input Focus */
+.promo-code input:focus {
+    border-color: #999999;
+}
+
+/* Apply Button */
+.promo-code button {
+    padding: 0 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #dddddd;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Apply Button Hover */
+.promo-code button:hover {
+    background-color: #bbbbbb;
+}
+
+
+/* ==========================================
+   15. CHECKOUT BUTTON
+========================================== */
+
+/* Checkout Button */
+.checkout-button {
+    width: 100%;
+    height: 45px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Checkout Button Hover */
+.checkout-button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   16. PAYMENT INFORMATION
+========================================== */
+
+/* Payment Information */
+.payment-info {
+    text-align: center;
+    font-size: 11px;
+    color: #777777;
+    margin-top: 18px;
+}
+
+
+/* ==========================================
+   17. CART PAGE FOOTER
+========================================== */
+
+/* Footer Section */
+.cart-section ~ .footer-section {
+    padding: 35px 5% 20px;
+    background-color: #ffffff;
+}
+
+/* Footer Container */
+.cart-section ~ .footer-section .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Footer Brand */
+.cart-section ~ .footer-section .footer-brand h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+/* Footer Description */
+.cart-section ~ .footer-section .footer-brand p {
+    font-size: 12px;
+    color: #777777;
+    line-height: 1.6;
+}
+
+/* Footer Links */
+.cart-section ~ .footer-section .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Footer Link Styling */
+.cart-section ~ .footer-section .footer-links a {
+    font-size: 11px;
+    color: #666666;
+    transition: 0.3s;
+}
+
+/* Footer Link Hover */
+.cart-section ~ .footer-section .footer-links a:hover {
+    color: #000000;
+}
+
+/* Footer Copyright */
+.cart-section ~ .footer-section .footer-bottom {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Copyright Text */
+.cart-section ~ .footer-section .footer-bottom p {
+    font-size: 11px;
+    color: #777777;
+}
+
+
+/* ==========================================
+   18. TABLET RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Cart Layout */
+    .cart-section {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 15px;
+    }
+
+    /* Cart Item */
+    .cart-item {
+        grid-template-columns: 80px 1fr;
+        gap: 12px;
+    }
+
+    /* Product Image */
+    .cart-product-image {
+        width: 80px;
+        height: 90px;
+    }
+
+    /* Product Price */
+    .cart-product-price {
+        grid-column: 2;
+    }
+
+    /* Remove Product */
+    .remove-product {
+        grid-column: 2;
+    }
+
+    /* Summary */
+    .order-summary {
+        padding: 18px;
+    }
+
+    /* Header */
+    header {
+        padding: 0 3%;
+    }
+
+    header nav ul {
+        gap: 12px;
+    }
+
+    header nav ul li a {
+        font-size: 11px;
+    }
+
+    /* Footer */
+    .cart-section ~ .footer-section .footer-container {
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+
+}
+
+
+/* ==========================================
+   19. MOBILE RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 480px) {
+
+    /* Header */
+    header {
+        height: auto;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header .logo a {
+        font-size: 23px;
+    }
+
+    /* Navigation */
+    header nav {
+        order: 3;
+        width: 100%;
+    }
+
+    header nav ul {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    header nav ul li a {
+        font-size: 11px;
+    }
+
+    /* Cart Heading */
+    .cart-heading {
+        padding: 25px 5% 15px;
+    }
+
+    .cart-heading h2 {
+        font-size: 21px;
+    }
+
+    /* Main Cart */
+    .cart-section {
+        grid-template-columns: 1fr;
+        padding: 20px 5% 35px;
+        gap: 25px;
+    }
+
+    /* Cart Items */
+    .cart-items {
+        gap: 12px;
+    }
+
+    /* Individual Cart Item */
+    .cart-item {
+        grid-template-columns: 85px 1fr;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    /* Product Image */
+    .cart-product-image {
+        width: 85px;
+        height: 95px;
+    }
+
+    /* Product Information */
+    .cart-product-info h3 {
+        font-size: 14px;
+    }
+
+    .cart-product-info p {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+
+    /* Quantity */
+    .quantity-selector button {
+        width: 25px;
+        height: 27px;
+    }
+
+    /* Price */
+    .cart-product-price {
+        grid-column: 2;
+    }
+
+    .cart-product-price p {
+        font-size: 13px;
+    }
+
+    /* Remove Link */
+    .remove-product {
+        grid-column: 2;
+    }
+
+    /* Order Summary */
+    .order-summary {
+        padding: 20px;
+    }
+
+    .order-summary h2 {
+        font-size: 19px;
+    }
+
+    /* Summary Rows */
+    .summary-row span,
+    .summary-row strong {
+        font-size: 12px;
+    }
+
+    /* Total */
+    .summary-total strong {
+        font-size: 19px;
+    }
+
+    /* Footer */
+    .cart-section ~ .footer-section {
+        padding: 30px 5% 20px;
+    }
+
+    .cart-section ~ .footer-section .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cart-section ~ .footer-section .footer-links {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+}
+
+/* ==========================================
+   FASHIONHUB - CHECKOUT PAGE
+========================================== */
+
+
+/* ==========================================
+   1. CHECKOUT HEADER
+========================================== */
+
+.checkout-header {
+    width: 100%;
+    min-height: 75px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Website Logo */
+.checkout-header .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.3s;
+}
+
+/* Logo Hover */
+.checkout-header .logo a:hover {
+    opacity: 0.7;
+}
+
+/* Secure Checkout */
+.secure-checkout span {
+    font-size: 11px;
+    color: #555555;
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================
+   2. CHECKOUT PROGRESS SECTION
+========================================== */
+
+.checkout-progress {
+    width: 75%;
+    max-width: 600px;
+    margin: 35px auto 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Progress Line */
+.checkout-progress::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+    top: 13px;
+    left: 0;
+}
+
+/* Individual Progress Step */
+.progress-step {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Progress Circle */
+.progress-step span {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    color: #777777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Completed and Active Steps */
+.progress-step:first-child span,
+.progress-step:nth-child(2) span {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Progress Text */
+.progress-step p {
+    font-size: 11px;
+    color: #666666;
+    margin-top: 7px;
+}
+
+
+/* ==========================================
+   3. MAIN CHECKOUT CONTAINER
+========================================== */
+
+.checkout-container {
+    width: 100%;
+    padding: 0 5% 45px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+    background-color: #f8f8f8;
+}
+
+
+/* ==========================================
+   4. LEFT CHECKOUT DETAILS
+========================================== */
+
+.checkout-details {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* ==========================================
+   5. EXPRESS CHECKOUT
+========================================== */
+
+.express-checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+/* Express Checkout Heading */
+.express-checkout h3 {
+    grid-column: 1 / -1;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+/* Express Checkout Buttons */
+.express-checkout button {
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Shop Pay Button */
+.express-checkout button:nth-of-type(1) {
+    background-color: #6035f5;
+    color: #ffffff;
+}
+
+/* Shop Pay Hover */
+.express-checkout button:nth-of-type(1):hover {
+    background-color: #4921d5;
+}
+
+/* PayPal Button */
+.express-checkout button:nth-of-type(2) {
+    background-color: #f9c54f;
+    color: #222222;
+}
+
+/* PayPal Hover */
+.express-checkout button:nth-of-type(2):hover {
+    background-color: #e9ae2f;
+}
+
+/* Continue Below Text */
+.express-checkout p {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 10px;
+    color: #888888;
+    padding-top: 8px;
+}
+
+
+/* ==========================================
+   6. SHIPPING ADDRESS SECTION
+========================================== */
+
+.shipping-address {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Shipping Heading */
+.shipping-address h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+/* Login Link */
+.shipping-address > a {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 11px;
+    color: #555555;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+/* Login Hover */
+.shipping-address > a:hover {
+    color: #000000;
+}
+
+
+/* ==========================================
+   7. FORM ROWS AND INPUTS
+========================================== */
+
+/* Form Row */
+.shipping-address .form-row {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* First Name and Last Name */
+.shipping-address .form-row:first-child {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* City, State and Postal Code */
+.shipping-address .form-row:last-child {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Individual Form Group */
+.form-group {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+/* Form Labels */
+.form-group label {
+    font-size: 11px;
+    color: #444444;
+}
+
+/* Form Inputs */
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 43px;
+    padding: 0 12px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 12px;
+    color: #333333;
+    transition: 0.3s;
+}
+
+/* Input Focus */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #888888;
+}
+
+/* Save Information */
+.save-information {
+    margin-top: 5px;
+}
+
+/* Save Information Label */
+.save-information label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: #555555;
+    cursor: pointer;
+}
+
+/* Checkbox */
+.save-information input {
+    accent-color: #000000;
+}
+
+
+/* ==========================================
+   8. PAYMENT METHOD SECTION
+========================================== */
+
+.payment-method {
+    width: 100%;
+}
+
+/* Payment Heading */
+.payment-method h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* Individual Payment Option */
+.payment-option {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+}
+
+/* Payment Labels */
+.payment-option > label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #555555;
+    cursor: pointer;
+}
+
+/* Payment Radio Buttons */
+.payment-option input[type="radio"] {
+    accent-color: #000000;
+    cursor: pointer;
+}
+
+/* Card Information */
+.card-information {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Card Inputs */
+.card-information > input,
+.card-information .form-row input {
+    width: 100%;
+    height: 43px;
+    padding: 0 12px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    background-color: #ffffff;
+    outline: none;
+    font-size: 12px;
+}
+
+/* Card Input Focus */
+.card-information input:focus {
+    border-color: #888888;
+}
+
+/* Card Expiry and CVC */
+.card-information .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+
+/* ==========================================
+   9. ORDER SUMMARY SECTION
+========================================== */
+
+.checkout-summary {
+    width: 100%;
+    padding: 25px;
+    background-color: #f2f2f2;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+}
+
+/* Order Summary Heading */
+.checkout-summary h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   10. SUMMARY PRODUCTS
+========================================== */
+
+.summary-product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75px 1fr 18px;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+/* Product Image */
+.summary-product img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #e5e5e5;
+    transition: 0.3s;
+}
+
+/* Image Hover */
+.summary-product img:hover {
+    transform: scale(1.04);
+}
+
+/* Product Information */
+.summary-product-info h3 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+/* Product Description and Price */
+.summary-product-info p {
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+/* Product Quantity */
+.summary-product > span {
+    font-size: 11px;
+    color: #555555;
+    text-align: center;
+}
+
+
+/* ==========================================
+   11. DISCOUNT CODE SECTION
+========================================== */
+
+.discount-code {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+/* Discount Input */
+.discount-code input {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    outline: none;
+    font-size: 12px;
+}
+
+/* Discount Input Focus */
+.discount-code input:focus {
+    border-color: #888888;
+}
+
+/* Apply Button */
+.discount-code button {
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #dddddd;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Apply Hover */
+.discount-code button:hover {
+    background-color: #bbbbbb;
+}
+
+
+/* ==========================================
+   12. SUMMARY ROWS
+========================================== */
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 13px;
+}
+
+/* Summary Labels */
+.summary-row span {
+    font-size: 12px;
+    color: #777777;
+}
+
+/* Summary Values */
+.summary-row strong {
+    font-size: 12px;
+    color: #111111;
+}
+
+/* Shipping Description */
+.summary-row:nth-of-type(3) span:last-child {
+    text-align: right;
+}
+
+
+/* ==========================================
+   13. TOTAL AMOUNT
+========================================== */
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding-top: 10px;
+}
+
+/* Total Label */
+.summary-total span {
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Total Amount */
+.summary-total strong {
+    font-size: 27px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/* ==========================================
+   14. CONTINUE TO PAYMENT BUTTON
+========================================== */
+
+.continue-payment {
+    width: 100%;
+    height: 45px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.continue-payment:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   15. PAYMENT SECURITY TEXT
+========================================== */
+
+.payment-security {
+    text-align: center;
+    font-size: 10px;
+    color: #777777;
+    margin-top: 15px;
+}
+
+
+/* ==========================================
+   16. CHECKOUT FOOTER
+========================================== */
+
+.checkout-container + .footer-section {
+    width: 100%;
+    padding: 25px 5%;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Footer Brand */
+.checkout-container + .footer-section .footer-brand h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Footer Description */
+.checkout-container + .footer-section .footer-brand p {
+    font-size: 12px;
+    color: #777777;
+}
+
+
+/* ==========================================
+   17. TABLET RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Main Layout */
+    .checkout-container {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 18px;
+        padding: 0 3% 35px;
+    }
+
+    /* Header */
+    .checkout-header {
+        padding: 0 3%;
+    }
+
+    .checkout-header .logo a {
+        font-size: 25px;
+    }
+
+    /* Progress */
+    .checkout-progress {
+        width: 85%;
+    }
+
+    /* Summary */
+    .checkout-summary {
+        padding: 18px;
+    }
+
+    .summary-product {
+        grid-template-columns: 55px 1fr 15px;
+        gap: 8px;
+    }
+
+    .summary-product img {
+        width: 55px;
+        height: 60px;
+    }
+
+    .summary-product-info h3 {
+        font-size: 11px;
+    }
+
+    .summary-total strong {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ==========================================
+   18. MOBILE RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 480px) {
+
+    /* Header */
+    .checkout-header {
+        min-height: 65px;
+        padding: 0 5%;
+    }
+
+    .checkout-header .logo a {
+        font-size: 23px;
+    }
+
+    .secure-checkout span {
+        font-size: 9px;
+    }
+
+    /* Progress */
+    .checkout-progress {
+        width: 90%;
+        margin: 25px auto 30px;
+    }
+
+    .progress-step span {
+        width: 23px;
+        height: 23px;
+        font-size: 10px;
+    }
+
+    .progress-step p {
+        font-size: 10px;
+    }
+
+    .checkout-progress::before {
+        top: 11px;
+    }
+
+    /* Main Layout */
+    .checkout-container {
+        grid-template-columns: 1fr;
+        padding: 0 5% 30px;
+        gap: 25px;
+    }
+
+    /* Express Checkout */
+    .express-checkout {
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .express-checkout h3 {
+        font-size: 18px;
+    }
+
+    .express-checkout button {
+        height: 42px;
+        font-size: 11px;
+    }
+
+    /* Shipping */
+    .shipping-address h2,
+    .payment-method h2 {
+        font-size: 19px;
+    }
+
+    .shipping-address .form-row:first-child {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .shipping-address .form-row:last-child {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 42px;
+    }
+
+    /* Payment */
+    .payment-option {
+        padding: 12px;
+    }
+
+    /* Summary */
+    .checkout-summary {
+        padding: 20px;
+    }
+
+    .checkout-summary h2 {
+        font-size: 19px;
+    }
+
+    .summary-product {
+        grid-template-columns: 65px 1fr 18px;
+    }
+
+    .summary-product img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .summary-total strong {
+        font-size: 24px;
+    }
+
+}
+
+/* ========================================
+   CONTACT PAGE - GENERAL STYLING
+======================================== */
+
+.contact-main {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 45px 5% 25px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.contact-header {
+    width: 100%;
+    min-height: 78px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
+
+.contact-header .logo a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-header nav a {
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-header nav a:hover {
+    color: #888888;
+}
+
+.contact-header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.contact-header .header-icons a {
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-header .header-icons a:hover {
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   CONTACT HEADING
+======================================== */
+
+.contact-heading {
+    margin-bottom: 55px;
+}
+
+.contact-heading h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #080808;
+    margin: 0 0 12px;
+}
+
+.contact-heading p {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777777;
+    margin: 0;
+}
+
+/* ========================================
+   CONTACT CONTENT LAYOUT
+======================================== */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.contact-left-column,
+.contact-right-column {
+    width: 100%;
+    min-width: 0;
+}
+
+/* ========================================
+   CONTACT DETAILS CARD
+======================================== */
+
+.contact-details {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 28px 30px;
+    margin-bottom: 35px;
+}
+
+.contact-details h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 23px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item > span {
+    font-size: 19px;
+    color: #555555;
+    min-width: 20px;
+}
+
+.contact-item h3 {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #777777;
+    margin: 0 0 5px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #111111;
+    margin: 0;
+}
+
+/* ========================================
+   FAQ SECTION
+======================================== */
+
+.faq-section {
+    margin-top: 35px;
+}
+
+.faq-section h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 18px;
+}
+
+.faq-section details {
+    border-bottom: 1px solid #eaeaea;
+    padding: 17px 0;
+}
+
+.faq-section summary {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111111;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 25px;
+}
+
+.faq-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-section summary::after {
+    content: "+";
+    position: absolute;
+    right: 2px;
+    top: -3px;
+    font-size: 19px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.faq-section details[open] summary::after {
+    content: "−";
+}
+
+.faq-section details p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #777777;
+    margin: 14px 0 0;
+}
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+
+.contact-form-section {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.form-group:nth-child(3),
+.form-group:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #555555;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    background: #fafafa;
+    color: #222222;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input,
+.form-group select {
+    height: 50px;
+}
+
+.form-group textarea {
+    min-height: 145px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #888888;
+    background: #ffffff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999;
+}
+
+/* Send Message Button */
+
+.contact-form button {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 52px;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* ========================================
+   CONTACT MAP
+======================================== */
+
+.contact-map {
+    width: 100%;
+    height: 355px;
+    margin-top: 28px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #eeeeee;
+}
+
+.contact-map img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.contact-map:hover img {
+    transform: scale(1.03);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer-section {
+    background: #ffffff;
+    padding: 35px 5% 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    color: #000000;
+    margin: 0 0 18px;
+}
+
+.footer-brand p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.footer-column h3 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 5px 0 15px;
+    color: #111111;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    font-size: 12px;
+    color: #777777;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #000000;
+    padding-left: 4px;
+}
+
+.footer-bottom {
+    max-width: 1440px;
+    margin: 30px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #777777;
+    margin: 0;
+}
+
+/* ========================================
+   TABLET RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .contact-main {
+        padding: 35px 4%;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .contact-form-section {
+        padding: 22px;
+    }
+
+    .contact-details {
+        padding: 22px;
+    }
+
+    .contact-header nav ul {
+        gap: 18px;
+    }
+
+    .contact-header .logo a {
+        font-size: 25px;
+    }
+
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .contact-header {
+        min-height: 65px;
+        padding: 0 5%;
+        flex-wrap: wrap;
+    }
+
+    .contact-header .logo a {
+        font-size: 23px;
+    }
+
+    .contact-header nav {
+        order: 3;
+        width: 100%;
+        padding: 12px 0;
+        overflow-x: auto;
+    }
+
+    .contact-header nav ul {
+        justify-content: space-between;
+        gap: 20px;
+        width: max-content;
+    }
+
+    .contact-header nav a {
+        font-size: 11px;
+    }
+
+    .contact-header .header-icons {
+        gap: 13px;
+    }
+
+    .contact-header .header-icons a {
+        font-size: 17px;
+    }
+
+    .contact-main {
+        padding: 35px 5% 30px;
+    }
+
+    .contact-heading {
+        margin-bottom: 30px;
+    }
+
+    .contact-heading h1 {
+        font-size: 32px;
+    }
+
+    .contact-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .contact-details {
+        padding: 22px;
+        margin-bottom: 25px;
+    }
+
+    .contact-details h2,
+    .faq-section h2 {
+        font-size: 20px;
+    }
+
+    .contact-item {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .contact-item p {
+        font-size: 13px;
+    }
+
+    .faq-section {
+        margin-top: 28px;
+    }
+
+    .faq-section summary {
+        font-size: 13px;
+    }
+
+    .contact-form-section {
+        padding: 20px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .form-group:nth-child(3),
+    .form-group:nth-child(4) {
+        grid-column: auto;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 46px;
+    }
+
+    .form-group textarea {
+        min-height: 120px;
+    }
+
+    .contact-form button {
+        grid-column: auto;
+        height: 48px;
+    }
+
+    .contact-map {
+        height: 230px;
+        margin-top: 22px;
+    }
+
+    .footer-section {
+        padding: 28px 5% 18px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 18px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand h2 {
+        font-size: 24px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+}
+
+/* =====================================
+   FASHIONHUB LOGIN PAGE
+===================================== */
+
+/* Login Page Background */
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f8f8f8;
+}
+
+/* Login Card */
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    border: 1px solid #e5e1e1;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+/* Logo */
+.login-logo {
+    text-align: center;
+    padding: 20px 20px 0;
+}
+
+.login-logo h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #000000;
+    letter-spacing: -1.5px;
+}
+
+/* Welcome Message */
+.login-welcome {
+    text-align: center;
+    margin: 8px 0 25px;
+}
+
+.login-welcome p {
+    font-size: 13px;
+    color: #777777;
+    margin: 0;
+}
+
+/* Login Form */
+.login-form {
+    padding: 0 25px;
+}
+
+/* Form Fields */
+.login-form .form-group {
+    margin-bottom: 17px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #222222;
+}
+
+/* Password Heading */
+.password-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-heading a {
+    font-size: 11px;
+    color: #555555;
+    text-decoration: none;
+}
+
+.password-heading a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Input Fields */
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #e5e1e1;
+    border-radius: 6px;
+    background: #ffffff;
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #888888;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.04);
+}
+
+/* Remember Me */
+.remember-me {
+    margin: 5px 0 20px;
+}
+
+.remember-me label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+    cursor: pointer;
+}
+
+.remember-me input {
+    accent-color: #000000;
+    margin: 0;
+}
+
+/* Login Button */
+.login-form button {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-form button:hover {
+    background: #333333;
+}
+
+/* Social Login */
+.social-login {
+    padding: 20px 25px;
+}
+
+/* Divider */
+.social-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 17px;
+}
+
+.social-divider::before,
+.social-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eeeeee;
+}
+
+.social-divider span {
+    font-size: 11px;
+    color: #777777;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-buttons a {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e1e1;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #222222;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.social-buttons a:hover {
+    background: #f5f5f5;
+    border-color: #bbbbbb;
+}
+
+/* Register Section */
+.register-section {
+    text-align: center;
+    padding: 17px 10px;
+    background: #f3f3f3;
+    border-top: 1px solid #eeeeee;
+}
+
+.register-section p {
+    margin: 0;
+    font-size: 12px;
+    color: #777777;
+}
+
+.register-section a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-section a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .login-section {
+        padding: 20px 16px;
+    }
+
+    .login-card {
+        max-width: 100%;
+    }
+
+    .login-logo h1 {
+        font-size: 29px;
+    }
+
+    .login-form {
+        padding: 0 20px;
+    }
+
+    .social-login {
+        padding: 18px 20px;
+    }
+
+    .social-buttons {
+        gap: 8px;
+    }
+
+}
+
+/* =====================================
+   PRODUCT DETAILS PAGE
+===================================== */
+
+/* General */
+.product-details-section {
+    width: 95%;
+    max-width: 1400px;
+    margin: 25px auto 100px;
+    display: grid;
+    grid-template-columns: 58% 40%;
+    gap: 2%;
+    align-items: start;
+}
+
+/* Breadcrumb */
+.breadcrumb-section {
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+.breadcrumb-section p {
+    font-size: 12px;
+    color: #777;
+}
+
+.breadcrumb-section a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-section a:hover {
+    color: #000;
+}
+
+.breadcrumb-section strong {
+    color: #111;
+}
+
+/* =====================================
+   PRODUCT IMAGE GALLERY
+===================================== */
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.product-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-thumbnails img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-thumbnails img:first-child {
+    border: 2px solid #111;
+}
+
+.product-thumbnails img:hover {
+    border-color: #111;
+    transform: scale(1.03);
+}
+
+.main-product-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+
+.main-product-image img {
+    width: 100%;
+    height: 650px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.main-product-image:hover img {
+    transform: scale(1.04);
+}
+
+.main-product-image button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.main-product-image button:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* =====================================
+   PRODUCT INFORMATION
+===================================== */
+
+.product-information {
+    width: 100%;
+}
+
+.product-brand {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #777;
+    margin: 0 0 5px;
+}
+
+.product-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.product-title h1 {
+    font-size: clamp(30px, 3vw, 48px);
+    line-height: 1.05;
+    font-weight: 700;
+    color: #080808;
+    margin: 0;
+}
+
+.product-title button {
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-title button:hover {
+    transform: scale(1.2);
+}
+
+/* Rating */
+.product-rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.product-rating span:first-child {
+    color: #000;
+    font-size: 19px;
+    letter-spacing: -2px;
+}
+
+.product-rating span:not(:first-child) {
+    color: #555;
+}
+
+.product-rating span:last-child {
+    color: #111;
+}
+
+/* Price */
+.product-price {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+.product-price p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+/* =====================================
+   COLOR SELECTION
+===================================== */
+
+.product-colors {
+    margin-top: 22px;
+}
+
+.product-colors h3,
+.product-sizes h3,
+.product-quantity h3 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.product-colors label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 0;
+}
+
+.product-colors input {
+    appearance: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.product-colors input[value="black"] {
+    background: #171717;
+}
+
+.product-colors input[value="white"] {
+    background: #e3e3e3;
+}
+
+.product-colors input[value="grey"] {
+    background: #858080;
+}
+
+.product-colors input:checked {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
+.product-colors input:hover {
+    transform: scale(1.1);
+}
+
+/* =====================================
+   SIZE SELECTION
+===================================== */
+
+.product-sizes {
+    margin-top: 25px;
+    position: relative;
+}
+
+.product-sizes > a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 11px;
+    color: #555;
+    text-decoration: underline;
+}
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.size-options label {
+    min-width: 65px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.size-options input {
+    display: none;
+}
+
+.size-options label:has(input:checked) {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.size-options label:hover {
+    border-color: #000;
+}
+
+.size-options label:has(input[value="42"]) {
+    color: #aaa;
+    background: #f5f5f5;
+}
+
+/* =====================================
+   QUANTITY SELECTOR
+===================================== */
+
+.product-quantity {
+    margin-top: 25px;
+}
+
+.product-quantity h3 {
+    margin-bottom: 10px;
+}
+
+.product-quantity button,
+.product-quantity span {
+    display: inline-block;
+    border: none;
+    background: transparent;
+    padding: 5px 12px;
+    font-size: 15px;
+}
+
+.product-quantity button {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.product-quantity button:hover {
+    color: #888;
+}
+
+.product-quantity {
+    display: block;
+}
+
+.product-quantity button:first-of-type {
+    border-radius: 20px 0 0 20px;
+}
+
+.product-quantity button:last-of-type {
+    border-radius: 0 20px 20px 0;
+}
+
+.product-quantity button,
+.product-quantity span {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-quantity button:first-of-type {
+    border-left: 1px solid #ddd;
+}
+
+.product-quantity button:last-of-type {
+    border-right: 1px solid #ddd;
+}
+
+/* =====================================
+   PURCHASE BUTTONS
+===================================== */
+
+.purchase-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 35px 0;
+}
+
+.purchase-buttons button {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.purchase-buttons button:hover {
+    background: #333;
+    border-color: #333;
+}
+
+.purchase-buttons button:last-child {
+    background: transparent;
+    color: #000;
+}
+
+.purchase-buttons button:last-child:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* =====================================
+   PRODUCT ACCORDION
+===================================== */
+
+.product-information details {
+    border-top: 1px solid #e8e8e8;
+    padding: 18px 0;
+}
+
+.product-information details:last-child {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.product-information summary {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-information summary::-webkit-details-marker {
+    display: none;
+}
+
+.product-information summary::after {
+    content: "+";
+    font-size: 20px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
+.product-information details[open] summary::after {
+    content: "−";
+}
+
+.product-information details p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer-section {
+    background: #fff;
+    padding: 55px 0 25px;
+}
+
+.footer-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.footer-brand h2 {
+    font-size: 30px;
+    margin: 0 0 15px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #777;
+    max-width: 350px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 25px;
+    align-content: start;
+}
+
+.footer-links a {
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    width: 95%;
+    max-width: 1400px;
+    margin: 30px auto 0;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #777;
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 1024px) {
+
+    .product-details-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .product-gallery {
+        grid-template-columns: 55px 1fr;
+        gap: 10px;
+    }
+
+    .product-thumbnails img {
+        height: 75px;
+    }
+
+    .main-product-image img {
+        height: 550px;
+    }
+
+    .product-title h1 {
+        font-size: 32px;
+    }
+
+    .size-options label {
+        min-width: 48px;
+    }
+
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 767px) {
+
+    .breadcrumb-section {
+        margin: 15px auto;
+    }
+
+    .product-details-section {
+        width: 92%;
+        margin: 20px auto 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* Gallery */
+    .product-gallery {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .main-product-image {
+        width: 100%;
+    }
+
+    .main-product-image img {
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+    }
+
+    .product-thumbnails {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .product-thumbnails img {
+        width: 75px;
+        height: 85px;
+    }
+
+    /* Product Details */
+    .product-information {
+        width: 100%;
+    }
+
+    .product-title h1 {
+        font-size: 32px;
+    }
+
+    .product-price p {
+        font-size: 23px;
+    }
+
+    .product-rating {
+        gap: 7px;
+    }
+
+    .product-colors input {
+        width: 34px;
+        height: 34px;
+    }
+
+    .size-options {
+        gap: 8px;
+    }
+
+    .size-options label {
+        flex: 1;
+        min-width: 0;
+        height: 40px;
+    }
+
+    .purchase-buttons {
+        margin: 25px 0;
+    }
+
+    .purchase-buttons button {
+        height: 48px;
+    }
+
+    .product-information details {
+        padding: 16px 0;
+    }
+
+    /* Footer */
+    .footer-section {
+        padding: 35px 0 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 15px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand h2 {
+        font-size: 25px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+
+    .main-product-image img {
+        height: 390px;
+    }
+
+    .product-title h1 {
+        font-size: 28px;
+    }
+
+    .product-thumbnails img {
+        height: 70px;
+    }
+
+    .product-rating {
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================
+   FASHIONHUB - PRODUCTS CATALOG PAGE
+========================================= */
+
+/* General Settings */
+.product-catalog,
+.catalog-header,
+.breadcrumb-section {
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+body {
+    margin: 0;
+    background: #f9f9f9;
+}
+
+/* =========================================
+   HEADER SECTION
+========================================= */
+
+.catalog-header {
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    gap: 25px;
+}
+
+/* Logo */
+.catalog-header .logo a {
+    font-size: 27px;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+/* Navigation */
+.catalog-header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-header nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 12px;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.catalog-header nav a:hover,
+.catalog-header nav a.active {
+    color: #000;
+}
+
+.catalog-header nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+.catalog-header nav a:hover::after,
+.catalog-header nav a.active::after {
+    width: 100%;
+}
+
+/* Search Box */
+.catalog-header .search-box input {
+    width: 180px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background: #f2f2f2;
+    outline: none;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.catalog-header .search-box input:focus {
+    background: #eaeaea;
+}
+
+/* Header Icons */
+.catalog-header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.catalog-header .header-icons a {
+    font-size: 21px;
+    color: #111;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.catalog-header .header-icons a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   BREADCRUMB SECTION
+========================================= */
+
+.catalog-header ~ .breadcrumb-section {
+    padding: 20px 5% 10px;
+}
+
+.breadcrumb-section p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.breadcrumb-section a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-section a:hover {
+    color: #000;
+}
+
+.breadcrumb-section strong {
+    color: #111;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PRODUCT CATALOG LAYOUT
+========================================= */
+
+.product-catalog {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    padding: 15px 5% 60px;
+    max-width: 1600px;
+    margin: auto;
+    align-items: start;
+}
+
+
+/* =========================================
+   FILTER SIDEBAR
+========================================= */
+
+.filter-sidebar {
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.filter-sidebar h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 25px;
+}
+
+/* Filter Headings */
+.filter-sidebar h3 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin: 25px 0 15px;
+}
+
+/* Category Filter */
+.filter-category label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.filter-category label:hover {
+    color: #777;
+}
+
+.filter-category input {
+    accent-color: #000;
+    cursor: pointer;
+}
+
+/* Price Filter */
+.filter-price {
+    margin-top: 30px;
+}
+
+.filter-price input[type="range"] {
+    width: 100%;
+    accent-color: #000;
+    cursor: pointer;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #555;
+    margin-top: 12px;
+}
+
+/* Color Filter */
+.color-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-options label {
+    cursor: pointer;
+    position: relative;
+}
+
+.color-options input {
+    position: absolute;
+    opacity: 0;
+}
+
+.color-options span {
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.color-options label:hover span {
+    transform: scale(1.15);
+}
+
+.color-options input:checked + span {
+    outline: 1px solid #000;
+    outline-offset: 3px;
+}
+
+.color-black {
+    background: #000;
+}
+
+.color-white {
+    background: #fff;
+}
+
+.color-cream {
+    background: #f5f2d9;
+}
+
+.color-grey {
+    background: #888;
+}
+
+/* Apply Filter Button */
+.apply-filter-button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.apply-filter-button:hover {
+    background: #444;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PRODUCT LISTING HEADING
+========================================= */
+
+.listing-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.listing-heading p {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+}
+
+/* Sort Products */
+.sort-products {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+.sort-products select {
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+    color: #111;
+}
+
+
+/* =========================================
+   PRODUCTS GRID
+========================================= */
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product-item {
+    min-width: 0;
+    cursor: pointer;
+}
+
+/* Product Image Container */
+.product-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #eee;
+}
+
+/* Product Image */
+.product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Image Hover */
+.product-item:hover .product-image img {
+    transform: scale(1.06);
+}
+
+/* Wishlist Button */
+.wishlist-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    background: rgba(255,255,255,0.85);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wishlist-button:hover {
+    background: #000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Product Badge */
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 8px;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.sale-badge {
+    background: #d91f26;
+}
+
+/* Product Information */
+.product-info {
+    padding-top: 15px;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: #111;
+    transition: color 0.3s ease;
+}
+
+.product-item:hover .product-info h3 {
+    color: #777;
+}
+
+.product-info > p {
+    font-size: 12px;
+    color: #777;
+    margin: 0 0 8px;
+}
+
+/* Product Price */
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-price del {
+    font-size: 11px;
+    color: #999;
+    font-weight: 400;
+}
+
+.sale-price {
+    color: #d91f26;
+}
+
+/* Product Rating */
+.product-rating {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 400;
+    color: #555;
+}
+
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 45px;
+}
+
+.pagination a,
+.pagination span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover,
+.pagination a.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.pagination span {
+    border: none;
+}
+
+
+/* =========================================
+   FOOTER SECTION
+========================================= */
+
+.footer-section {
+    background: #fff;
+    padding: 45px 5% 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 25px;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.footer-brand p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #555;
+    margin: 0;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .catalog-header {
+        padding: 0 3%;
+        gap: 15px;
+    }
+
+    .catalog-header nav ul {
+        gap: 15px;
+    }
+
+    .catalog-header .search-box input {
+        width: 130px;
+    }
+
+    .product-catalog {
+        grid-template-columns: 210px 1fr;
+        gap: 20px;
+        padding: 15px 3% 45px;
+    }
+
+    .filter-sidebar {
+        padding: 20px;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+
+    /* Header */
+    .catalog-header {
+        height: auto;
+        min-height: 65px;
+        padding: 12px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .catalog-header .logo a {
+        font-size: 23px;
+    }
+
+    .catalog-header nav {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .catalog-header nav ul {
+        gap: 22px;
+        width: max-content;
+    }
+
+    .catalog-header nav a {
+        font-size: 11px;
+    }
+
+    .catalog-header .search-box {
+        display: none;
+    }
+
+    .catalog-header .header-icons {
+        gap: 13px;
+    }
+
+    .catalog-header .header-icons a {
+        font-size: 19px;
+    }
+
+    /* Breadcrumb */
+    .catalog-header ~ .breadcrumb-section {
+        padding: 18px 5% 10px;
+    }
+
+    /* Catalog Layout */
+    .product-catalog {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 5% 40px;
+        gap: 25px;
+    }
+
+    /* Filter Sidebar */
+    .filter-sidebar {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px;
+    }
+
+    .filter-sidebar h2 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .filter-sidebar h3 {
+        margin-top: 18px;
+    }
+
+    .filter-category label {
+        font-size: 12px;
+    }
+
+    /* Listing Heading */
+    .product-listing {
+        width: 100%;
+    }
+
+    .listing-heading {
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .listing-heading p,
+    .sort-products {
+        font-size: 11px;
+    }
+
+    /* Product Grid */
+    .products-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 12px;
+    }
+
+    .product-image {
+        aspect-ratio: 1 / 1.2;
+    }
+
+    .product-info {
+        padding-top: 10px;
+    }
+
+    .product-info h3 {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .product-info > p {
+        font-size: 11px;
+    }
+
+    .product-price {
+        font-size: 12px;
+    }
+
+    .product-rating {
+        font-size: 10px;
+    }
+
+    .wishlist-button {
+        width: 29px;
+        height: 29px;
+        top: 8px;
+        right: 8px;
+        font-size: 17px;
+    }
+
+    /* Pagination */
+    .pagination {
+        gap: 7px;
+        margin-top: 35px;
+    }
+
+    .pagination a,
+    .pagination span {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer-section {
+        padding: 30px 5% 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-brand h2 {
+        font-size: 22px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 11px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+}
+
+/* =========================================
+   FASHIONHUB - REGISTER PAGE
+========================================= */
+
+/* Register Page Background */
+body:has(.register-section) {
+    margin: 0;
+    background: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Register Section */
+.register-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+    box-sizing: border-box;
+}
+
+/* Register Card */
+.register-card {
+    width: 100%;
+    max-width: 390px;
+    background: #ffffff;
+    padding: 25px 24px;
+    border-radius: 9px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* Logo */
+.register-logo {
+    text-align: center;
+}
+
+.register-logo h1 {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #000;
+    margin: 0 0 5px;
+}
+
+/* Welcome Message */
+.register-welcome {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.register-welcome p {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+/* Registration Form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Groups */
+.register-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Labels */
+.register-form label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* Input Fields */
+.register-form input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border: 1px solid #dedada;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 12px;
+    color: #222;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Placeholder */
+.register-form input::placeholder {
+    color: #9299a5;
+}
+
+/* Input Hover */
+.register-form input:hover {
+    border-color: #999;
+}
+
+/* Input Focus */
+.register-form input:focus {
+    border-color: #111;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Register Button */
+.register-form button {
+    width: 100%;
+    height: 43px;
+    margin-top: 0;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.register-form button:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Button Click */
+.register-form button:active {
+    transform: translateY(0);
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link p {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+.login-link a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #888;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .register-section {
+        padding: 20px 16px;
+        align-items: center;
+    }
+
+    .register-card {
+        max-width: 100%;
+        padding: 25px 20px;
+    }
+
+    .register-logo h1 {
+        font-size: 25px;
+    }
+
+    .register-form {
+        gap: 14px;
+    }
+
+    .register-form input {
+        height: 42px;
+    }
+
+    .register-form button {
+        height: 44px;
+    }
+
+}
+
+/* ========================================
+   FASHIONHUB - WISHLIST PAGE
+======================================== */
+
+/* Wishlist Page */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #080808;
+    font-family: Arial, sans-serif;
+}
+
+/* ========================================
+   HEADER SECTION
+======================================== */
+
+header {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #ededed;
+}
+
+/* Logo */
+.logo a {
+    color: #080808;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -1.5px;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #999;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header-icons a {
+    color: #111;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.header-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.header-icons a.active {
+    color: #000;
+}
+
+
+/* ========================================
+   WISHLIST HEADING
+======================================== */
+
+.wishlist-heading {
+    margin: 0 5%;
+    padding: 32px 0 14px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.wishlist-heading h1 {
+    margin: 0 0 5px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.wishlist-heading p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   WISHLIST PRODUCTS SECTION
+======================================== */
+
+.wishlist-section {
+    padding: 30px 5% 45px;
+}
+
+.wishlist-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+/* ========================================
+   INDIVIDUAL PRODUCT CARD
+======================================== */
+
+.wishlist-item {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Product Image */
+.wishlist-image {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f0f0f0;
+}
+
+.wishlist-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Image Hover Effect */
+.wishlist-item:hover .wishlist-image img {
+    transform: scale(1.06);
+}
+
+
+/* Remove Wishlist Button */
+.remove-wishlist {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    color: #111;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove-wishlist:hover {
+    background: #000;
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+
+/* ========================================
+   PRODUCT INFORMATION
+======================================== */
+
+.wishlist-info {
+    padding-top: 10px;
+}
+
+.product-category {
+    display: block;
+    margin-bottom: 4px;
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.wishlist-info h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-price {
+    margin: 0 0 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-price strong {
+    color: #d71920;
+}
+
+.product-price del {
+    margin-left: 5px;
+    color: #888;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/* Stock Status */
+.stock-status {
+    margin: 0 0 10px;
+    font-size: 11px;
+    color: #111;
+}
+
+.stock-status::first-letter {
+    color: #000;
+}
+
+.out-of-stock {
+    color: #999;
+}
+
+
+/* ========================================
+   ADD TO CART BUTTON
+======================================== */
+
+.wishlist-cart {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wishlist-cart:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Disabled Button */
+.wishlist-cart.disabled,
+.wishlist-cart:disabled {
+    border-color: #f0f0f0;
+    background: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.wishlist-cart.disabled:hover,
+.wishlist-cart:disabled:hover {
+    background: #f0f0f0;
+    color: #888;
+}
+
+
+/* ========================================
+   FOOTER SECTION
+======================================== */
+
+.footer-section {
+    padding: 35px 5% 20px;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Footer Brand */
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-brand h2 {
+    margin: 0 0 8px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.footer-brand p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.footer-brand .footer-copyright {
+    margin-top: 12px;
+    color: #555;
+    font-size: 11px;
+}
+
+
+/* Footer Links */
+.footer-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column a {
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #000;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN - TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .wishlist-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 18px;
+    }
+
+    .wishlist-image {
+        height: 300px;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        min-height: 60px;
+        padding: 0 4%;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .header-icons {
+        gap: 15px;
+    }
+
+    .header-icons a {
+        font-size: 18px;
+    }
+
+
+    /* Wishlist Heading */
+    .wishlist-heading {
+        margin: 0 4%;
+        padding: 25px 0 12px;
+    }
+
+    .wishlist-heading h1 {
+        font-size: 27px;
+    }
+
+    .wishlist-heading p {
+        font-size: 12px;
+    }
+
+
+    /* Wishlist Products */
+    .wishlist-section {
+        padding: 20px 4% 30px;
+    }
+
+    .wishlist-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 12px;
+    }
+
+    .wishlist-image {
+        height: 210px;
+        border-radius: 7px;
+    }
+
+    .remove-wishlist {
+        top: 7px;
+        right: 7px;
+        width: 25px;
+        height: 25px;
+        font-size: 19px;
+    }
+
+
+    /* Product Information */
+    .wishlist-info {
+        padding-top: 8px;
+    }
+
+    .product-category {
+        font-size: 9px;
+    }
+
+    .wishlist-info h3 {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 13px;
+    }
+
+    .stock-status {
+        font-size: 10px;
+    }
+
+    .wishlist-cart {
+        min-height: 36px;
+        font-size: 11px;
+    }
+
+
+    /* Footer */
+    .footer-section {
+        padding: 25px 4% 18px;
+    }
+
+    .footer-container {
+        gap: 20px;
+    }
+
+    .footer-brand h2 {
+        font-size: 23px;
+    }
+
+    .footer-brand p {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .footer-column {
+        gap: 10px;
+    }
+
+    .footer-column a {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE DEVICES
+======================================== */
+
+@media (max-width: 380px) {
+
+    .wishlist-image {
+        height: 170px;
+    }
+
+    .wishlist-container {
+        gap: 20px 10px;
+    }
+
+    .wishlist-info h3 {
+        font-size: 11px;
+    }
+
+}

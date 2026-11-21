@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Website Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Checkout - FashionHub</title>
+    <!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         HEADER SECTION
+    ========================== -->
+
+    <header class="checkout-header">
+
+        <!-- Website Logo -->
+        <div class="logo">
+
+            <a href="index.html">FashionHub</a>
+
+        </div>
+
+        <!-- Secure Checkout Information -->
+        <div class="secure-checkout">
+
+            <span>♙ SECURE CHECKOUT</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CHECKOUT PROGRESS SECTION
+    ========================== -->
+
+    <section class="checkout-progress">
+
+        <!-- Step 1: Cart -->
+        <div class="progress-step">
+
+            <span>✓</span>
+
+            <p>Cart</p>
+
+        </div>
+
+
+        <!-- Step 2: Shipping -->
+        <div class="progress-step">
+
+            <span>2</span>
+
+            <p>Shipping</p>
+
+        </div>
+
+
+        <!-- Step 3: Payment -->
+        <div class="progress-step">
+
+            <span>3</span>
+
+            <p>Payment</p>
+
+        </div>
+
+
+        <!-- Step 4: Confirmation -->
+        <div class="progress-step">
+
+            <span>4</span>
+
+            <p>Confirmation</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN CHECKOUT SECTION
+    ========================== -->
+
+    <main class="checkout-container">
+
+
+        <!-- LEFT SIDE: CHECKOUT DETAILS -->
+        <section class="checkout-details">
+
+
+            <!-- =========================
+                 EXPRESS CHECKOUT SECTION
+            ========================== -->
+
+            <div class="express-checkout">
+
+                <h3>Express Checkout</h3>
+
+                <button type="button">SHOP PAY</button>
+
+                <button type="button">PAYPAL</button>
+
+                <p>OR CONTINUE BELOW</p>
+
+            </div>
+
+
+            <!-- =========================
+                 SHIPPING ADDRESS SECTION
+            ========================== -->
+
+            <section class="shipping-address">
+
+                <!-- Section Heading -->
+                <h2>Shipping Address</h2>
+
+                <!-- Login Link -->
+                <a href="login.html">Log in for faster checkout</a>
+
+
+                <!-- Shipping Address Form -->
+                <form>
+
+
+                    <!-- First Name and Last Name -->
+                    <div class="form-row">
+
+
+                        <!-- First Name -->
+                        <div class="form-group">
+
+                            <label for="first-name">First Name</label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+                                placeholder="Jane"
+                            >
+
+                        </div>
+
+
+                        <!-- Last Name -->
+                        <div class="form-group">
+
+                            <label for="last-name">Last Name</label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                placeholder="Doe"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email Address -->
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="jane.doe@example.com"
+                        >
+
+                    </div>
+
+
+                    <!-- Street Address -->
+                    <div class="form-group">
+
+                        <label for="address">Street Address</label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            placeholder="123 Fashion Ave, Apt 4B"
+                        >
+
+                    </div>
+
+
+                    <!-- City, State and Postal Code -->
+                    <div class="form-row">
+
+
+                        <!-- City -->
+                        <div class="form-group">
+
+                            <label for="city">City</label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="New York"
+                            >
+
+                        </div>
+
+
+                        <!-- State -->
+                        <div class="form-group">
+
+                            <label for="state">State / Province</label>
+
+                            <select id="state">
+
+                                <option value="">Select State</option>
+
+                                <option value="new-york">New York</option>
+
+                                <option value="california">California</option>
+
+                                <option value="texas">Texas</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Postal Code -->
+                        <div class="form-group">
+
+                            <label for="postal-code">ZIP / Postal Code</label>
+
+                            <input
+                                type="text"
+                                id="postal-code"
+                                placeholder="10001"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Save Address Option -->
+                    <div class="save-information">
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Save this information for next time
+
+                        </label>
+
+                    </div>
+
+
+                </form>
+
+            </section>
+
+
+            <!-- =========================
+                 PAYMENT METHOD SECTION
+            ========================== -->
+
+            <section class="payment-method">
+
+                <h2>Payment Method</h2>
+
+
+                <!-- Credit / Debit Card -->
+                <div class="payment-option">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="card"
+                            checked
+                        >
+
+                        Credit / Debit Card
+
+                    </label>
+
+
+                    <!-- Card Information -->
+                    <div class="card-information">
+
+
+                        <!-- Card Number -->
+                        <input
+                            type="text"
+                            placeholder="Card number"
+                        >
+
+
+                        <!-- Expiry Date and CVC -->
+                        <div class="form-row">
+
+                            <input
+                                type="text"
+                                placeholder="MM / YY"
+                            >
+
+                            <input
+                                type="text"
+                                placeholder="CVC"
+                            >
+
+                        </div>
+
+
+                        <!-- Name on Card -->
+                        <input
+                            type="text"
+                            placeholder="Name on card"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- UPI / Mobile Wallet -->
+                <div class="payment-option">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="upi"
+                        >
+
+                        UPI / Mobile Wallet
+
+                    </label>
+
+                </div>
+
+
+                <!-- Cash on Delivery -->
+                <div class="payment-option">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cod"
+                        >
+
+                        Cash on Delivery
+
+                    </label>
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+        <!-- =========================
+             RIGHT SIDE: ORDER SUMMARY
+        ========================== -->
+
+        <aside class="checkout-summary">
+
+
+            <!-- Order Summary Heading -->
+            <h2>Order Summary</h2>
+
+
+            <!-- Product 1 -->
+            <div class="summary-product">
+
+                <img
+                    src="images/blazer.jpg"
+                    alt="Tailored Wool Blend Blazer"
+                >
+
+                <div class="summary-product-info">
+
+                    <h3>Tailored Wool Blend Blazer</h3>
+
+                    <p>Color: Noir | Size: M</p>
+
+                    <p>$450.00</p>
+
+                </div>
+
+                <span>1</span>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="summary-product">
+
+                <img
+                    src="images/shirt.jpg"
+                    alt="Crisp Poplin Button-Down"
+                >
+
+                <div class="summary-product-info">
+
+                    <h3>Crisp Poplin Button-Down</h3>
+
+                    <p>Color: Blanc | Size: M</p>
+
+                    <p>$125.00</p>
+
+                </div>
+
+                <span>1</span>
+
+            </div>
+
+
+            <!-- Discount Code -->
+            <div class="discount-code">
+
+                <input
+                    type="text"
+                    placeholder="Discount code"
+                >
+
+                <button type="button">Apply</button>
+
+            </div>
+
+
+            <!-- Subtotal -->
+            <div class="summary-row">
+
+                <span>Subtotal</span>
+
+                <strong>$700.00</strong>
+
+            </div>
+
+
+            <!-- Shipping -->
+            <div class="summary-row">
+
+                <span>Shipping</span>
+
+                <span>Calculated at next step</span>
+
+            </div>
+
+
+            <!-- Estimated Tax -->
+            <div class="summary-row">
+
+                <span>Estimated Tax</span>
+
+                <strong>$56.00</strong>
+
+            </div>
+
+
+            <!-- Total -->
+            <div class="summary-total">
+
+                <span>Total</span>
+
+                <strong>$756.00</strong>
+
+            </div>
+
+
+            <!-- Continue to Payment -->
+            <button type="button" class="continue-payment">
+
+                Continue to Payment →
+
+            </button>
+
+
+            <!-- Payment Security Information -->
+            <p class="payment-security">
+
+                Payments are secure and encrypted.
+
+            </p>
+
+
+        </aside>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER SECTION
+    ========================== -->
+
+    <footer class="footer-section">
+
+
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+
+            <h2>FashionHub</h2>
+
+            <p>
+                High-fashion utility for the modern era.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         WEBSITE INFORMATION
+    ========================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Shopping Cart - FashionHub</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         HEADER SECTION
+    ========================== -->
+
+    <header class="cart-header">
+
+
+        <!-- Website Logo -->
+        <div class="logo">
+
+            <a href="index.html">FashionHub</a>
+
+        </div>
+
+
+        <!-- Navigation Menu -->
+        <nav>
+
+            <ul>
+
+                <li><a href="#">Men</a></li>
+
+                <li><a href="#">Women</a></li>
+
+                <li><a href="#">Accessories</a></li>
+
+                <li><a href="about-us.html">About</a></li>
+
+                <li><a href="contact-us.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Header Icons -->
+        <div class="header-icons">
+
+            <a href="#" aria-label="Search">⌕</a>
+
+            <a href="#" aria-label="Wishlist">♡</a>
+
+            <a href="#" aria-label="Shopping Bag">♧</a>
+
+            <a href="#" aria-label="Account">♙</a>
+
+        </div>
+
+
+    </header>
+
+
+    <!-- =========================
+         CART HEADING SECTION
+    ========================== -->
+
+    <section class="cart-heading">
+
+        <h2>Your Cart</h2>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN SHOPPING CART SECTION
+    ========================== -->
+
+    <main class="cart-section">
+
+
+        <!-- =========================
+             CART ITEMS SECTION
+        ========================== -->
+
+        <section class="cart-items">
+
+
+            <!-- =========================
+                 CART ITEM 1
+            ========================== -->
+
+            <div class="cart-item">
+
+
+                <!-- Product Image -->
+                <div class="cart-product-image">
+
+                    <img
+                        src="images/cart1.png"
+                        alt="Tailored Black Blazer"
+                    >
+
+                </div>
+
+
+                <!-- Product Information -->
+                <div class="cart-product-info">
+
+                    <h3>Tailored Black Blazer</h3>
+
+                    <p>Size: M | Color: Onyx</p>
+
+
+                    <!-- Quantity Selector -->
+                    <div class="quantity-selector">
+
+                        <button type="button" aria-label="Decrease quantity">
+                            −
+                        </button>
+
+                        <span>1</span>
+
+                        <button type="button" aria-label="Increase quantity">
+                            +
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Product Price -->
+                <div class="cart-product-price">
+
+                    <p>
+
+                        <del>$350.00</del>
+
+                        $280.00
+
+                    </p>
+
+                </div>
+
+
+                <!-- Remove Product -->
+                <div class="remove-product">
+
+                    <a href="#">REMOVE</a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =========================
+                 CART ITEM 2
+            ========================== -->
+
+            <div class="cart-item">
+
+
+                <!-- Product Image -->
+                <div class="cart-product-image">
+
+                    <img
+                        src="images/cart2.png"
+                        alt="Minimalist Leather Sneaker"
+                    >
+
+                </div>
+
+
+                <!-- Product Information -->
+                <div class="cart-product-info">
+
+                    <h3>Minimalist Leather Sneaker</h3>
+
+                    <p>Size: 42 | Color: Pure White</p>
+
+
+                    <!-- Quantity Selector -->
+                    <div class="quantity-selector">
+
+                        <button type="button" aria-label="Decrease quantity">
+                            −
+                        </button>
+
+                        <span>1</span>
+
+                        <button type="button" aria-label="Increase quantity">
+                            +
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Product Price -->
+                <div class="cart-product-price">
+
+                    <p>
+
+                        <del>$150.00</del>
+
+                        $120.00
+
+                    </p>
+
+                </div>
+
+
+                <!-- Remove Product -->
+                <div class="remove-product">
+
+                    <a href="#">REMOVE</a>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             ORDER SUMMARY SECTION
+        ========================== -->
+
+        <aside class="order-summary">
+
+
+            <!-- Summary Heading -->
+            <h2>Order Summary</h2>
+
+
+            <!-- Subtotal -->
+            <div class="summary-row">
+
+                <span>Subtotal (2 items)</span>
+
+                <strong>$635.00</strong>
+
+            </div>
+
+
+            <!-- Estimated Tax -->
+            <div class="summary-row">
+
+                <span>Estimated Tax</span>
+
+                <strong>$46.50</strong>
+
+            </div>
+
+
+            <!-- Shipping -->
+            <div class="summary-row">
+
+                <span>Shipping</span>
+
+                <strong>Complimentary</strong>
+
+            </div>
+
+
+            <!-- Discount -->
+            <div class="summary-discount">
+
+                <span>Discount Applied (WELCOME10)</span>
+
+                <strong>-$63.50</strong>
+
+            </div>
+
+
+            <!-- Total Amount -->
+            <div class="summary-total">
+
+                <span>Total</span>
+
+                <p>
+
+                    <del>$635.00</del>
+
+                    <strong>$618.00</strong>
+
+                </p>
+
+            </div>
+
+
+            <!-- Promo Code Section -->
+            <div class="promo-code">
+
+                <input
+                    type="text"
+                    placeholder="Promo Code"
+                    aria-label="Promo Code"
+                >
+
+                <button type="button">APPLY</button>
+
+            </div>
+
+
+            <!-- Checkout Button -->
+            <button type="button" class="checkout-button">
+
+                PROCEED TO CHECKOUT →
+
+            </button>
+
+
+            <!-- Payment Information -->
+            <p class="payment-info">
+
+                Secure checkout powered by Stripe.
+
+            </p>
+
+
+        </aside>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER SECTION
+    ========================== -->
+
+    <footer class="footer-section">
+
+
+        <!-- Footer Container -->
+        <div class="footer-container">
+
+
+            <!-- Brand Information -->
+            <div class="footer-brand">
+
+
+                <!-- Website Logo -->
+                <h2>FashionHub</h2>
+
+
+                <!-- Brand Description -->
+                <p>
+
+                    High-fashion utility for the modern era.
+                    Crafted collections for the modern minimalist.
+
+                </p>
+
+
+            </div>
+
+
+            <!-- Footer Navigation -->
+            <div class="footer-links">
+
+
+                <a href="#">Sustainability</a>
+
+                <a href="#">Size Guide</a>
+
+                <a href="#">Shipping & Returns</a>
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Service</a>
+
+                <a href="#">FAQ</a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Footer Copyright -->
+        <div class="footer-bottom">
+
+
+            <p>
+
+                &copy; 2024 FashionHub. All rights reserved.
+                High-fashion utility for the modern era.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+</html>
