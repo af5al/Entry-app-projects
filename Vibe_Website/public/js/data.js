@@ -6,7 +6,7 @@ window.SITE_DATA = {
   // Paste Nicole's links here; empty ones are hidden.
   social: {
     instagram: '', // e.g. 'https://www.instagram.com/<handle>/'
-    youtube: '',
+    youtube: 'https://www.youtube.com/@nicoletran5323',
     tiktok: '',
   },
 

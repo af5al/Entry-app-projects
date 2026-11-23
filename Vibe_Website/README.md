@@ -38,7 +38,7 @@ Everything changeable lives in **`public/js/data.js`**:
 - **Shows:** add `{ date: 'YYYY-MM-DD', ... }`. Past dates move to "Past shows" automatically.
 - **Videos:** paste the YouTube ID into `youtube: ''`. Empty ones show "Coming soon".
 - **Testimonials:** currently **samples**. Replace with real client quotes and remove `sample: true`.
-- **Social links:** fill in `social.instagram` etc. to show them in the footer.
+- **Social links:** YouTube is set (@nicoletran5323). Fill in `social.instagram` / `tiktok` to add them to the footer.
 
 **Photos:** the current images in `public/images/` were cropped from a screenshot of Nicole's Instagram grid,
 so they are low resolution (~220px wide). Replace them with the original photos/video stills at the same file names:

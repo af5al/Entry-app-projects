@@ -75,7 +75,7 @@
     if (!host) return;
     const social = Object.entries(DATA.social || {})
       .filter(([, url]) => url)
-      .map(([name, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}</a>`)
+      .map(([name, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc({ youtube: 'YouTube', instagram: 'Instagram', tiktok: 'TikTok' }[name] || name)}</a>`)
       .join('');
     host.outerHTML = `
       <footer class="site-footer">
@@ -363,6 +363,16 @@
     });
   }
 
+  /* ---------- Social links: <a data-social="youtube"> gets its URL, or is removed if empty ---------- */
+
+  function wireSocialLinks() {
+    document.querySelectorAll('[data-social]').forEach((el) => {
+      const url = (DATA.social || {})[el.dataset.social];
+      if (url) el.href = url;
+      else el.remove();
+    });
+  }
+
   /* ---------- Photos: fall back to placeholder if the real file is missing ---------- */
 
   function wirePhotos() {
@@ -383,4 +393,5 @@
   renderVideos();
   renderTestimonials();
   renderGallery();
+  wireSocialLinks();
 })();
