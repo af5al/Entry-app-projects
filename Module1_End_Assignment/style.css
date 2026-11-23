@@ -1,0 +1,37 @@
+html {
+    Scrollbar-width: smoth;
+}   
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    Position: sticky;
+    Top: 0;
+    z-index: 1000;
+}
+Nav a {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    padding: 10px;
+    Color : White;
+    Margin-right: 15px;
+}
+.Card img {
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+    Object-fit: cover;
+}
+.Card h3 {
+    font-size: 20px;
+    margin: 12px;
+}
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

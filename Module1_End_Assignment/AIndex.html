@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SECTION 1: HEAD SETTINGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest E-commerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- SECTION 2: HEADER AND NAVIGATION -->
+    <header class="bg-dark text-white p-3 sticky-top">
+        <nav class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <div class="logo">
+                    <h1>ShopNest</h1>
+                </div>
+                <ul class="nav-links d-flex flex-wrap gap-3 list-unstyled m-0">
+                    <li><a href="#home" class="text-white">Home</a></li>
+                    <li><a href="#shop" class="text-white">Shop</a></li>
+                    <li><a href="#deals" class="text-white">Deals</a></li>
+                    <li><a href="#categories" class="text-white">Categories</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <input type="search" placeholder="Search..." class="form-control">
+                    <span role="img" aria-label="Shopping Cart">🛒</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- SECTION 3: HERO SECTION -->
+        <section id="home" class="hero bg-light text-center p-5">
+            <h2>Welcome to ShopNest - Your One-Stop E-commerce Destination!</h2>
+            <p>Find the best products at the lowest prices.</p>
+            <a href="#shop" class="btn btn-primary">Shop Now</a>
+            <a href="#deals" class="btn btn-secondary">View Deals</a>
+        </section>
+        <!-- SECTION 4: FEATURED PRODUCTS -->
+        <section id="shop" class="container my-5">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row g-3">
+                <!-- PRODUCT 1: WIRELESS HEADPHONES -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-3 h-100">
+                        <img src="./images/product1.jpg" class="card-img-top" alt="Wireless Headphones">
+                        <h3>Wireless Headphones</h3>
+                        <p>Experience crystal-clear sound with our premium wireless headphones.</p>
+                        <p>★★★★★</p>
+                        <del>₹2,999</del>
+                        <strong>₹1,999</strong>
+                        <button type="button" class="btn btn-primary mt-3">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- PRODUCT 2: SMART WATCH -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-3 h-100">
+                        <img src="./images/product2.jpg" class="card-img-top" alt="Smart Watch">
+                        <h3>Smart Watch</h3>
+                        <p>Stay connected and track your fitness with our latest smart watch.</p>
+                        <p>★★★★★</p>
+                        <del>₹2,999</del>
+                        <strong>₹1,999</strong>
+                        <button type="button" class="btn btn-primary mt-3">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- PRODUCT 3: BLUETOOTH SPEAKER -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-3 h-100">
+                        <img src="./images/product3.jpg" class="card-img-top" alt="Bluetooth Speaker">
+                        <h3>Bluetooth Speaker</h3>
+                        <p>Enjoy high-quality sound on the go with our portable Bluetooth speaker.</p>
+                        <p>★★★★★</p>
+                        <del>₹2,999</del>
+                        <strong>₹1,999</strong>
+                        <button type="button" class="btn btn-primary mt-3">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- PRODUCT 4: SHOES -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-3 h-100">
+                        <img src="./images/product4.jpg" class="card-img-top" alt="Shoes">
+                        <h3>Shoes</h3>
+                        <p>Shop for the latest trends in footwear.</p>
+                        <p>★★★★★</p>
+                        <del>₹2,999</del>
+                        <strong>₹1,999</strong>
+                        <button type="button" class="btn btn-primary mt-3">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- PRODUCT 5: SHIRTS -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-3 h-100">
+                        <img src="./images/product5.jpg" class="card-img-top" alt="Shirts">
+                        <h3>Shirts</h3>
+                        <p>Shop for the latest trends in shirts.</p>
+                        <p>★★★★★</p>
+                        <del>₹2,999</del>
+                        <strong>₹1,999</strong>
+                        <button type="button" class="btn btn-primary mt-3">Add to Cart</button>
+                    </div>
+                </article>
+                <!-- PRODUCT 6: BACKPACK -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-3 h-100">
+                        <img src="./images/product6.jpg" class="card-img-top" alt="Backpack">
+                        <h3>Back Pack</h3>
+                        <p>Shop for the latest trends in Back Pack.</p>
+                        <p>★★★★★</p>
+                        <del>₹2,999</del>
+                        <strong>₹1,999</strong>
+                        <button type="button" class="btn btn-primary mt-3">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- SECTION 5: CATEGORY SHOWCASE -->
+        <section id="categories" class="container my-5">
+            <h2 class="text-center mb-4">Shop by Category</h2>
+            <div class="row g-3 text-center">
+                <article class="col-6 col-md-3">
+                    <a href="#shop" class="card p-4 text-decoration-none">Electronics</a>
+                </article>
+                <article class="col-6 col-md-3">
+                    <a href="#shop" class="card p-4 text-decoration-none">Clothing</a>
+                </article>
+                <article class="col-6 col-md-3">
+                    <a href="#shop" class="card p-4 text-decoration-none">Footwear</a>
+                </article>
+                <article class="col-6 col-md-3">
+                    <a href="#shop" class="card p-4 text-decoration-none">Books</a>
+                </article>
+            </div>
+        </section>
+        <!-- SECTION 6: DEALS -->
+        <aside id="deals" class="bg-warning-subtle p-4 text-center">
+            <h2>Special Deals</h2>
+            <p>Explore our discounted products and latest offers.</p>
+            <a href="#shop" class="btn btn-primary">Explore Products</a>
+        </aside>
+        <!-- SECTION 7: NEWSLETTER -->
+        <section class="bg-light p-5 text-center">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and special offers.</p>
+            <form class="d-flex justify-content-center flex-wrap gap-2">
+                <input type="email" placeholder="Enter your email" class="form-control w-auto" required>
+                <button type="button" class="btn btn-primary">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <!-- SECTION 8: FOOTER -->
+    <footer id="contact" class="bg-dark text-white p-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- FOOTER: ABOUT -->
+                <div class="col-12 col-md-3">
+                    <h3>About</h3>
+                    <p>ShopNest is your one-stop online shopping destination.</p>
+                </div>
+                <!-- FOOTER: QUICK LINKS -->
+                <div class="col-12 col-md-3">
+                    <h3>Quick Links</h3>
+                    <p><a href="#home" class="text-white">Home</a></p>
+                    <p><a href="#shop" class="text-white">Shop</a></p>
+                    <p><a href="#categories" class="text-white">Categories</a></p>
+                </div>
+                <!-- FOOTER: CONTACT -->
+                <div class="col-12 col-md-3">
+                    <h3>Contact</h3>
+                    <p>Email: info@mystore.com</p>
+                </div>
+                <!-- FOOTER: SOCIAL MEDIA -->
+                <div class="col-12 col-md-3">
+                    <h3>Social Media</h3>
+                    <p>Facebook | Instagram | YouTube</p>
+                </div>
+            </div>
+            <p class="text-center mt-4">&copy; 2026 ShopNest. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
