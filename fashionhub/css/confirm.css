@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+/* Confirmation section */
+.confirmation-section {
+    padding: 60px 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Confirmation card */
+.confirmation-card {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+/* Success Icon */
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.success-icon i {
+    font-size: 28px;
+    color: #000000;
+}
+/* Heading */
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.heading h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    font-size: 13px;
+    color: #777777;
+    line-height: 1.6;
+}
+/* Order Details */
+.order-details {
+    background-color: #f8f8f8;
+    padding: 18px 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.order-details p {
+    font-size: 10px;
+    color: #888888;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.order-details h6 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/* Arrival Section */
+.arrival-section {
+    margin-bottom: 35px;
+}
+
+.arrival-section h4 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.tracking-progress {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.tracking-step {
+    flex: 1;
+}
+
+.step-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.step-icon i {
+    font-size: 18px;
+}
+
+.tracking-step h6 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tracking-step p {
+    font-size: 11px;
+    color: #888888;
+    margin-bottom: 0;
+}
+/* Confirmation Buttons */
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.confirmation-buttons .btn {
+    padding: 12px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #eeeeee;
+    padding: 30px 0 15px;
+    background-color: #ffffff;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    padding-bottom: 30px;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    font-size: 11px;
+    color: #777777;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 11px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+    color: #777777;
+    margin: 0;
+}
+
