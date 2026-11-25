@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #777777;
+
+}
+/* head-part */
+.head-part{
+      text-align: center;
+    margin-bottom: 30px;
+}
+.head-part h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+.head-part h6{
+   font-size: 15px;
+   color: #777777;
+}
+
+/* form */
+.form-group{
+    margin-bottom: 25px;
+}
+.form-group label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.input-box input{
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    background: transparent;
+}
+.password-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.password-heading a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #777777;
+}
+
+.remember-me{
+display: flex;
+align-items: center;
+color: #777777;
+gap: 8px;
+margin-bottom: 25px;
+}
+.remember-me input{
+    cursor: pointer;
+
+}
+.login-btn{
+    background-color: black;
+    color: #f5f5f5;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.para{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777777;
+    font-size: 14px;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.buttons button{
+    flex:1;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* register part */
+.register-part{
+    /* background-color: #777777; */
+    text-align: center;
+    border-top: 1px solid #777777;
+}
+.register-part p{
+font-size: 14px;
+color: #777777;
+}
+.register-part a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-part a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | FashionHub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+
+        <div class="container-fluid px-4">
+
+            <div class="d-flex align-items-center justify-content-between">
+
+                <a href="#" class="logo">FashionHub</a>
+
+                <nav class="main-nav">
+                    <a href="men.html">Men</a>
+                    <a href="women.html">Women</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <div class="header-icons">
+                    <i class="bi bi-search"></i>
+                    <a href="./wishlist.html"><i class="bi bi-heart"></i></a>
+                    <i class="bi bi-bag"></i>
+                    <i class="bi bi-person"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Cart Section -->
+    <main class="container cart-container">
+
+        <h2 class="cart-heading">Your Cart</h2>
+
+        <div class="row">
+
+            <!-- Left Column: Cart Products -->
+            <div class="col-lg-8">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./assets/black-blazer.png" alt="Tailored Black Blazer">
+                    </div>
+
+                    <div class="product-details">
+
+                        <div class="product-info">
+                            <h5>Tailored Black Blazer</h5>
+                            <p>Size: M | Color: Onyx</p>
+                        </div>
+
+                        <div class="product-price">
+                            <span class="old-price">$350.00</span>
+                            <strong>$280.00</strong>
+                        </div>
+
+                        <div class="product-actions">
+
+                            <div class="quantity">
+                                <button type="button">−</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </div>
+
+                            <button type="button" class="remove-btn">
+                                <i class="bi bi-trash"></i>
+                                REMOVE
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./assets/sneaker.png" alt="Minimalist Leather Sneaker">
+                    </div>
+
+                    <div class="product-details">
+
+                        <div class="product-info">
+                            <h5>Minimalist Leather Sneaker</h5>
+                            <p>Size: 42 | Color: Pure White</p>
+                        </div>
+
+                        <div class="product-price">
+                            <span class="old-price">$150.00</span>
+                            <strong>$120.00</strong>
+                        </div>
+
+                        <div class="product-actions">
+
+                            <div class="quantity">
+                                <button type="button">−</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </div>
+
+                            <button type="button" class="remove-btn">
+                                <i class="bi bi-trash"></i>
+                                REMOVE
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Column: Order Summary -->
+            <div class="col-lg-4">
+
+                <div class="order-summary">
+
+                    <h4>Order Summary</h4>
+
+                    <div class="summary-details">
+
+                        <div class="summary-row">
+                            <span>Subtotal (2 items)</span>
+                            <strong>$635.00</strong>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Estimated Tax</span>
+                            <strong>$46.50</strong>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <strong>Complimentary</strong>
+                        </div>
+
+                        <div class="discount-applied">
+                            <span>Discount Applied (WELCOME10)</span>
+                            <strong>-$63.50</strong>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <div>
+                                <del>$635.00</del>
+                                <strong>$618.00</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Discount Code -->
+                    <div class="discount-code">
+
+                        <input type="text" class="form-control" placeholder="Promo Code">
+
+                        <button type="button" class="btn btn-dark">
+                            APPLY
+                        </button>
+
+                    </div>
+
+
+                    <!-- Checkout Button -->
+                    <button type="button" class="btn btn-dark checkout-button">
+                        PROCEED TO CHECKOUT
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                    <p class="secure-message">
+                        Secure checkout powered by Stripe.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="cart-footer">
+
+        <div class="footer-brand">
+            <h3>FashionHub</h3>
+            <p>© 2024 FashionHub. All rights reserved. High-fashion utility for the modern era.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Sustainability</a>
+            <a href="#">Size Guide</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">FAQ</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
