@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+/* Header */
+header {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+.logo a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+}
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+.header-options{
+    display: flex;
+    gap: 20px;
+}
+.header-options a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+}
+.header-icons{
+    display: flex;
+    gap: 20px;
+}
+.header-icons a{
+    font-size: 15px;
+    cursor: pointer;
+}
+.heading{
+    margin: 30px 35px;
+}
+.main-heading h1{
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.main-para{
+    font-size: 13px;
+    color: #666666;
+    max-width: 450px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-section .row {
+    row-gap: 30px;
+}
+/* Concierge Details */
+.left h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-info h4 {
+    font-size: 11px;
+    font-weight: bold;
+    color: #888888;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.contact-info p{
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.contact-info {
+    margin-bottom: 25px;
+}
+
+/* FAQ */
+.faq h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.faq-items{
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px 0;
+}
+.faq details {
+    border-bottom: 1px solid #eeeeee;
+    padding: 18px 0;
+}
+.faq summary{
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.faq details p{
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+/* Form */
+form label{
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+form input,
+form select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+form textarea{
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border-radius: 5px;
+    border:1px solid #dddddd;
+    font-size: 13px;
+    margin-bottom: 20px;
+    outline: none;
+}
+form button{
+    padding: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+/* map */
+.map {
+    margin-top: 35px;
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.footer{
+    background-color: #ffffff;
+    padding: 50px 0 30px;
+    border-top: 1px solid #eeeeee;
+}
+.footer-content h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.footer-links{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 500;
+}
+.footer-bottom p{
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    max-width: 3oopx;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px){
+    .header-options{
+        display: none;
+    }
+    .menu-icon{
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+    }
+    #menu-toggled:checked ~ .header-options{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .header-options {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .header-options {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        margin: 25px 15px;
+    }
+
+    .contact-section {
+        padding: 25px 15px;
+    }
+
+    .contact-section .row {
+        row-gap: 35px;
+    }
+}
